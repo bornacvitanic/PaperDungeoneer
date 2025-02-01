@@ -12,3 +12,412 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d87c1950193ba54aa42358fc1bc433c, type: 3}
   m_Name: RogueDictionary
   m_EditorClassIdentifier: 
+  words:
+  - Rogue
+  - Stealth
+  - Shadow
+  - Assassin
+  - Thief
+  - Sneak
+  - Daggers
+  - Backstab
+  - Ambush
+  - Evasion
+  - Agility
+  - Dexterity
+  - Trickery
+  - Cunning
+  - Poison
+  - Smoke Bomb
+  - Vanish
+  - Critical Strike
+  - Pickpocket
+  - Lockpicking
+  - Subterfuge
+  - Silent Kill
+  - Shadowstep
+  - Sneak Attack
+  - Dual Wield
+  - Cloak
+  - Concealment
+  - Deception
+  - Infiltration
+  - Shadow Dance
+  - Shroud
+  - Gambit
+  - Cutthroat
+  - Scoundrel
+  - Bandit
+  - Stalker
+  - Swiftness
+  - Feint
+  - Prowl
+  - Sabotage
+  - Dagger Throw
+  - Bleed
+  - Sudden Strike
+  - Coup de Grace
+  - Shadowmeld
+  - Unseen
+  - Swift Strike
+  - Blade Mastery
+  - Nightstalker
+  - Phantom
+  - Trickster
+  - Illusion
+  - Slippery
+  - Escape Artist
+  - Hide
+  - Ambusher
+  - Blade Flurry
+  - Silent Footsteps
+  - Execution
+  - Lurker
+  - "Rogue\u2019s Gambit"
+  - Shadow Veil
+  - Quick Reflexes
+  - Sidestep
+  - Deathmark
+  - Cloaked
+  - Shank
+  - Dirty Fighting
+  - Evade
+  - Knifeplay
+  - Skulker
+  - Shadow Walker
+  - Dark Step
+  - Nocturnal
+  - Predator
+  - Striker
+  - Subtlety
+  - Guile
+  - Blindsided
+  - Deft
+  - Sleight of Hand
+  - Mislead
+  - Disguise
+  - Parry
+  - Adrenaline Rush
+  - Instincts
+  - "Viper\u2019s Strike"
+  - Venom
+  - Slay
+  - Crippling Strike
+  - Smoke Screen
+  - Illusive
+  - Shadowborn
+  - Flicker
+  - Mirage
+  - Cursed Blade
+  - Stab
+  - Darting Blade
+  - Swift Hand
+  - Cloak and Dagger
+  - Shadow Leap
+  - Rift Step
+  - Cutpurse
+  - Opportunist
+  - Hide in Shadows
+  - Blade Dance
+  - Underhanded
+  - Wraith
+  - Silent Death
+  - Reaper
+  - Daggerstorm
+  - Shadowbind
+  - Fade
+  - Veil of Night
+  - Phantasm
+  - Shadow Fang
+  - Knife Trick
+  - Ghost Step
+  - Assassinate
+  - Vicious Strike
+  - Quickdraw
+  - Blade Trick
+  - Nightblade
+  - Tactician
+  - Feigned Retreat
+  - Twisting Blades
+  - Dart
+  - Shadow Mirage
+  - Sly
+  - Elusive
+  - Phantom Strike
+  - Ravager
+  - Whispered Death
+  - "Death\u2019s Touch"
+  - Dagger Master
+  - Slick
+  - Smokescreen
+  - Untraceable
+  - Hexblade
+  - Enforcer
+  - Dark Assassin
+  - Ruthless
+  - "Razor\u2019s Edge"
+  - Cloaked Menace
+  - Ambush Master
+  - Undetectable
+  - Obfuscate
+  - Elude
+  - Nimble
+  - Cutlass
+  - Poison Dart
+  - Inflict Wounds
+  - Fatal Flourish
+  - Bleeding Edge
+  - Shadowy Figure
+  - Venomous Blade
+  - Night Terror
+  - Arcane Trickster
+  - Hooded Figure
+  - Bloodletting
+  - Nightcrawler
+  - Phantom Dagger
+  - Swashbuckler
+  - Trick Dagger
+  - Ghostly Presence
+  - Lethal Edge
+  - Quickblade
+  - Bloodseeker
+  - Infiltrator
+  - Sinister
+  - Black Mask
+  - Cruel Blade
+  - Whispering Shadow
+  - "Dagger\u2019s Kiss"
+  - Blackout
+  - Slaughter
+  - Whispered Blade
+  - Executioner
+  - Darkened Cloak
+  - Black Veil
+  - Phantom Cloak
+  - Silent Step
+  - Sinister Strike
+  - Piercing Fang
+  - Deadly Precision
+  - Cunning Edge
+  - Cruel Trick
+  - Razor Fang
+  - Silent Reaper
+  - "Death\u2019s Whisper"
+  - Veiled Assassin
+  - Deathstalker
+  - Fatal Strike
+  - Venom Kiss
+  - Silent Hunter
+  - Whispering Death
+  - Death Mask
+  - Slitted Throat
+  - Hidden Blade
+  - Bloodshadow
+  - Cloaked Death
+  - Silent Predator
+  - Shrouded Reaper
+  - Phantom Hunter
+  - "Shadow\u2019s Bite"
+  - Eclipsed Assassin
+  - Gutter Rat
+  - "Knife\u2019s Edge"
+  - "Night\u2019s Embrace"
+  - Quick Cut
+  - Silent Fury
+  - Shadeborn
+  - Reaver
+  - Sharp Reflexes
+  - Ambitious Cutthroat
+  - Grave Dancer
+  - Blood Dagger
+  - Cloak of Midnight
+  - "Death\u2019s Blade"
+  - Whisper Fang
+  - Cruel Cut
+  - Moonlit Stalker
+  - Twisted Blade
+  - Smoke and Mirrors
+  - Ominous Cloak
+  - Bloodied Fang
+  - Cursed Reaver
+  - "Nocturne\u2019s Edge"
+  - Sly Hunter
+  - Sinister Dance
+  - Fatal Lunge
+  - Black Talon
+  - Cold Blooded
+  - Moonlit Phantom
+  - Eclipse Dagger
+  - Wraith Blade
+  - Shadowfang
+  - Stiletto
+  - "Cutthroat\u2019s Gambit"
+  - Bloodmoon Dagger
+  - Razor Dancer
+  - Duskrunner
+  - Shadow Marauder
+  - "Rogue\u2019s Edge"
+  - Stalk and Strike
+  - Strangler
+  - Craven Knife
+  - Ghostblade
+  - Blood Hunter
+  - Gloaming Stalker
+  - Shrouded Blade
+  - Venomous Whisper
+  - "Death\u2019s Cloak"
+  - Nightshroud
+  - Obsidian Blade
+  - Phantom Veil
+  - Twilight Striker
+  - Veiled Trickster
+  - Shadowborn Stalker
+  - "Death\u2019s Gambit"
+  - Poison Fang
+  - Razor Claw
+  - Twilight Cloak
+  - Duskwalker
+  - Wraith Step
+  - "Death\u2019s Edge"
+  - Cloaked Phantom
+  - Blackshade
+  - Blooded Whisper
+  - Shadow Assassin
+  - Cruel Whisper
+  - Shadowy Execution
+  - Midnight Reaper
+  - Venom Shadow
+  - "Blade\u2019s Whisper"
+  - Unseen Reaper
+  - Bloodthirsty Phantom
+  - Shrouded Executioner
+  - Sinister Wraith
+  - Masked Hunter
+  - Twilight Reaper
+  - Wraithborn Stalker
+  - Veiled Reaver
+  - Cloaked Venom
+  - Phantom Stinger
+  - "Reaper\u2019s Mark"
+  - Shadowfang Assassin
+  - Moonlit Reaver
+  - Shrouded Trickster
+  - Whisperfang Executioner
+  - Silent Edge
+  - Crimson Shadow
+  - "Rogue\u2019s Kiss"
+  - Phantom Embrace
+  - Midnight Stalker
+  - Dusky Blade
+  - Unseen Death
+  - Omen Dagger
+  - Sly Specter
+  - Veiled Nightblade
+  - Whispered Phantom
+  - Bloodveil Assassin
+  - Cursed Executioner
+  - "Shadow\u2019s Embrace"
+  - Razor Trickster
+  - Deathmask
+  - Phantom Marauder
+  - Cloaked Shade
+  - Bloodstained Whisper
+  - Deadly Mirage
+  - Forsaken Blade
+  - Phantom Enforcer
+  - Stygian Trickster
+  - Unforgiving Blade
+  - Bloodmarked Reaper
+  - "Reaver\u2019s Shadow"
+  - Midnight Wraith
+  - Crimson Veil
+  - Venom Shroud
+  - "Rogue\u2019s Curse"
+  - Deadly Whisper
+  - Sinister Marauder
+  - Phantom Shade
+  - Dusken Phantom
+  - Whisperfang
+  - "Reaper\u2019s Kiss"
+  - Daggerborn Stalker
+  - Crimson Cloak
+  - Twilight Phantom
+  - Venomstrike
+  - Shrouded Hunter
+  - Cloaked Executioner
+  - Whisperblade
+  - Blackened Fang
+  - Midnight Trickster
+  - Wraith Assassin
+  - Nightborn Stalker
+  - Silent Marauder
+  - Dusken Shade
+  - Phantom Kiss
+  - Whisperfang Stalker
+  - Veiled Executioner
+  - Cloaked Reaver
+  - Shadowborn Assassin
+  - Bloodstalker
+  - Phantom Veil Assassin
+  - "Death\u2019s Phantom"
+  - Moonlit Trickster
+  - Whisperfang Hunter
+  - Venomous Stalker
+  - "Night\u2019s Phantom"
+  - Cloaked Whisperer
+  - "Reaper\u2019s Phantom"
+  - Sinister Kiss
+  - Twilight Reaver
+  - Dusken Assassin
+  - Phantom Executioner
+  - Shadowborn Wraith
+  - Cloaked Phantom Hunter
+  - Midnight Executioner
+  - Wraith Reaper
+  - Blackfang Assassin
+  - Shadowborn Hunter
+  - Nightborn Reaper
+  - "Death\u2019s Hunter"
+  - Venomborn Executioner
+  - Dusken Reaver
+  - Phantomborn Assassin
+  - Whisperfang Reaver
+  - Crimson Executioner
+  - Twilight Hunter
+  - Venomous Reaper
+  - Bloodborn Phantom
+  - Nightveil Assassin
+  - Deathfang Reaver
+  - Dusken Executioner
+  - Phantomborn Hunter
+  - Whisperfang Assassin
+  - Crimson Stalker
+  - Midnight Executioner
+  - Shadowborn Trickster
+  - Cloaked Phantom Assassin
+  - Wraithborn Executioner
+  - Phantom Reaper
+  - Nightveil Trickster
+  - "Death\u2019s Whisperer"
+  - Bloodveil Reaper
+  - Sinister Hunter
+  - Midnight Shade
+  - Shadowborn Marauder
+  - Crimson Phantom
+  - Dusken Trickster
+  - Phantom Whisperer
+  - Deathfang Assassin
+  - Twilight Trickster
+  - Nightveil Reaper
+  - Sinister Phantom
+  - Cloaked Phantom Stalker
+  - Dusken Marauder
+  - Phantomborn Executioner
+  - Bloodveil Stalker
+  - Nightveil Executioner
+  - Midnight Phantom
+  - Shadowfang Executioner
+  - Crimson Hunter
+  - Dusken Executioner
+  - Phantomfang Hunter
+  - Whisperborn Assassin
