@@ -5,23 +5,17 @@ namespace PaperDungeoneer.Scoring
 {
     public class ScoreUI : MonoBehaviour
     {
-        [SerializeField] private TMP_Text scoreText;
         [SerializeField] private ScoreManager scorer;
+        [SerializeField] private TMP_Text scoreText;
 
         private void OnEnable()
         {
-            if (scorer != null)
-            {
-                scorer.OnScoreChanged += UpdateScoreDisplay;
-            }
+            scorer.OnScoreChanged += UpdateScoreDisplay;
         }
 
         private void OnDisable()
         {
-            if (scorer != null)
-            {
-                scorer.OnScoreChanged -= UpdateScoreDisplay;
-            }
+            scorer.OnScoreChanged -= UpdateScoreDisplay;
         }
 
         private void UpdateScoreDisplay(int newScore)

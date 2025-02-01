@@ -8,7 +8,7 @@ namespace PaperDungeoneer.Scoring
     {
         public static ScoreManager Instance { get; private set; }
 
-        private int score = 0;
+        private int score;
 
         public event Action<int> OnScoreChanged;
 
@@ -38,11 +38,6 @@ namespace PaperDungeoneer.Scoring
         public void AddScore(int amount)
         {
             Score += amount;
-        }
-
-        public void SubtractScore(int amount)
-        {
-            Score -= amount;
         }
 
         public void ResetScore()
