@@ -2,61 +2,64 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class CountdownTimer : MonoBehaviour
+namespace PaperDungeoneer.Timers
 {
-    [SerializeField] private float timeSeconds;
-    [SerializeField] private TimerUI timerUI;
-
-    private float currentTimeSeconds;
-    private Coroutine timerCoroutine;
-
-    public UnityEvent OnTimerComplete;
-
-    private void Awake()
+    public class CountdownTimer : MonoBehaviour
     {
-        currentTimeSeconds = timeSeconds;
-    }
+        [SerializeField] private float timeSeconds;
+        [SerializeField] private TimerUI timerUI;
 
-    private void OnDisable()
-    {
-        StopTimer();
-    }
+        private float currentTimeSeconds;
+        private Coroutine timerCoroutine;
 
-    [ContextMenu("Start Timer")]
-    public void StartTimer()
-    {
-        StopTimer();
-        timerCoroutine = StartCoroutine(CountDown());
-    }
+        public UnityEvent OnTimerComplete;
 
-    [ContextMenu("Stop Timer")]
-    public void StopTimer()
-    {
-        if (timerCoroutine != null)
+        private void Awake()
         {
-            StopCoroutine(timerCoroutine);
-            timerCoroutine = null;
+            currentTimeSeconds = timeSeconds;
         }
-    }
 
-    [ContextMenu("Reset Timer")]
-    public void ResetTimer()
-    {
-        currentTimeSeconds = timeSeconds;
-        StartTimer();
-    }
-
-    private IEnumerator CountDown()
-    {
-        while (currentTimeSeconds > 0)
+        private void OnDisable()
         {
+            StopTimer();
+        }
+
+        [ContextMenu("Start Timer")]
+        public void StartTimer()
+        {
+            StopTimer();
+            timerCoroutine = StartCoroutine(CountDown());
+        }
+
+        [ContextMenu("Stop Timer")]
+        public void StopTimer()
+        {
+            if (timerCoroutine != null)
+            {
+                StopCoroutine(timerCoroutine);
+                timerCoroutine = null;
+            }
+        }
+
+        [ContextMenu("Reset Timer")]
+        public void ResetTimer()
+        {
+            currentTimeSeconds = timeSeconds;
+            StartTimer();
+        }
+
+        private IEnumerator CountDown()
+        {
+            while (currentTimeSeconds > 0)
+            {
+                timerUI.UpdateUITimer(currentTimeSeconds);
+                yield return new WaitForSeconds(Time.deltaTime);
+                currentTimeSeconds -= Time.deltaTime;
+            }
+
+            currentTimeSeconds = 0;
             timerUI.UpdateUITimer(currentTimeSeconds);
-            yield return new WaitForSeconds(Time.deltaTime);
-            currentTimeSeconds -= Time.deltaTime;
+            OnTimerComplete?.Invoke();
         }
-
-        currentTimeSeconds = 0;
-        timerUI.UpdateUITimer(currentTimeSeconds);
-        OnTimerComplete?.Invoke();
     }
 }
