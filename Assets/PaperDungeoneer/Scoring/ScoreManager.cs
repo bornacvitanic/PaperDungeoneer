@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 namespace PaperDungeoneer.Scoring
 {
@@ -30,6 +31,7 @@ namespace PaperDungeoneer.Scoring
             }
 
             Instance = this;
+            Score = 0;
             DontDestroyOnLoad(gameObject);
         }
 
