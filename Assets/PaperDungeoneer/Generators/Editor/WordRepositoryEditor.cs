@@ -54,7 +54,7 @@ public class WordRepositoryWindow : EditorWindow
 
             foreach (var word in wordRepository.Words)
             {
-                GUILayout.Label(word, EditorStyles.wordWrappedLabel);
+                GUILayout.Label(word.word, EditorStyles.wordWrappedLabel);
             }
 
             EditorGUILayout.EndScrollView();
@@ -70,7 +70,11 @@ public class WordRepositoryWindow : EditorWindow
         }
 
         wordRepository.Words.Clear();
-        wordRepository.Words.AddRange(wordsInParagraph.Split(new[] { ',', ' ' }, System.StringSplitOptions.RemoveEmptyEntries));
+        string[] splitWords = wordsInParagraph.Split(new[] { ", " }, System.StringSplitOptions.RemoveEmptyEntries);
+        foreach (var w in splitWords)
+        {
+            wordRepository.Words.Add(new WordValue() { word = w});
+        }
         Debug.Log($"Word Repository updated with {wordRepository.Words.Count} words.");
     }
 }

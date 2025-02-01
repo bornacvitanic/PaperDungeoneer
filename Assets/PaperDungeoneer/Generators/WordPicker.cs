@@ -8,12 +8,23 @@ namespace PaperDungoneer.WordDictionary
     {
         [SerializeField] private WordRepository wordDictionary;
 
-        public List<string> GetWordsByLenght(int length)
+        public List<WordValue> GetWordsByLenght(int length)
         {
-            List<string> filteredWords = wordDictionary.Words.Where(word => word.Length <= length).ToList();
+            List<WordValue> filteredWords = wordDictionary.Words.Where(word => word.word.Length <= length).ToList();
             if (filteredWords.Count == 0)
             {
                 Debug.LogWarning($"No words found with length {length}");
+                return new();
+            }
+            return filteredWords;
+        }
+
+        public List<WordValue> GetWordsByValue(int wordValue)
+        {
+            List<WordValue> filteredWords = wordDictionary.Words.Where(word => word.wordValue <= wordValue).ToList();
+            if (filteredWords.Count == 0)
+            {
+                Debug.LogWarning($"No words found with value {wordValue}");
                 return new();
             }
             return filteredWords;
