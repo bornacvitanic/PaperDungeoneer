@@ -1,23 +1,23 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class TypingManager : MonoBehaviour
 {
+    [SerializeField] private TypingUI typingUI;
+    [SerializeField] private TMP_InputField inputField;
     [Header("Colors")]
     [SerializeField] private Color correctColor = Color.green;
     [SerializeField] private Color incorrectColor = Color.red;
     [SerializeField] private Color defaultColor = Color.white;
-    [SerializeField] private TMP_InputField inputField;
-    [SerializeField] private TMP_Text targetWordDisplay;
-    private string targetWord;
 
     public UnityEvent OnWordCompleted;
 
-    void Start()
+    private string targetWord;
+    public void Start()
     {
-        inputField.onValueChanged.AddListener(UpdateColoredText);
+        inputField.text = "";
+        inputField.onValueChanged.AddListener(CheckInput);
     }
 
     private void Update()
@@ -26,42 +26,37 @@ public class TypingManager : MonoBehaviour
             inputField.ActivateInputField();
     }
 
-    public void AssignTargetWord(string word)
+    public void SetTargetWord(string word)
     {
         targetWord = word;
-        targetWordDisplay.text = $"<color=#{ColorUtility.ToHtmlStringRGB(defaultColor)}>{targetWord}</color>";
+        typingUI.SetTargetText(targetWord, defaultColor);
         inputField.text = "";
-        inputField.ActivateInputField(); 
     }
 
-    void UpdateColoredText(string currentInput)
+    private void CheckInput(string currentInput)
     {
-        string coloredText = "";
+        typingUI.SetTargetText("", defaultColor);
         for (int i = 0; i < targetWord.Length; i++)
         {
             if (i < currentInput.Length)
             {
                 if (currentInput[i] == targetWord[i])
-                    coloredText += $"<color=#{ColorUtility.ToHtmlStringRGB(correctColor)}>{targetWord[i]}</color>";
+                    typingUI.AddLetterToTargetText(targetWord[i], correctColor);
                 else
-                    coloredText += $"<color=#{ColorUtility.ToHtmlStringRGB(incorrectColor)}>{targetWord[i]}</color>";
+                    typingUI.AddLetterToTargetText(targetWord[i], incorrectColor);
             }
             else
             {
-                coloredText += targetWord[i];
+                typingUI.AddLetterToTargetText(targetWord[i], defaultColor);
             }
         }
-        targetWordDisplay.text = coloredText;
-        CheckInput(currentInput);
+
+        if (IsWordCompleted(currentInput))
+            OnWordCompleted.Invoke();
     }
 
-    private void CheckInput(string currentInput)
+    public bool IsWordCompleted(string currentInput)
     {
-        if (currentInput != targetWord) return;
-
-        inputField.text = "";
-        targetWordDisplay.text = "";
-        Debug.Log("Correct! Word defeated!");
-        OnWordCompleted.Invoke();
+        return currentInput == targetWord;
     }
 }

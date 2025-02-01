@@ -456,6 +456,7 @@ GameObject:
   - component: {fileID: 670744044}
   - component: {fileID: 670744047}
   - component: {fileID: 670744046}
+  - component: {fileID: 670744048}
   - component: {fileID: 670744045}
   m_Layer: 5
   m_Name: InputField (TMP)
@@ -623,6 +624,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670744043}
   m_CullTransparentMesh: 1
+--- !u!114 &670744048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670744043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2bfad545e900c48893335a855bcc15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetWordDisplay: {fileID: 1006779505}
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  incorrectColor: {r: 1, g: 0, b: 0, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &916783634
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,7 +652,7 @@ GameObject:
   - component: {fileID: 916783637}
   - component: {fileID: 916783636}
   m_Layer: 5
-  m_Name: Text
+  m_Name: InputText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,7 +863,7 @@ GameObject:
   - component: {fileID: 1006779506}
   - component: {fileID: 1006779505}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TargetText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -999,17 +1016,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9930898b690b5cf41990b89b1a83bb00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  typingUI: {fileID: 670744048}
+  inputField: {fileID: 670744045}
   correctColor: {r: 0, g: 1, b: 0, a: 1}
   incorrectColor: {r: 1, g: 0, b: 0, a: 1}
   defaultColor: {r: 0, g: 0, b: 0, a: 1}
-  inputField: {fileID: 670744045}
-  targetWordDisplay: {fileID: 1006779505}
   OnWordCompleted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2095667497}
-        m_TargetAssemblyTypeName: WordGenerator, PaperDungeoneer.Generators
-        m_MethodName: PickRandomWord
+      - m_Target: {fileID: 2086613598}
+        m_TargetAssemblyTypeName: PaperDungoneer.TypingMinigame.TypingLogic, PaperDungeoneer.TypingMinigame
+        m_MethodName: PickTargetWord
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1298,6 +1315,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2086613597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086613599}
+  - component: {fileID: 2086613598}
+  m_Layer: 0
+  m_Name: TypingMinigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2086613598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086613597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b7ffbb0bb43f645968adba25843aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordPicker: {fileID: 2095667497}
+  OnWordPicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1204085224}
+        m_TargetAssemblyTypeName: TypingManager, PaperDungeoneer.Typing
+        m_MethodName: SetTargetWord
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &2086613599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086613597}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2095667496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,34 +1404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfcd28cb80e24e447a4a5bff85de9edf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  words:
-  - Scroll
-  - Glyph
-  - Map
-  - Letter
-  - Ink
-  - Quill
-  - Crypt
-  - Trapdoor
-  - Relic
-  - Runestone
-  - Wizard
-  - Skeleton
-  OnWordPicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1204085224}
-        m_TargetAssemblyTypeName: TypingManager, PaperDungeoneer.Typing
-        m_MethodName: AssignTargetWord
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  wordDictionary: {fileID: 11400000, guid: 5ea4b50f5f542274d972d1c0fc021a93, type: 2}
 --- !u!4 &2095667498
 Transform:
   m_ObjectHideFlags: 0
@@ -1378,5 +1428,6 @@ SceneRoots:
   - {fileID: 523192308}
   - {fileID: 1313409471}
   - {fileID: 1379734225}
-  - {fileID: 1204085225}
   - {fileID: 2095667498}
+  - {fileID: 1204085225}
+  - {fileID: 2086613599}
