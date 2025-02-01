@@ -1,0 +1,17 @@
+{
+    "name": "PaperDungeoneer.TypingMinigame",
+    "rootNamespace": "",
+    "references": [
+        "GUID:97f7d67d71ffb8343a3f64f50036b645",
+        "GUID:7949f851d2289d044bb449d0585393a2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
