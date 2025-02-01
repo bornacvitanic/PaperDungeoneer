@@ -7,10 +7,11 @@ namespace PaperDungeoneer.Timers
     public class CountdownTimer : MonoBehaviour
     {
         [SerializeField] private float timeSeconds;
-        [SerializeField] private TimerUI timerUI;
 
         private float currentTimeSeconds;
         private Coroutine timerCoroutine;
+
+        public float CurrentTimeSeconds {  get { return currentTimeSeconds; } }
 
         public UnityEvent OnTimerComplete;
 
@@ -52,13 +53,11 @@ namespace PaperDungeoneer.Timers
         {
             while (currentTimeSeconds > 0)
             {
-                timerUI.UpdateUITimer(currentTimeSeconds);
                 yield return new WaitForSeconds(Time.deltaTime);
                 currentTimeSeconds -= Time.deltaTime;
             }
 
             currentTimeSeconds = 0;
-            timerUI.UpdateUITimer(currentTimeSeconds);
             OnTimerComplete?.Invoke();
         }
     }

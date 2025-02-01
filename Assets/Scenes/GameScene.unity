@@ -946,6 +946,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player HUD Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4875667156739171781, guid: 7b893f05b56933845a0b030d53fca5c3,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 2055663048}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

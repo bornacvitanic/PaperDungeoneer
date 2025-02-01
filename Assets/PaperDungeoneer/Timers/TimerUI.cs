@@ -8,7 +8,13 @@ namespace PaperDungeoneer.Timers
 {
     public class TimerUI : MonoBehaviour
     {
-        [SerializeField] TMP_Text timerText;
+        [SerializeField] private TMP_Text timerText;
+        [SerializeField] private CountdownTimer timer;
+
+        private void Update()
+        {
+            UpdateUITimer(timer.CurrentTimeSeconds);
+        }
 
         public void UpdateUITimer(float seconds)
         {
