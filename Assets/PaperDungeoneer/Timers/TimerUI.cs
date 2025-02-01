@@ -11,9 +11,14 @@ namespace PaperDungeoneer.Timers
         [SerializeField] private TMP_Text timerText;
         [SerializeField] private CountdownTimer timer;
 
-        private void Update()
+        private void OnEnable()
         {
-            UpdateUITimer(timer.CurrentTimeSeconds);
+            timer.OnTimeTick += UpdateUITimer;
+        }
+
+        private void OnDisable()
+        {
+            timer.OnTimeTick -= UpdateUITimer;
         }
 
         public void UpdateUITimer(float seconds)

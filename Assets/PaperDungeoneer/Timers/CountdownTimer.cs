@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,7 +12,7 @@ namespace PaperDungeoneer.Timers
         private float currentTimeSeconds;
         private Coroutine timerCoroutine;
 
-        public float CurrentTimeSeconds {  get { return currentTimeSeconds; } }
+        public Action<float> OnTimeTick;
 
         public UnityEvent OnTimerComplete;
 
@@ -53,11 +54,13 @@ namespace PaperDungeoneer.Timers
         {
             while (currentTimeSeconds > 0)
             {
+                OnTimeTick.Invoke(currentTimeSeconds);
                 yield return new WaitForSeconds(Time.deltaTime);
                 currentTimeSeconds -= Time.deltaTime;
             }
 
-            currentTimeSeconds = 0;
+            currentTimeSeconds = 0; 
+            OnTimeTick.Invoke(currentTimeSeconds);
             OnTimerComplete?.Invoke();
         }
     }
