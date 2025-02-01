@@ -1,4 +1,4 @@
-using PaperDungoneer.Generators;
+using PaperDungoneer.WordDictionary;
 using UnityEngine;
 using UnityEngine.Events;
 
