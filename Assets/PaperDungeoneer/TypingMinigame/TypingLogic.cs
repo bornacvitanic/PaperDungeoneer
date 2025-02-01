@@ -9,6 +9,8 @@ namespace PaperDungoneer.TypingMinigame
         [SerializeField] private WordPicker wordPicker;
 
         public UnityEvent<string> OnWordPicked;
+        public UnityEvent OnRestartGame;
+        public UnityEvent OnEndGame;
 
         private void Start()
         {
@@ -20,6 +22,17 @@ namespace PaperDungoneer.TypingMinigame
             var word = wordPicker.GetWordsByLenght(10);
 
             OnWordPicked.Invoke(word[Random.Range(0, word.Count)]);
+        }
+
+        public void RestartGame()
+        {
+            OnRestartGame.Invoke();
+            PickTargetWord();
+        }
+
+        public void EndGame() 
+        {
+            OnEndGame.Invoke();
         }
     }
 }
