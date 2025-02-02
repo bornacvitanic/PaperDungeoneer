@@ -50,7 +50,7 @@ namespace PaperDungeoneer.Typing
                 {
                     var currentLetter = currentInput[i];
                     if (currentLetter == ' ')
-                        currentLetter = '~';
+                        currentLetter = '\u02fd';
 
                     if (currentLetter == targetWord[i])
                     {
