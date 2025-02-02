@@ -7,6 +7,7 @@ namespace PaperDungoneer.Spawners
     public class RandomObjectPlacer : MonoBehaviour
     {
         [SerializeField] private List<GameObject> prefabs;
+        [SerializeField] private bool randomOrientation;
 
         public UnityEvent<GameObject> OnObjectPlaced;
 
@@ -33,15 +34,20 @@ namespace PaperDungoneer.Spawners
             }
 
             GameObject selectedPrefab = prefabs[Random.Range(0, prefabs.Count)];
-            instance = Instantiate(selectedPrefab, transform);
+            instance = Instantiate(selectedPrefab, transform.position, (randomOrientation?GetRandomOrientation():transform.rotation),transform);
             OnObjectPlaced.Invoke(instance);
         }
 
-        
+        private static Quaternion GetRandomOrientation()
+        {
+            return Quaternion.Euler(0,Random.Range(0,4)*90f,0);
+        }
+
         #region GizmoVariables
         private int currentPrefabIndex = 0;
-        private float timer = 0f;
-        private const float previewInterval = 5f;
+        private float lastChangeTime = 0f;
+        private const float previewInterval = 1f;
+        private Quaternion gizmoOrientation;
         #endregion
         
         private void OnDrawGizmos()
@@ -49,12 +55,13 @@ namespace PaperDungoneer.Spawners
             if (prefabs == null || prefabs.Count == 0)
                 return;
             if (instance != null) return;
-
-            timer += Time.deltaTime;
-            if (timer >= previewInterval)
+            
+            if (lastChangeTime + previewInterval < Time.realtimeSinceStartup)
             {
-                timer = 0f;
+                lastChangeTime = 0f;
                 currentPrefabIndex = (currentPrefabIndex + 1) % prefabs.Count;
+                gizmoOrientation = randomOrientation ? GetRandomOrientation() : Quaternion.identity;
+                lastChangeTime = Time.realtimeSinceStartup;
             }
 
             GameObject prefab = prefabs[currentPrefabIndex];
@@ -73,7 +80,7 @@ namespace PaperDungoneer.Spawners
 
                     Gizmos.color = new Color(1, 1, 1, 0.5f); // Semi-transparent white
                     Gizmos.matrix = matrix;
-                    Gizmos.DrawMesh(meshFilter.sharedMesh, Vector3.zero, Quaternion.identity, Vector3.one);
+                    Gizmos.DrawMesh(meshFilter.sharedMesh, transform.position, gizmoOrientation, Vector3.one);
                 }
             }
         }
