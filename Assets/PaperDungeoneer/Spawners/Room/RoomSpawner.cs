@@ -30,7 +30,7 @@ namespace PaperDungeoneer.Spawners.Room
 
         private void Start()
         {
-            if (instances == null || instances.Count == 0) GenerateRoom();
+            if (Application.isPlaying || instances == null || instances.Count == 0) GenerateRoom();
         }
 
         [ContextMenu("Generate Room")]

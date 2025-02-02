@@ -15,7 +15,7 @@ namespace PaperDungoneer.Spawners
 
         private void Awake()
         {
-            if (instance == null) PlaceRandomObject();
+            if (Application.isPlaying || instance == null) PlaceRandomObject();
         }
 
         [ContextMenu("Place Random Object")]

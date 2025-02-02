@@ -16,7 +16,7 @@ namespace PaperDungeoneer.Spawners.Room
 
         private void Awake()
         {
-            if (instances.Count == 0) AssembleProceduralFloorTile();
+            if (Application.isPlaying || instances.Count == 0) AssembleProceduralFloorTile();
         }
 
         private void AssembleProceduralFloorTile()
