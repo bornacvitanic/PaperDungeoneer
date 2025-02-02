@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 3424149494934067936}
-  fadeOutDuration: 1
+  fadeOutDuration: 2
   fadeOutAnimationCurve:
     serializedVersion: 2
     m_Curve:

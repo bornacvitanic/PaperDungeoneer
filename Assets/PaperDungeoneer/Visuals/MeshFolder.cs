@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MeshFolderMultipleFolds : MonoBehaviour
 {
     [SerializeField] private float flattenDuration = 2f;
     [SerializeField] private int foldCount = 3;
     [SerializeField] private float foldDuration = 2f;
+
+    public UnityEvent OnFold;
+    private Coroutine flatteningRoutine;
 
     // Holds a baked/duplicated mesh along with its working vertex arrays.
     private class FolderMesh
@@ -27,7 +31,7 @@ public class MeshFolderMultipleFolds : MonoBehaviour
             Debug.LogWarning("Target not set.", this);
             return;
         }
-
+        
         CollectMeshes(target);
         if (folderMeshes.Count == 0)
         {
@@ -35,11 +39,13 @@ public class MeshFolderMultipleFolds : MonoBehaviour
             return;
         }
 
-        StartCoroutine(FlattenThenFold(target));
+        if (flatteningRoutine != null) StopCoroutine(flatteningRoutine);
+        flatteningRoutine = StartCoroutine(FlattenThenFold(target));
     }
 
     private void CollectMeshes(GameObject target)
     {
+        folderMeshes.Clear();
         // Process MeshFilter-based meshes.
         var meshFilters = target.GetComponentsInChildren<MeshFilter>();
         foreach (var mf in meshFilters)
@@ -162,6 +168,7 @@ public class MeshFolderMultipleFolds : MonoBehaviour
             var isXFold = (foldIndex % 2 == 0);
 
             Debug.Log($"Starting fold phase {foldIndex + 1} using {(isXFold ? "x-axis" : "y-axis")} rotation.");
+            OnFold?.Invoke();
 
             // Animate the fold for this phase over foldDuration.
             var foldElapsed = 0f;
