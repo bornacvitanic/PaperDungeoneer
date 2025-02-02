@@ -1,3 +1,4 @@
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,8 +15,11 @@ namespace PaperDungeoneer.Typing
         [SerializeField] private Color defaultColor = Color.white;
 
         private string targetWord;
+        private string previousInput = string.Empty;
 
         public UnityEvent OnWordCompleted;
+        public UnityEvent OnCorrectLetterTyped;
+        public UnityEvent OnIncorrectLetterTyped;
 
         public void Start()
         {
@@ -41,12 +45,23 @@ namespace PaperDungeoneer.Typing
             typingUI.SetTargetText("", defaultColor);
             for (int i = 0; i < targetWord.Length; i++)
             {
+
                 if (i < currentInput.Length)
                 {
-                    if (currentInput[i] == targetWord[i])
+                    var currentLetter = currentInput[i];
+                    if (currentLetter == ' ')
+                        currentLetter = '~';
+
+                    if (currentLetter == targetWord[i])
+                    {
                         typingUI.AddLetterToTargetText(targetWord[i], correctColor);
+                        OnCorrectLetterTyped.Invoke();
+                    }
                     else
-                        typingUI.AddLetterToTargetText(currentInput[i], incorrectColor);
+                    {
+                        typingUI.AddLetterToTargetText(currentLetter, incorrectColor);
+                        OnIncorrectLetterTyped.Invoke();
+                    }
                 }
                 else
                 {
