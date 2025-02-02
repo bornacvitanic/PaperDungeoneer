@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: SmallFloorTileWeightedPrefabRepository
   m_EditorClassIdentifier: 
   prefabs:
+  - prefab: {fileID: 4538038699939553119, guid: ea8bcc3361f0453419b0ecccb7ed0dbf,
+      type: 3}
+    weight: 3
   - prefab: {fileID: 919132149155446097, guid: 44f5c28f70b89a14881c807857c4c851, type: 3}
-    weight: 20
+    weight: 7
   - prefab: {fileID: 919132149155446097, guid: 2595447e34249914da153b6513a07b7d, type: 3}
     weight: 2
   - prefab: {fileID: 919132149155446097, guid: 86dc2e5cb485efd4795e6f5276ac9446, type: 3}

@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 namespace PaperDungoneer.Spawners
 {
+    [ExecuteAlways]
     public class RandomObjectPlacer : MonoBehaviour
     {
         [SerializeField] private List<GameObject> prefabs;

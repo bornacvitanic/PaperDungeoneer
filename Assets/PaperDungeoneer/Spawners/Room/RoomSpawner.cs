@@ -20,11 +20,13 @@ namespace PaperDungeoneer.Spawners.Room
 
         [Header("Wall and Corner Dimensions")]
         [SerializeField] private float wallWidth = 1.0f; // Width of the wall prefabs
+        
+        [Header("Instances")]
+        [SerializeField] private List<GameObject> instances;
 
         private int RoomWidth { get; set; }
         private int RoomLength { get; set; }
 
-        private readonly List<GameObject> instances = new();
 
         private void Start()
         {
@@ -37,7 +39,8 @@ namespace PaperDungeoneer.Spawners.Room
             // Clear existing room instances
             foreach (var instance in instances)
             {
-                Destroy(instance);
+                if (Application.isPlaying) Destroy(instance);
+                else DestroyImmediate(instance);
             }
             instances.Clear();
 

@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace PaperDungeoneer.Spawners.Room
 {
+    [ExecuteAlways]
     public class ProceduralFloorTileAssembler : MonoBehaviour
     {
         [Header("Half-Sized Floor Tiles")]
