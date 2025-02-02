@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc32ddcdd44332f488b1d52195ab92d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeSeconds: 10
-  timerUI: {fileID: 0}
+  timeSeconds: 5
   OnTimerComplete:
     m_PersistentCalls:
       m_Calls: []
