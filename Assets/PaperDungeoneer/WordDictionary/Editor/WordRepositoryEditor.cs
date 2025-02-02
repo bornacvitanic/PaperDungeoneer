@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using PaperDungoneer.WordDictionary;
+using System.Linq;
 
 public class WordRepositoryWindow : EditorWindow
 {
@@ -70,7 +71,7 @@ public class WordRepositoryWindow : EditorWindow
         }
 
         wordRepository.ScoredWords.Clear();
-        string[] splitWords = wordsInParagraph.Split(new[] { ", " }, System.StringSplitOptions.RemoveEmptyEntries);
+        string[] splitWords = wordsInParagraph.Split(new[] { ", " }, System.StringSplitOptions.RemoveEmptyEntries).ToHashSet().ToArray();
         foreach (var w in splitWords)
         {
             wordRepository.ScoredWords.Add(new ScoredWord() { word = w});
