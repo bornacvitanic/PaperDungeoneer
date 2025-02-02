@@ -8,11 +8,7 @@ namespace PaperDungoneer.WordDictionary
     {
         [SerializeField] private List<ScoredWord> scoredWords = new();
 
-        public List<ScoredWord> ScoredWords
-        {
-            get => scoredWords;
-            set => scoredWords = value;
-        }
+        public List<ScoredWord> ScoredWords => scoredWords;
 
         private readonly HashSet<char> homeRowKeys = new()
         {
