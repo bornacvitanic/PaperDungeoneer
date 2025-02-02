@@ -46,13 +46,16 @@ namespace PaperDungeoneer.Typing
                     if (currentInput[i] == targetWord[i])
                         typingUI.AddLetterToTargetText(targetWord[i], correctColor);
                     else
-                        typingUI.AddLetterToTargetText(targetWord[i], incorrectColor);
+                        typingUI.AddLetterToTargetText(currentInput[i], incorrectColor);
                 }
                 else
                 {
                     typingUI.AddLetterToTargetText(targetWord[i], defaultColor);
                 }
             }
+
+            for (int i = targetWord.Length; i < currentInput.Length; i++)
+                typingUI.AddLetterToTargetText(currentInput[i], incorrectColor);
 
             CheckIfWordCompleted(currentInput);
         }
