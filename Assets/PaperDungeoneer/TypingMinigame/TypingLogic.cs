@@ -18,6 +18,8 @@ namespace PaperDungoneer.TypingMinigame
         private int difficultyLevel;
         private int slidingDifficultyRange;
 
+        private string currentWord = "";
+
         private List<ScoredWord> fetchedWords = new();
 
         public UnityEvent<string> OnWordPicked;
@@ -29,6 +31,8 @@ namespace PaperDungoneer.TypingMinigame
         {
             difficultyLevel = startingDifficultyLevel;
             slidingDifficultyRange = startingSlidingDifficultyRange;
+            fetchedWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange, slidingDifficultyRange);
+
             PickTargetWord();
         }
 
@@ -41,11 +45,15 @@ namespace PaperDungoneer.TypingMinigame
             }
 
             var randomScoreWord = fetchedWords[Random.Range(0, fetchedWords.Count)];
+            while (currentWord == randomScoreWord.word)
+                randomScoreWord = fetchedWords[Random.Range(0, fetchedWords.Count)];
+
             fetchedWords.Remove(randomScoreWord);
 
             if (randomScoreWord.score <= uppercaseDifficultyLevelStart)
                 randomScoreWord.word = randomScoreWord.word.ToLower();
 
+            currentWord = randomScoreWord.word;
             OnWordPicked.Invoke(randomScoreWord.word);
         }
 
