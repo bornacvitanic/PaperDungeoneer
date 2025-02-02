@@ -13,6 +13,7 @@ namespace PaperDungoneer.TypingMinigame
         [SerializeField] private int uppercaseDifficultyLevelStart = 40;
 
         private int difficultyLevel;
+        private string currentWord = "";
 
         public UnityEvent<string> OnWordPicked;
         public UnityEvent OnRestartGame;
@@ -26,13 +27,19 @@ namespace PaperDungoneer.TypingMinigame
 
         public void PickTargetWord()
         {
-            var scoreWords = wordPicker.GetWordsByScore(difficultyLevel - slidingDifficultyRange, difficultyLevel);
+            var scoreWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange);
             var randomScoreWord = scoreWords[Random.Range(0, scoreWords.Count)];
 
-            if (randomScoreWord.score <= uppercaseDifficultyLevelStart)
-                randomScoreWord.word = randomScoreWord.word.ToLower();
+            while(currentWord == randomScoreWord.word)
+            {
+                randomScoreWord = scoreWords[Random.Range(0, scoreWords.Count)];
+            }
 
-            OnWordPicked.Invoke(randomScoreWord.word);
+            currentWord = randomScoreWord.word;
+            if (randomScoreWord.score <= uppercaseDifficultyLevelStart)
+                currentWord = randomScoreWord.word.ToLower();
+
+            OnWordPicked.Invoke(currentWord);
         }
             
         public void IncreaseDifficulty()

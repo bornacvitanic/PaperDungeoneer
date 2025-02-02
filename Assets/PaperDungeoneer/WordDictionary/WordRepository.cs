@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace PaperDungoneer.WordDictionary
@@ -9,6 +10,7 @@ namespace PaperDungoneer.WordDictionary
         [SerializeField] private List<ScoredWord> scoredWords = new();
 
         public List<ScoredWord> ScoredWords => scoredWords;
+        public int MaxScore => scoredWords.Any() ? scoredWords.Max(s => s.score) : 0;
 
         private readonly HashSet<char> homeRowKeys = new()
         {

@@ -19,12 +19,15 @@ namespace PaperDungoneer.WordDictionary
             return filteredWords;
         }
 
-        public List<ScoredWord> GetWordsByScore(int wordScoreFrom, int wordScoreTo)
+        public List<ScoredWord> GetWordsByScore(int wordScoreTo, int range)
         {
-            List<ScoredWord> filteredWords = wordDictionary.ScoredWords.Where(word => word.score >= wordScoreFrom && word.score <= wordScoreTo).ToList();
+            if(wordScoreTo > wordDictionary.MaxScore)
+                wordScoreTo = wordDictionary.MaxScore;
+
+            List<ScoredWord> filteredWords = wordDictionary.ScoredWords.Where(word => word.score >= wordScoreTo - range && word.score <= wordScoreTo).ToList();
             if (filteredWords.Count == 0)
             {
-                Debug.LogWarning($"No words found within scores {wordScoreFrom} - {wordScoreTo}");
+                Debug.LogWarning($"No words found within scores {wordScoreTo - range} - {wordScoreTo}");
                 return new();
             }
             return filteredWords;
