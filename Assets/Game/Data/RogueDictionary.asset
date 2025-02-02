@@ -12,820 +12,568 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d87c1950193ba54aa42358fc1bc433c, type: 3}
   m_Name: RogueDictionary
   m_EditorClassIdentifier: 
-  words:
+  scoredWords:
   - word: Rogue
-    wordValue: 18
+    score: 18
   - word: Stealth
-    wordValue: 20
+    score: 20
   - word: Shadow
-    wordValue: 16
-  - word: Assassin
-    wordValue: 20
-  - word: Thief
-    wordValue: 16
+    score: 16
+  - word: Dagger
+    score: 16
   - word: Sneak
-    wordValue: 14
-  - word: Daggers
-    wordValue: 18
-  - word: Backstab
-    wordValue: 24
+    score: 14
   - word: Ambush
-    wordValue: 18
-  - word: Evasion
-    wordValue: 24
-  - word: Agility
-    wordValue: 22
-  - word: Dexterity
-    wordValue: 34
-  - word: Trickery
-    wordValue: 30
-  - word: Cunning
-    wordValue: 26
+    score: 18
   - word: Poison
-    wordValue: 22
-  - word: Smoke Bomb
-    wordValue: 36
-  - word: Vanish
-    wordValue: 18
-  - word: Critical Strike
-    wordValue: 52
-  - word: Pickpocket
-    wordValue: 36
-  - word: Lockpicking
-    wordValue: 36
-  - word: Subterfuge
-    wordValue: 34
-  - word: Silent Kill
-    wordValue: 34
-  - word: Shadowstep
-    wordValue: 30
-  - word: Sneak Attack
-    wordValue: 36
-  - word: Dual Wield
-    wordValue: 30
+    score: 22
+  - word: Evasion
+    score: 24
+  - word: Backstab
+    score: 24
   - word: Cloak
-    wordValue: 14
-  - word: Concealment
-    wordValue: 40
+    score: 14
+  - word: Agility
+    score: 22
+  - word: Trick
+    score: 18
   - word: Deception
-    wordValue: 34
-  - word: Infiltration
-    wordValue: 42
-  - word: Shadow Dance
-    wordValue: 36
-  - word: Shroud
-    wordValue: 18
-  - word: Gambit
-    wordValue: 20
-  - word: Cutthroat
-    wordValue: 32
-  - word: Scoundrel
-    wordValue: 30
-  - word: Bandit
-    wordValue: 20
-  - word: Stalker
-    wordValue: 20
-  - word: Swiftness
-    wordValue: 28
-  - word: Feint
-    wordValue: 18
-  - word: Prowl
-    wordValue: 18
-  - word: Sabotage
-    wordValue: 24
-  - word: Dagger Throw
-    wordValue: 38
-  - word: Bleed
-    wordValue: 16
-  - word: Sudden Strike
-    wordValue: 42
-  - word: Coup de Grace
-    wordValue: 46
-  - word: Shadowmeld
-    wordValue: 28
-  - word: Unseen
-    wordValue: 22
-  - word: Swift Strike
-    wordValue: 40
-  - word: Blade Mastery
-    wordValue: 42
-  - word: Nightstalker
-    wordValue: 36
-  - word: Phantom
-    wordValue: 24
-  - word: Trickster
-    wordValue: 32
-  - word: Illusion
-    wordValue: 26
-  - word: Slippery
-    wordValue: 28
-  - word: Escape Artist
-    wordValue: 44
-  - word: Hide
-    wordValue: 12
-  - word: Ambusher
-    wordValue: 26
-  - word: Blade Flurry
-    wordValue: 38
-  - word: Silent Footsteps
-    wordValue: 54
-  - word: Execution
-    wordValue: 36
-  - word: Lurker
-    wordValue: 20
-  - word: "Rogue\u2019s Gambit"
-    wordValue: 48
-  - word: Shadow Veil
-    wordValue: 34
-  - word: Quick Reflexes
-    wordValue: 48
-  - word: Sidestep
-    wordValue: 26
-  - word: Deathmark
-    wordValue: 26
-  - word: Cloaked
-    wordValue: 20
-  - word: Shank
-    wordValue: 12
-  - word: Dirty Fighting
-    wordValue: 46
-  - word: Evade
-    wordValue: 16
-  - word: Knifeplay
-    wordValue: 28
-  - word: Skulker
-    wordValue: 20
-  - word: Shadow Walker
-    wordValue: 38
-  - word: Dark Step
-    wordValue: 28
-  - word: Nocturnal
-    wordValue: 32
-  - word: Predator
-    wordValue: 28
-  - word: Striker
-    wordValue: 24
-  - word: Subtlety
-    wordValue: 28
-  - word: Guile
-    wordValue: 16
-  - word: Blindsided
-    wordValue: 30
-  - word: Deft
-    wordValue: 12
-  - word: Sleight of Hand
-    wordValue: 44
-  - word: Mislead
-    wordValue: 20
-  - word: Disguise
-    wordValue: 24
-  - word: Parry
-    wordValue: 18
-  - word: Adrenaline Rush
-    wordValue: 48
-  - word: Instincts
-    wordValue: 32
-  - word: "Viper\u2019s Strike"
-    wordValue: 50
-  - word: Venom
-    wordValue: 20
-  - word: Slay
-    wordValue: 10
-  - word: Crippling Strike
-    wordValue: 56
-  - word: Smoke Screen
-    wordValue: 42
-  - word: Illusive
-    wordValue: 26
-  - word: Shadowborn
-    wordValue: 32
-  - word: Flicker
-    wordValue: 22
-  - word: Mirage
-    wordValue: 20
-  - word: Cursed Blade
-    wordValue: 38
-  - word: Stab
-    wordValue: 12
-  - word: Darting Blade
-    wordValue: 40
-  - word: Swift Hand
-    wordValue: 30
-  - word: Cloak and Dagger
-    wordValue: 46
-  - word: Shadow Leap
-    wordValue: 32
-  - word: Rift Step
-    wordValue: 32
-  - word: Cutpurse
-    wordValue: 30
-  - word: Opportunist
-    wordValue: 42
-  - word: Hide in Shadows
-    wordValue: 46
-  - word: Blade Dance
-    wordValue: 34
-  - word: Underhanded
-    wordValue: 34
-  - word: Wraith
-    wordValue: 20
-  - word: Silent Death
-    wordValue: 38
-  - word: Reaper
-    wordValue: 22
-  - word: Daggerstorm
-    wordValue: 34
-  - word: Shadowbind
-    wordValue: 30
-  - word: Fade
-    wordValue: 10
-  - word: Veil of Night
-    wordValue: 44
-  - word: Phantasm
-    wordValue: 24
-  - word: Shadow Fang
-    wordValue: 30
-  - word: Knife Trick
-    wordValue: 38
-  - word: Ghost Step
-    wordValue: 32
+    score: 34
   - word: Assassinate
-    wordValue: 30
-  - word: Vicious Strike
-    wordValue: 50
-  - word: Quickdraw
-    wordValue: 30
-  - word: Blade Trick
-    wordValue: 36
-  - word: Nightblade
-    wordValue: 30
-  - word: Tactician
-    wordValue: 32
-  - word: Feigned Retreat
-    wordValue: 52
-  - word: Twisting Blades
-    wordValue: 48
-  - word: Dart
-    wordValue: 12
-  - word: Shadow Mirage
-    wordValue: 40
-  - word: Sly
-    wordValue: 8
+    score: 30
+  - word: Lurk
+    score: 12
+  - word: Fade
+    score: 10
+  - word: Dodge
+    score: 14
+  - word: Slay
+    score: 10
+  - word: Slippery
+    score: 28
   - word: Elusive
-    wordValue: 24
-  - word: Phantom Strike
-    wordValue: 48
-  - word: Ravager
-    wordValue: 22
-  - word: Whispered Death
-    wordValue: 48
-  - word: "Death\u2019s Touch"
-    wordValue: 42
-  - word: Dagger Master
-    wordValue: 40
-  - word: Slick
-    wordValue: 14
-  - word: Smokescreen
-    wordValue: 38
-  - word: Untraceable
-    wordValue: 38
-  - word: Hexblade
-    wordValue: 24
-  - word: Enforcer
-    wordValue: 30
-  - word: Dark Assassin
-    wordValue: 34
-  - word: Ruthless
-    wordValue: 24
-  - word: "Razor\u2019s Edge"
-    wordValue: 40
-  - word: Cloaked Menace
-    wordValue: 46
-  - word: Ambush Master
-    wordValue: 42
-  - word: Undetectable
-    wordValue: 42
-  - word: Obfuscate
-    wordValue: 30
-  - word: Elude
-    wordValue: 16
+    score: 24
+  - word: Blink
+    score: 16
+  - word: Vanish
+    score: 18
+  - word: Shadowstep
+    score: 30
+  - word: Smoke
+    score: 16
+  - word: Stab
+    score: 12
+  - word: Crit
+    score: 16
+  - word: Flurry
+    score: 20
+  - word: Slash
+    score: 10
+  - word: Cutthroat
+    score: 32
+  - word: Guile
+    score: 16
+  - word: Cunning
+    score: 26
+  - word: Prowl
+    score: 18
+  - word: Strike
+    score: 20
+  - word: Silent
+    score: 20
+  - word: Silentstep
+    score: 34
+  - word: Shiv
+    score: 12
+  - word: Trap
+    score: 14
+  - word: Feint
+    score: 18
+  - word: Swindle
+    score: 22
+  - word: Shroud
+    score: 18
+  - word: Subterfuge
+    score: 34
+  - word: Lacerate
+    score: 26
+  - word: Quickstep
+    score: 32
+  - word: Venom
+    score: 20
+  - word: Mug
+    score: 10
+  - word: Sap
+    score: 8
+  - word: Distract
+    score: 26
+  - word: Gamble
+    score: 18
+  - word: Acrobatic
+    score: 32
   - word: Nimble
-    wordValue: 22
-  - word: Cutlass
-    wordValue: 20
-  - word: Poison Dart
-    wordValue: 38
-  - word: Inflict Wounds
-    wordValue: 48
-  - word: Fatal Flourish
-    wordValue: 40
-  - word: Bleeding Edge
-    wordValue: 42
-  - word: Shadowy Figure
-    wordValue: 44
-  - word: Venomous Blade
-    wordValue: 48
-  - word: Night Terror
-    wordValue: 44
-  - word: Arcane Trickster
-    wordValue: 56
-  - word: Hooded Figure
-    wordValue: 42
-  - word: Bloodletting
-    wordValue: 40
-  - word: Nightcrawler
-    wordValue: 40
-  - word: Phantom Dagger
-    wordValue: 44
-  - word: Swashbuckler
-    wordValue: 36
-  - word: Trick Dagger
-    wordValue: 38
-  - word: Ghostly Presence
-    wordValue: 54
-  - word: Lethal Edge
-    wordValue: 32
-  - word: Quickblade
-    wordValue: 32
-  - word: Bloodseeker
-    wordValue: 36
-  - word: Infiltrator
-    wordValue: 38
-  - word: Sinister
-    wordValue: 28
-  - word: Black Mask
-    wordValue: 28
-  - word: Cruel Blade
-    wordValue: 36
-  - word: Whispering Shadow
-    wordValue: 54
-  - word: "Dagger\u2019s Kiss"
-    wordValue: 36
-  - word: Blackout
-    wordValue: 26
-  - word: Slaughter
-    wordValue: 26
-  - word: Whispered Blade
-    wordValue: 48
-  - word: Executioner
-    wordValue: 44
-  - word: Darkened Cloak
-    wordValue: 42
-  - word: Black Veil
-    wordValue: 32
-  - word: Phantom Cloak
-    wordValue: 42
-  - word: Silent Step
-    wordValue: 38
-  - word: Sinister Strike
-    wordValue: 52
-  - word: Piercing Fang
-    wordValue: 44
-  - word: Deadly Precision
-    wordValue: 54
-  - word: Cunning Edge
-    wordValue: 42
-  - word: Cruel Trick
-    wordValue: 40
-  - word: Razor Fang
-    wordValue: 32
-  - word: Silent Reaper
-    wordValue: 46
-  - word: "Death\u2019s Whisper"
-    wordValue: 48
-  - word: Veiled Assassin
-    wordValue: 44
-  - word: Deathstalker
-    wordValue: 34
-  - word: Fatal Strike
-    wordValue: 36
-  - word: Venom Kiss
-    wordValue: 34
-  - word: Silent Hunter
-    wordValue: 46
-  - word: Whispering Death
-    wordValue: 52
-  - word: Death Mask
-    wordValue: 28
-  - word: Slitted Throat
-    wordValue: 46
-  - word: Hidden Blade
-    wordValue: 36
-  - word: Bloodshadow
-    wordValue: 32
-  - word: Cloaked Death
-    wordValue: 38
-  - word: Silent Predator
-    wordValue: 52
-  - word: Shrouded Reaper
-    wordValue: 50
-  - word: Phantom Hunter
-    wordValue: 50
-  - word: "Shadow\u2019s Bite"
-    wordValue: 42
-  - word: Eclipsed Assassin
-    wordValue: 50
-  - word: Gutter Rat
-    wordValue: 36
-  - word: "Knife\u2019s Edge"
-    wordValue: 38
-  - word: "Night\u2019s Embrace"
-    wordValue: 52
-  - word: Quick Cut
-    wordValue: 34
-  - word: Silent Fury
-    wordValue: 38
-  - word: Shadeborn
-    wordValue: 28
-  - word: Reaver
-    wordValue: 22
-  - word: Sharp Reflexes
-    wordValue: 44
-  - word: Ambitious Cutthroat
-    wordValue: 68
-  - word: Grave Dancer
-    wordValue: 40
-  - word: Blood Dagger
-    wordValue: 36
-  - word: Cloak of Midnight
-    wordValue: 54
-  - word: "Death\u2019s Blade"
-    wordValue: 38
-  - word: Whisper Fang
-    wordValue: 38
-  - word: Cruel Cut
-    wordValue: 34
-  - word: Moonlit Stalker
-    wordValue: 50
-  - word: Twisted Blade
-    wordValue: 42
-  - word: Smoke and Mirrors
-    wordValue: 58
-  - word: Ominous Cloak
-    wordValue: 44
-  - word: Bloodied Fang
-    wordValue: 40
-  - word: Cursed Reaver
-    wordValue: 46
-  - word: "Nocturne\u2019s Edge"
-    wordValue: 54
-  - word: Sly Hunter
-    wordValue: 34
-  - word: Sinister Dance
-    wordValue: 48
-  - word: Fatal Lunge
-    wordValue: 32
-  - word: Black Talon
-    wordValue: 34
-  - word: Cold Blooded
-    wordValue: 38
-  - word: Moonlit Phantom
-    wordValue: 54
-  - word: Eclipse Dagger
-    wordValue: 44
-  - word: Wraith Blade
-    wordValue: 38
-  - word: Shadowfang
-    wordValue: 26
-  - word: Stiletto
-    wordValue: 28
-  - word: "Cutthroat\u2019s Gambit"
-    wordValue: 62
-  - word: Bloodmoon Dagger
-    wordValue: 52
-  - word: Razor Dancer
-    wordValue: 42
-  - word: Duskrunner
-    wordValue: 34
-  - word: Shadow Marauder
-    wordValue: 46
-  - word: "Rogue\u2019s Edge"
-    wordValue: 40
-  - word: Stalk and Strike
-    wordValue: 48
-  - word: Strangler
-    wordValue: 28
-  - word: Craven Knife
-    wordValue: 42
-  - word: Ghostblade
-    wordValue: 28
-  - word: Blood Hunter
-    wordValue: 42
-  - word: Gloaming Stalker
-    wordValue: 48
-  - word: Shrouded Blade
-    wordValue: 42
-  - word: Venomous Whisper
-    wordValue: 58
-  - word: "Death\u2019s Cloak"
-    wordValue: 38
-  - word: Nightshroud
-    wordValue: 34
-  - word: Obsidian Blade
-    wordValue: 44
-  - word: Phantom Veil
-    wordValue: 42
-  - word: Twilight Striker
-    wordValue: 54
-  - word: Veiled Trickster
-    wordValue: 56
-  - word: Shadowborn Stalker
-    wordValue: 56
-  - word: "Death\u2019s Gambit"
-    wordValue: 44
-  - word: Poison Fang
-    wordValue: 36
-  - word: Razor Claw
-    wordValue: 34
-  - word: Twilight Cloak
-    wordValue: 44
-  - word: Duskwalker
-    wordValue: 28
-  - word: Wraith Step
-    wordValue: 38
-  - word: "Death\u2019s Edge"
-    wordValue: 36
-  - word: Cloaked Phantom
-    wordValue: 48
-  - word: Blackshade
-    wordValue: 26
-  - word: Blooded Whisper
-    wordValue: 50
-  - word: Shadow Assassin
-    wordValue: 40
-  - word: Cruel Whisper
-    wordValue: 46
-  - word: Shadowy Execution
-    wordValue: 60
-  - word: Midnight Reaper
-    wordValue: 52
-  - word: Venom Shadow
-    wordValue: 40
-  - word: "Blade\u2019s Whisper"
-    wordValue: 48
-  - word: Unseen Reaper
-    wordValue: 48
-  - word: Bloodthirsty Phantom
-    wordValue: 68
-  - word: Shrouded Executioner
-    wordValue: 72
-  - word: Sinister Wraith
-    wordValue: 52
-  - word: Masked Hunter
-    wordValue: 42
-  - word: Twilight Reaper
-    wordValue: 52
-  - word: Wraithborn Stalker
-    wordValue: 60
-  - word: Veiled Reaver
-    wordValue: 46
-  - word: Cloaked Venom
-    wordValue: 44
-  - word: Phantom Stinger
-    wordValue: 52
-  - word: "Reaper\u2019s Mark"
-    wordValue: 44
-  - word: Shadowfang Assassin
-    wordValue: 50
-  - word: Moonlit Reaver
-    wordValue: 52
-  - word: Shrouded Trickster
-    wordValue: 60
-  - word: Whisperfang Executioner
-    wordValue: 82
-  - word: Silent Edge
-    wordValue: 36
-  - word: Crimson Shadow
-    wordValue: 46
-  - word: "Rogue\u2019s Kiss"
-    wordValue: 38
-  - word: Phantom Embrace
-    wordValue: 54
-  - word: Midnight Stalker
-    wordValue: 50
-  - word: Dusky Blade
-    wordValue: 32
-  - word: Unseen Death
-    wordValue: 40
-  - word: Omen Dagger
-    wordValue: 36
-  - word: Sly Specter
-    wordValue: 38
-  - word: Veiled Nightblade
-    wordValue: 54
-  - word: Whispered Phantom
-    wordValue: 58
-  - word: Bloodveil Assassin
-    wordValue: 54
-  - word: Cursed Executioner
-    wordValue: 68
-  - word: "Shadow\u2019s Embrace"
-    wordValue: 52
-  - word: Razor Trickster
-    wordValue: 54
-  - word: Deathmask
-    wordValue: 24
-  - word: Phantom Marauder
-    wordValue: 54
-  - word: Cloaked Shade
-    wordValue: 36
-  - word: Bloodstained Whisper
-    wordValue: 66
-  - word: Deadly Mirage
-    wordValue: 40
-  - word: Forsaken Blade
-    wordValue: 42
-  - word: Phantom Enforcer
-    wordValue: 58
-  - word: Stygian Trickster
-    wordValue: 58
-  - word: Unforgiving Blade
-    wordValue: 56
-  - word: Bloodmarked Reaper
-    wordValue: 60
-  - word: "Reaver\u2019s Shadow"
-    wordValue: 48
-  - word: Midnight Wraith
-    wordValue: 50
-  - word: Crimson Veil
-    wordValue: 44
-  - word: Venom Shroud
-    wordValue: 42
-  - word: "Rogue\u2019s Curse"
-    wordValue: 46
-  - word: Deadly Whisper
-    wordValue: 44
-  - word: Sinister Marauder
-    wordValue: 58
-  - word: Phantom Shade
-    wordValue: 40
-  - word: Dusken Phantom
-    wordValue: 46
-  - word: Whisperfang
-    wordValue: 34
-  - word: "Reaper\u2019s Kiss"
-    wordValue: 42
-  - word: Daggerborn Stalker
-    wordValue: 56
-  - word: Crimson Cloak
-    wordValue: 44
-  - word: Twilight Phantom
-    wordValue: 54
+    score: 22
+  - word: Escape
+    score: 20
+  - word: Reflex
+    score: 20
+  - word: Phantom
+    score: 24
+  - word: Hex
+    score: 10
+  - word: Curse
+    score: 18
+  - word: Hexblade
+    score: 24
+  - word: Trickster
+    score: 32
+  - word: Mislead
+    score: 20
+  - word: Mirage
+    score: 20
+  - word: Fadeaway
+    score: 22
+  - word: Specter
+    score: 26
+  - word: Infiltrate
+    score: 34
+  - word: Disguise
+    score: 24
+  - word: Scoundrel
+    score: 30
+  - word: Vile
+    score: 14
+  - word: Daggerfall
+    score: 24
+  - word: Veil
+    score: 14
+  - word: Nightfall
+    score: 24
+  - word: Cruelty
+    score: 26
+  - word: Betrayal
+    score: 26
+  - word: Swift
+    score: 16
+  - word: Viper
+    score: 20
+  - word: Doom
+    score: 14
+  - word: Fatal
+    score: 12
+  - word: Shadowdance
+    score: 32
+  - word: Phantomstrike
+    score: 44
+  - word: Devious
+    score: 24
+  - word: Slink
+    score: 14
+  - word: Ghost
+    score: 14
+  - word: Illusion
+    score: 26
+  - word: Fadeout
+    score: 22
+  - word: Parry
+    score: 18
+  - word: Shadowmeld
+    score: 28
+  - word: Cloakstep
+    score: 28
+  - word: Shadowbind
+    score: 30
+  - word: Riftstep
+    score: 28
+  - word: Cutpurse
+    score: 30
+  - word: Scurry
+    score: 22
+  - word: Veilstrike
+    score: 34
+  - word: Sly
+    score: 8
+  - word: Sidestep
+    score: 26
+  - word: Nocturnal
+    score: 32
+  - word: Blindside
+    score: 28
+  - word: Underhanded
+    score: 34
+  - word: Sleight
+    score: 20
+  - word: Forsaken
+    score: 24
   - word: Venomstrike
-    wordValue: 40
-  - word: Shrouded Hunter
-    wordValue: 50
-  - word: Cloaked Executioner
-    wordValue: 68
-  - word: Whisperblade
-    wordValue: 38
-  - word: Blackened Fang
-    wordValue: 42
-  - word: Midnight Trickster
-    wordValue: 62
-  - word: Wraith Assassin
-    wordValue: 44
-  - word: Nightborn Stalker
-    wordValue: 56
-  - word: Silent Marauder
-    wordValue: 50
-  - word: Dusken Shade
-    wordValue: 34
-  - word: Phantom Kiss
-    wordValue: 38
-  - word: Whisperfang Stalker
-    wordValue: 58
-  - word: Veiled Executioner
-    wordValue: 68
-  - word: Cloaked Reaver
-    wordValue: 46
-  - word: Shadowborn Assassin
-    wordValue: 56
-  - word: Bloodstalker
-    wordValue: 36
-  - word: Phantom Veil Assassin
-    wordValue: 66
-  - word: "Death\u2019s Phantom"
-    wordValue: 48
-  - word: Moonlit Trickster
-    wordValue: 62
-  - word: Whisperfang Hunter
-    wordValue: 60
-  - word: Venomous Stalker
-    wordValue: 54
-  - word: "Night\u2019s Phantom"
-    wordValue: 50
-  - word: Cloaked Whisperer
-    wordValue: 56
-  - word: "Reaper\u2019s Phantom"
-    wordValue: 56
-  - word: Sinister Kiss
-    wordValue: 42
-  - word: Twilight Reaver
-    wordValue: 52
-  - word: Dusken Assassin
-    wordValue: 42
-  - word: Phantom Executioner
-    wordValue: 72
-  - word: Shadowborn Wraith
-    wordValue: 56
-  - word: Cloaked Phantom Hunter
-    wordValue: 74
-  - word: Midnight Executioner
-    wordValue: 74
-  - word: Wraith Reaper
-    wordValue: 46
-  - word: Blackfang Assassin
-    wordValue: 48
-  - word: Shadowborn Hunter
-    wordValue: 58
-  - word: Nightborn Reaper
-    wordValue: 58
-  - word: "Death\u2019s Hunter"
-    wordValue: 46
-  - word: Venomborn Executioner
-    wordValue: 84
-  - word: Dusken Reaver
-    wordValue: 44
-  - word: Phantomborn Assassin
-    wordValue: 64
-  - word: Whisperfang Reaver
-    wordValue: 60
-  - word: Crimson Executioner
-    wordValue: 74
-  - word: Twilight Hunter
-    wordValue: 52
-  - word: Venomous Reaper
-    wordValue: 56
-  - word: Bloodborn Phantom
-    wordValue: 60
-  - word: Nightveil Assassin
-    wordValue: 54
-  - word: Deathfang Reaver
-    wordValue: 50
-  - word: Dusken Executioner
-    wordValue: 66
-  - word: Phantomborn Hunter
-    wordValue: 66
-  - word: Whisperfang Assassin
-    wordValue: 58
-  - word: Crimson Stalker
-    wordValue: 50
-  - word: Midnight Executioner
-    wordValue: 74
-  - word: Shadowborn Trickster
-    wordValue: 68
-  - word: Cloaked Phantom Assassin
-    wordValue: 72
-  - word: Wraithborn Executioner
-    wordValue: 84
-  - word: Phantom Reaper
-    wordValue: 50
-  - word: Nightveil Trickster
-    wordValue: 66
-  - word: "Death\u2019s Whisperer"
-    wordValue: 56
-  - word: Bloodveil Reaper
-    wordValue: 56
-  - word: Sinister Hunter
-    wordValue: 54
-  - word: Midnight Shade
-    wordValue: 42
-  - word: Shadowborn Marauder
-    wordValue: 62
-  - word: Crimson Phantom
-    wordValue: 54
-  - word: Dusken Trickster
-    wordValue: 54
-  - word: Phantom Whisperer
-    wordValue: 60
-  - word: Deathfang Assassin
-    wordValue: 48
-  - word: Twilight Trickster
-    wordValue: 62
-  - word: Nightveil Reaper
-    wordValue: 56
-  - word: Sinister Phantom
-    wordValue: 56
-  - word: Cloaked Phantom Stalker
-    wordValue: 72
-  - word: Dusken Marauder
-    wordValue: 48
-  - word: Phantomborn Executioner
-    wordValue: 88
-  - word: Bloodveil Stalker
-    wordValue: 54
-  - word: Nightveil Executioner
-    wordValue: 78
-  - word: Midnight Phantom
-    wordValue: 54
-  - word: Shadowfang Executioner
-    wordValue: 74
-  - word: Crimson Hunter
-    wordValue: 52
-  - word: Dusken Executioner
-    wordValue: 66
-  - word: Phantomfang Hunter
-    wordValue: 60
-  - word: Whisperborn Assassin
-    wordValue: 64
+    score: 40
+  - word: Slither
+    score: 22
+  - word: Darkblade
+    score: 24
+  - word: Nightshade
+    score: 28
+  - word: Razor
+    score: 18
+  - word: Deathmark
+    score: 26
+  - word: Phantomblade
+    score: 38
+  - word: Misdirect
+    score: 32
+  - word: Hoodwink
+    score: 26
+  - word: Subdue
+    score: 20
+  - word: Thief
+    score: 16
+  - word: Whisper
+    score: 24
+  - word: Reaper
+    score: 22
+  - word: Enigma
+    score: 20
+  - word: Nightstalker
+    score: 36
+  - word: Nightweaver
+    score: 38
+  - word: Mistwalk
+    score: 24
+  - word: Gloom
+    score: 16
+  - word: Phantomveil
+    score: 38
+  - word: Lurkstep
+    score: 26
+  - word: Sable
+    score: 14
+  - word: Skulker
+    score: 20
+  - word: Shade
+    score: 12
+  - word: Eclipse
+    score: 24
+  - word: Outlaw
+    score: 20
+  - word: Bandit
+    score: 20
+  - word: Trickblade
+    score: 32
+  - word: Swindlefang
+    score: 32
+  - word: Slystep
+    score: 22
+  - word: Evade
+    score: 16
+  - word: Daggerdance
+    score: 32
+  - word: Twisted
+    score: 24
+  - word: Sinslash
+    score: 20
+  - word: Conceal
+    score: 24
+  - word: Crossfang
+    score: 26
+  - word: Moonveil
+    score: 30
+  - word: Creep
+    score: 20
+  - word: Deceit
+    score: 22
+  - word: Guise
+    score: 16
+  - word: Riftcloak
+    score: 28
+  - word: Umbra
+    score: 18
+  - word: Voidstep
+    score: 28
+  - word: Bleakfang
+    score: 24
+  - word: Wraith
+    score: 20
+  - word: Blackguard
+    score: 28
+  - word: Daggerfang
+    score: 26
+  - word: Obfuscate
+    score: 30
+  - word: Revenant
+    score: 30
+  - word: Deathshroud
+    score: 32
+  - word: Phantomslash
+    score: 34
+  - word: Slipstream
+    score: 32
+  - word: Trickfang
+    score: 28
+  - word: Nightfang
+    score: 26
+  - word: Sabotage
+    score: 24
+  - word: Fadefang
+    score: 20
+  - word: Serpentstrike
+    score: 46
+  - word: Venomcloak
+    score: 34
+  - word: Gutterfang
+    score: 32
+  - word: Ebonfang
+    score: 26
+  - word: Sinister
+    score: 28
+  - word: Twilightstep
+    score: 40
+  - word: Nocturne
+    score: 32
+  - word: Bloodfang
+    score: 26
+  - word: Forshadow
+    score: 26
+  - word: Phantomrift
+    score: 38
+  - word: Smokeveil
+    score: 30
+  - word: Throatcut
+    score: 32
+  - word: Gutstab
+    score: 22
+  - word: Daggerborn
+    score: 32
+  - word: Umbral
+    score: 20
+  - word: Haunt
+    score: 16
+  - word: Obscure
+    score: 26
+  - word: Shadebound
+    score: 30
+  - word: Murkblade
+    score: 28
+  - word: Gloomfang
+    score: 26
+  - word: Riftfang
+    score: 24
+  - word: Darkstep
+    score: 24
+  - word: Lacerfang
+    score: 26
+  - word: Blackveil
+    score: 28
+  - word: Fadeblade
+    score: 24
+  - word: Shadowfang
+    score: 26
+  - word: Duskrunner
+    score: 34
+  - word: Moonshadow
+    score: 32
+  - word: Daggerwhisper
+    score: 40
+  - word: Cursedfang
+    score: 30
+  - word: Daggerstep
+    score: 30
+  - word: Shadefang
+    score: 22
+  - word: Abysscloak
+    score: 28
+  - word: Voidfang
+    score: 24
+  - word: Riftwalker
+    score: 32
+  - word: Silentfang
+    score: 30
+  - word: Mistfang
+    score: 24
+  - word: Wraithblade
+    score: 34
+  - word: Specterfang
+    score: 36
+  - word: Blackshade
+    score: 26
+  - word: Gloomslice
+    score: 32
+  - word: Slithershadow
+    score: 38
+  - word: Darkfang
+    score: 20
+  - word: Venomshroud
+    score: 38
+  - word: Veilwalker
+    score: 32
+  - word: Stiletto
+    score: 28
+  - word: Hauntslice
+    score: 32
+  - word: Whisperfang
+    score: 34
+  - word: Ebonshadow
+    score: 32
+  - word: Vileblade
+    score: 28
+  - word: Backlash
+    score: 20
+  - word: Nocturneblade
+    score: 46
+  - word: Lurker
+    score: 20
+  - word: Sinveil
+    score: 24
+  - word: Duskslash
+    score: 20
+  - word: Blightfang
+    score: 28
+  - word: Daggerstrike
+    score: 36
+  - word: Lurkslash
+    score: 22
+  - word: Voidshadow
+    score: 30
+  - word: Phantomfang
+    score: 34
+  - word: Wraithfang
+    score: 30
+  - word: Forsworn
+    score: 28
+  - word: Cryptshade
+    score: 32
+  - word: Blackfang
+    score: 24
+  - word: Nightstep
+    score: 30
+  - word: Abyssfang
+    score: 24
+  - word: Lamentblade
+    score: 34
+  - word: Shadowhex
+    score: 26
+  - word: Creepstrike
+    score: 40
+  - word: Sneakfang
+    score: 24
+  - word: Twilightslash
+    score: 36
+  - word: Gloombound
+    score: 34
+  - word: Shadeveil
+    score: 26
+  - word: Riftshroud
+    score: 32
+  - word: Sinisterfang
+    score: 38
+  - word: Shadeborn
+    score: 28
+  - word: Umbralstep
+    score: 34
+  - word: Eclipsefang
+    score: 34
+  - word: Veilfang
+    score: 24
+  - word: Cloakfang
+    score: 24
+  - word: Revenantshade
+    score: 42
+  - word: Twilightfang
+    score: 36
+  - word: Forsakenfang
+    score: 34
+  - word: Spectralstep
+    score: 40
+  - word: Omenfang
+    score: 26
+  - word: Spectershade
+    score: 38
+  - word: Lurkfang
+    score: 22
+  - word: Obscurefang
+    score: 36
+  - word: Silentcut
+    score: 32
+  - word: Blackshroud
+    score: 32
+  - word: Cursedveil
+    score: 34
+  - word: Gloomstep
+    score: 30
+  - word: Murkfury
+    score: 28
+  - word: Duskrift
+    score: 24
+  - word: Nocturnefang
+    score: 42
+  - word: Ebonveil
+    score: 30
+  - word: Stalkerfang
+    score: 30
+  - word: Whisperveil
+    score: 38
+  - word: Trickveil
+    score: 32
+  - word: Deathwhisper
+    score: 38
+  - word: Shadewhisper
+    score: 36
+  - word: Daggerveil
+    score: 30
+  - word: Cloakedfang
+    score: 30
+  - word: Murkfrost
+    score: 30
+  - word: Abyssveil
+    score: 28
+  - word: Fateshade
+    score: 24
+  - word: Obscureveil
+    score: 40
+  - word: Wraithshroud
+    score: 38
+  - word: Guttershade
+    score: 34
+  - word: Shadowedfang
+    score: 32
+  - word: Serpentfang
+    score: 36
+  - word: Doomveil
+    score: 28
+  - word: Nightshadefang
+    score: 38
+  - word: Sinwhisper
+    score: 34
+  - word: Duskrider
+    score: 28
+  - word: Lurkbane
+    score: 26
+  - word: Abysswhisper
+    score: 38
+  - word: Slitherfang
+    score: 32
+  - word: Murkveil
+    score: 28
+  - word: Umbrafang
+    score: 28
+  - word: Darkreaper
+    score: 32
+  - word: Nocturneshade
+    score: 44
+  - word: Stilettofang
+    score: 38
+  - word: Bloodshade
+    score: 28
+  - word: Phantomwhisper
+    score: 48
+  - word: Wraithveil
+    score: 34
+  - word: Voidshade
+    score: 26
+  - word: Shadestep
+    score: 26
+  - word: Fadewhisper
+    score: 34
+  - word: Lurkblade
+    score: 26
+  - word: Shadowreaper
+    score: 38
