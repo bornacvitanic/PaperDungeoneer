@@ -5,6 +5,8 @@ namespace PaperDungoneer.TypingMinigame
 {
     public class AnyKeyDetector : MonoBehaviour
     {
+        [SerializeField] private bool detectOnlyOnce;
+
         public UnityEvent OnAnyKeyPressed;
 
         private void Update()
@@ -12,7 +14,8 @@ namespace PaperDungoneer.TypingMinigame
             if (Input.anyKey)
             {
                 OnAnyKeyPressed.Invoke();
-                this.enabled = false;
+                if(detectOnlyOnce)
+                    this.enabled = false;
             }
         }
     }
