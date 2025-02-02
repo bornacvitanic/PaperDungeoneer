@@ -1278,6 +1278,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &268362614678014965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,6 +1458,9 @@ MonoBehaviour:
   randomOrientation: 0
   instance: {fileID: 9061315039014004281}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &290440708266692497
@@ -2099,6 +2105,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 5135039157664935633}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &452599139237127231
@@ -4109,6 +4118,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &900160785928330702
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,6 +4842,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1109783834175538812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5241,6 +5256,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 8885099562470416134}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1306713164951460198
@@ -7324,6 +7342,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2028978793577766942
 GameObject:
   m_ObjectHideFlags: 0
@@ -9178,6 +9199,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2415052348716058728
 GameObject:
   m_ObjectHideFlags: 0
@@ -9245,6 +9269,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 1555521092138412519}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &2424962601432038665
@@ -10447,6 +10474,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2676213381608213954
 GameObject:
   m_ObjectHideFlags: 0
@@ -11054,6 +11084,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 1827474370171820829}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3002861665594310981
@@ -11712,6 +11745,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3285701092225933819
 GameObject:
   m_ObjectHideFlags: 0
@@ -11866,6 +11902,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 6172907251242765064}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3327784930470313958
@@ -12835,6 +12874,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3572786057688514655
 GameObject:
   m_ObjectHideFlags: 0
@@ -13490,6 +13532,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 335191036126460739}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3871574062307090352
@@ -14460,6 +14505,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4113094701355815067
 GameObject:
   m_ObjectHideFlags: 0
@@ -14552,6 +14600,9 @@ MonoBehaviour:
   randomOrientation: 0
   instance: {fileID: 4983001897859258082}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &4116201046795407726
@@ -15549,6 +15600,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 1197593688681399180}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &4362156456564454991
@@ -17998,6 +18052,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4916177681746451009
 GameObject:
   m_ObjectHideFlags: 0
@@ -19235,6 +19292,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5256007632579992126
 GameObject:
   m_ObjectHideFlags: 0
@@ -20393,6 +20453,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5550493170373800029
 GameObject:
   m_ObjectHideFlags: 0
@@ -20697,6 +20760,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5642849379641105612
 GameObject:
   m_ObjectHideFlags: 0
@@ -20862,6 +20928,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 2600310902943206548}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &5693278107809343215
@@ -21843,6 +21912,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5882319230005289896
 GameObject:
   m_ObjectHideFlags: 0
@@ -22108,6 +22180,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 1500898828438764482}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &5930567965586493460
@@ -24801,6 +24876,7 @@ GameObject:
   - component: {fileID: 7692324557360408969}
   - component: {fileID: 9039557905834726664}
   - component: {fileID: 2405327930210712548}
+  - component: {fileID: 2043642300953550536}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -24870,6 +24946,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2043642300953550536}
+        m_TargetAssemblyTypeName: MeshFolderMultipleFolds, PaperDungeoneer.Visuals
+        m_MethodName: Fold
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9039557905834726664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24896,6 +24987,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jiggleAngle: 2
   jiggleInterval: 1
+--- !u!114 &2043642300953550536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6594648649958682379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281cb63e3db247eabde9b4c11900d794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flattenDuration: 0.2
+  foldCount: 5
+  foldDuration: 0.5
 --- !u!1 &6608346997458246689
 GameObject:
   m_ObjectHideFlags: 0
@@ -25310,6 +25416,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 6699164492075640968}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &6725205501842819102
@@ -26713,6 +26822,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4093486278141974138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28891,6 +29003,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7567817583098333798
 GameObject:
   m_ObjectHideFlags: 0
@@ -30666,6 +30781,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7840368883779104217
 GameObject:
   m_ObjectHideFlags: 0
@@ -30733,6 +30851,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 8691018362765925845}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &7872230351427656684
@@ -31867,6 +31988,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8177159433281283488
 GameObject:
   m_ObjectHideFlags: 0
@@ -32239,6 +32363,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 5572529071654079625}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &8248167431345869793
@@ -33840,6 +33967,9 @@ MonoBehaviour:
   OnObjectPlaced:
     m_PersistentCalls:
       m_Calls: []
+  OnCurrentInstanceRequested:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8767690070208348711
 GameObject:
   m_ObjectHideFlags: 0
@@ -33907,6 +34037,9 @@ MonoBehaviour:
   randomOrientation: 1
   instance: {fileID: 5256007632579992126}
   OnObjectPlaced:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCurrentInstanceRequested:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &8776798412395899620

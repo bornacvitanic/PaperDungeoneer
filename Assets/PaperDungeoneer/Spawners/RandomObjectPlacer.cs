@@ -12,10 +12,16 @@ namespace PaperDungoneer.Spawners
         [SerializeField] private GameObject instance;
 
         public UnityEvent<GameObject> OnObjectPlaced;
+        public UnityEvent<GameObject> OnCurrentInstanceRequested;
 
         private void Awake()
         {
             if (Application.isPlaying || instance == null) PlaceRandomObject();
+        }
+
+        public void EmitCurrentInstance()
+        {
+            OnCurrentInstanceRequested?.Invoke(instance);
         }
 
         [ContextMenu("Place Random Object")]
