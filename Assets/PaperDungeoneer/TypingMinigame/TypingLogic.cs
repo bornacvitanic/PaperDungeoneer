@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using NUnit.Framework;
 using PaperDungoneer.WordDictionary;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,48 +10,58 @@ namespace PaperDungoneer.TypingMinigame
     {
         [SerializeField] private WordPicker wordPicker;
         [SerializeField] private int startingDifficultyLevel = 10;
-        [SerializeField] private int slidingDifficultyRange = 20;
-        [SerializeField] private int increaseInLevel = 2;
+        [UnityEngine.Range(0f,1f)]
+        [SerializeField] private float difficultyMultiplier = 0.5f;
+        [SerializeField] private int startingSlidingDifficultyRange = 10;
         [SerializeField] private int uppercaseDifficultyLevelStart = 40;
 
         private int difficultyLevel;
-        private string currentWord = "";
+        private int slidingDifficultyRange;
+
+        private List<ScoredWord> fetchedWords = new();
 
         public UnityEvent<string> OnWordPicked;
         public UnityEvent OnRestartGame;
         public UnityEvent OnEndGame;
+        public UnityEvent OnDifficultyLevelIncrease;
 
         private void Start()
         {
             difficultyLevel = startingDifficultyLevel;
+            slidingDifficultyRange = startingSlidingDifficultyRange;
             PickTargetWord();
         }
 
         public void PickTargetWord()
         {
-            var scoreWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange);
-            var randomScoreWord = scoreWords[Random.Range(0, scoreWords.Count)];
-
-            while(currentWord == randomScoreWord.word)
+            if (fetchedWords.Count == 0)
             {
-                randomScoreWord = scoreWords[Random.Range(0, scoreWords.Count)];
+                fetchedWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange, slidingDifficultyRange);
+                IncreaseDifficultAndSlidingLevel();
             }
 
-            currentWord = randomScoreWord.word;
-            if (randomScoreWord.score <= uppercaseDifficultyLevelStart)
-                currentWord = randomScoreWord.word.ToLower();
+            var randomScoreWord = fetchedWords[Random.Range(0, fetchedWords.Count)];
+            fetchedWords.Remove(randomScoreWord);
 
-            OnWordPicked.Invoke(currentWord);
+            if (randomScoreWord.score <= uppercaseDifficultyLevelStart)
+                randomScoreWord.word = randomScoreWord.word.ToLower();
+
+            OnWordPicked.Invoke(randomScoreWord.word);
         }
-            
-        public void IncreaseDifficulty()
+
+        private void IncreaseDifficultAndSlidingLevel()
         {
-            difficultyLevel += increaseInLevel;
+            difficultyLevel += (int)(difficultyLevel * difficultyMultiplier);
+            slidingDifficultyRange++;
+
+            OnDifficultyLevelIncrease.Invoke();
         }
 
         public void RestartGame()
         {
             difficultyLevel = startingDifficultyLevel;
+            slidingDifficultyRange = startingSlidingDifficultyRange;
+            fetchedWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange, slidingDifficultyRange);
             OnRestartGame.Invoke();
             PickTargetWord();
         }

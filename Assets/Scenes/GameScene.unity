@@ -714,7 +714,7 @@ PrefabInstance:
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
       propertyPath: OnWordCompleted.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
@@ -729,7 +729,7 @@ PrefabInstance:
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
       propertyPath: OnWordCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
@@ -745,12 +745,12 @@ PrefabInstance:
         type: 3}
       propertyPath: OnWordCompleted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1952257091}
+      objectReference: {fileID: 2055663048}
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
       propertyPath: OnWordCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 2055663048}
+      objectReference: {fileID: 5448455094285124219}
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
       propertyPath: OnWordCompleted.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -784,12 +784,12 @@ PrefabInstance:
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
       propertyPath: OnWordCompleted.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: IncreaseDifficulty
+      value: ResetTimer
       objectReference: {fileID: 0}
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
       propertyPath: OnWordCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: ResetTimer
+      value: AddPoints
       objectReference: {fileID: 0}
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
@@ -804,12 +804,12 @@ PrefabInstance:
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
       propertyPath: OnWordCompleted.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PaperDungoneer.TypingMinigame.TypingLogic, PaperDungeoneer.TypingMinigame
+      value: PaperDungeoneer.Timers.CountdownTimer, PaperDungeoneer.Timers
       objectReference: {fileID: 0}
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
       propertyPath: OnWordCompleted.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: PaperDungeoneer.Timers.CountdownTimer, PaperDungeoneer.Timers
+      value: PaperDungeoneer.Scoring.AddScore, PaperDungeoneer.Scoring
       objectReference: {fileID: 0}
     - target: {fileID: 4526956832474391216, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
