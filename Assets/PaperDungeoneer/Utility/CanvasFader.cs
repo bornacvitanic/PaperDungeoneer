@@ -6,18 +6,20 @@ namespace PaperDungeoneer.Utility
     public class CanvasFader : MonoBehaviour
     {
         [Header("References")]
-        public CanvasGroup canvasGroup; // Assign the CanvasGroup component of your black canvas.
+        [SerializeField] private CanvasGroup canvasGroup; // Assign the CanvasGroup component of your black canvas.
 
         [Header("Settings")]
-        public float fadeOutDuration = 1f; // Duration for fade-out.
-        public AnimationCurve fadeOutAnimationCurve = AnimationCurve.Linear(0,0,1,1);
-        public float fadeInDuration = 1f; // Duration for fade-in.
-        public AnimationCurve fadeInAnimationCurve = AnimationCurve.Linear(0,1,1,0);
+        [SerializeField] private float fadeOutDuration = 1f; // Duration for fade-out.
+        [SerializeField] private AnimationCurve fadeOutAnimationCurve = AnimationCurve.Linear(0,0,1,1);
+        [SerializeField] private float fadeInDuration = 1f; // Duration for fade-in.
+        [SerializeField] private AnimationCurve fadeInAnimationCurve = AnimationCurve.Linear(0,1,1,0);
 
         [Header("Events")]
+        public UnityEvent onFadeOutStart; // Raised when fade-out starts.
         public UnityEvent onFadeOutComplete; // Raised when fade-out is done.
-        public UnityEvent onFadeInStart; // Raised when fade-in starts.
         public UnityEvent onCrossFadeMidpoint; // Raised at the midpoint of a crossfade.
+        public UnityEvent onFadeInStart; // Raised when fade-in starts.
+        public UnityEvent onFadeInComplete; // Raised when fade-in is done.
 
         private Coroutine currentFadeCoroutine;
 
@@ -68,11 +70,13 @@ namespace PaperDungeoneer.Utility
             }
 
             canvasGroup.alpha = targetAlpha;
+            onFadeInComplete.Invoke();
             currentFadeCoroutine = null;
         }
 
         private System.Collections.IEnumerator FadeOutCoroutine()
         {
+            onFadeOutStart.Invoke();
             float targetAlpha = 1f;
             float timer = 0f;
 
@@ -92,6 +96,7 @@ namespace PaperDungeoneer.Utility
         private System.Collections.IEnumerator CrossFadeCoroutine()
         {
             // Fade to black
+            onFadeOutStart.Invoke();
             float targetAlpha = 1f;
             float timer = 0f;
 
@@ -104,8 +109,9 @@ namespace PaperDungeoneer.Utility
             }
 
             canvasGroup.alpha = targetAlpha;
+            onFadeOutComplete.Invoke();
             onCrossFadeMidpoint.Invoke();
-
+            onFadeInStart.Invoke();
             // Fade back to transparent
             targetAlpha = 0f;
             timer = 0f;
@@ -119,6 +125,7 @@ namespace PaperDungeoneer.Utility
             }
 
             canvasGroup.alpha = targetAlpha;
+            onFadeInComplete.Invoke();
             currentFadeCoroutine = null;
         }
     }
