@@ -101,7 +101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press any key to Start the Game!
+  m_text: Press any key to Start Combat!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd2654f67ac866a46852b387295a7f3a, type: 2}
   m_sharedMaterial: {fileID: -5433344618818313827, guid: bd2654f67ac866a46852b387295a7f3a,

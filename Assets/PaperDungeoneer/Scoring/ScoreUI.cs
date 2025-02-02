@@ -11,6 +11,7 @@ namespace PaperDungeoneer.Scoring
         private void OnEnable()
         {
             scorer.OnScoreChanged += UpdateScoreDisplay;
+            UpdateScoreDisplay(scorer.Score);
         }
 
         private void OnDisable()

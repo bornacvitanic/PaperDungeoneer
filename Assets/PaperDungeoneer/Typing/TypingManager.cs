@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -19,6 +20,11 @@ namespace PaperDungeoneer.Typing
         public UnityEvent OnWordCompleted;
         public UnityEvent OnCorrectLetterTyped;
         public UnityEvent OnIncorrectLetterTyped;
+
+        private void OnEnable()
+        {
+            inputField.ActivateInputField();
+        }
 
         private void OnDisable()
         {
