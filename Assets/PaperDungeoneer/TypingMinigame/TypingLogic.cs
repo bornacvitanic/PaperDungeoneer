@@ -29,7 +29,7 @@ namespace PaperDungoneer.TypingMinigame
             var scoreWords = wordPicker.GetWordsByScore(difficultyLevel - slidingDifficultyRange, difficultyLevel);
             var randomScoreWord = scoreWords[Random.Range(0, scoreWords.Count)];
 
-            if (randomScoreWord.score <= uppercaseDifficultyStart)
+            if (randomScoreWord.score <= uppercaseDifficultyLevelStart)
                 randomScoreWord.word = randomScoreWord.word.ToLower();
 
             OnWordPicked.Invoke(randomScoreWord.word);
