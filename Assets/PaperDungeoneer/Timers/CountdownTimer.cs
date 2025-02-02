@@ -14,8 +14,8 @@ namespace PaperDungeoneer.Timers
 
         public float CurrentTimeSeconds => currentTimeSeconds;
 
-        public Action OnTimeTick;
-        public Action OnTimeReset;
+        public event Action OnTimeTick;
+        public event Action OnTimeReset;
 
         public UnityEvent OnTimerComplete;
 
@@ -56,20 +56,20 @@ namespace PaperDungeoneer.Timers
         public void ResetTime()
         {
             currentTimeSeconds = timeSeconds;
-            OnTimeReset();
+            OnTimeReset?.Invoke();
         }
 
         private IEnumerator CountDown()
         {
             while (currentTimeSeconds > 0)
             {
-                OnTimeTick.Invoke();
+                OnTimeTick?.Invoke();
                 yield return new WaitForSeconds(Time.deltaTime);
                 currentTimeSeconds -= Time.deltaTime;
             }
 
             currentTimeSeconds = 0; 
-            OnTimeTick.Invoke();
+            OnTimeTick?.Invoke();
             OnTimerComplete?.Invoke();
         }
     }
