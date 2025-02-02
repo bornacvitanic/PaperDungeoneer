@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using PaperDungoneer.WordDictionary;
+using System.Linq;
 
 public class WordRepositoryWindow : EditorWindow
 {
@@ -38,7 +39,7 @@ public class WordRepositoryWindow : EditorWindow
 
         GUILayout.Space(10);
 
-        if (GUILayout.Button("Populate From Paragraph"))
+        if (GUILayout.Button("Populate From Paragraph and Evaluate"))
         {
             PopulateFromParagraph();
             EditorUtility.SetDirty(wordRepository);
@@ -47,14 +48,14 @@ public class WordRepositoryWindow : EditorWindow
         GUILayout.Space(10);
 
         // Scrollable List of Stored Words
-        if (wordRepository.Words != null && wordRepository.Words.Count > 0)
+        if (wordRepository.ScoredWords != null && wordRepository.ScoredWords.Count > 0)
         {
             GUILayout.Label("Stored Words:", EditorStyles.boldLabel);
             wordsScrollPos = EditorGUILayout.BeginScrollView(wordsScrollPos, GUILayout.Height(150));
 
-            foreach (var word in wordRepository.Words)
+            foreach (var word in wordRepository.ScoredWords)
             {
-                GUILayout.Label(word, EditorStyles.wordWrappedLabel);
+                GUILayout.Label(word.word, EditorStyles.wordWrappedLabel);
             }
 
             EditorGUILayout.EndScrollView();
@@ -69,8 +70,13 @@ public class WordRepositoryWindow : EditorWindow
             return;
         }
 
-        wordRepository.Words.Clear();
-        wordRepository.Words.AddRange(wordsInParagraph.Split(new[] { ',', ' ' }, System.StringSplitOptions.RemoveEmptyEntries));
-        Debug.Log($"Word Repository updated with {wordRepository.Words.Count} words.");
+        wordRepository.ScoredWords.Clear();
+        string[] splitWords = wordsInParagraph.Split(new[] { ", " }, System.StringSplitOptions.RemoveEmptyEntries).ToHashSet().ToArray();
+        foreach (var w in splitWords)
+        {
+            wordRepository.ScoredWords.Add(new ScoredWord() { word = w});
+        }
+        wordRepository.EvaluateWordValues();
+        Debug.Log($"Word Repository updated with {wordRepository.ScoredWords.Count} words and evaluated.");
     }
 }

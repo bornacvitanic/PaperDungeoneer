@@ -12,412 +12,568 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d87c1950193ba54aa42358fc1bc433c, type: 3}
   m_Name: RogueDictionary
   m_EditorClassIdentifier: 
-  words:
-  - Rogue
-  - Stealth
-  - Shadow
-  - Assassin
-  - Thief
-  - Sneak
-  - Daggers
-  - Backstab
-  - Ambush
-  - Evasion
-  - Agility
-  - Dexterity
-  - Trickery
-  - Cunning
-  - Poison
-  - Smoke Bomb
-  - Vanish
-  - Critical Strike
-  - Pickpocket
-  - Lockpicking
-  - Subterfuge
-  - Silent Kill
-  - Shadowstep
-  - Sneak Attack
-  - Dual Wield
-  - Cloak
-  - Concealment
-  - Deception
-  - Infiltration
-  - Shadow Dance
-  - Shroud
-  - Gambit
-  - Cutthroat
-  - Scoundrel
-  - Bandit
-  - Stalker
-  - Swiftness
-  - Feint
-  - Prowl
-  - Sabotage
-  - Dagger Throw
-  - Bleed
-  - Sudden Strike
-  - Coup de Grace
-  - Shadowmeld
-  - Unseen
-  - Swift Strike
-  - Blade Mastery
-  - Nightstalker
-  - Phantom
-  - Trickster
-  - Illusion
-  - Slippery
-  - Escape Artist
-  - Hide
-  - Ambusher
-  - Blade Flurry
-  - Silent Footsteps
-  - Execution
-  - Lurker
-  - "Rogue\u2019s Gambit"
-  - Shadow Veil
-  - Quick Reflexes
-  - Sidestep
-  - Deathmark
-  - Cloaked
-  - Shank
-  - Dirty Fighting
-  - Evade
-  - Knifeplay
-  - Skulker
-  - Shadow Walker
-  - Dark Step
-  - Nocturnal
-  - Predator
-  - Striker
-  - Subtlety
-  - Guile
-  - Blindsided
-  - Deft
-  - Sleight of Hand
-  - Mislead
-  - Disguise
-  - Parry
-  - Adrenaline Rush
-  - Instincts
-  - "Viper\u2019s Strike"
-  - Venom
-  - Slay
-  - Crippling Strike
-  - Smoke Screen
-  - Illusive
-  - Shadowborn
-  - Flicker
-  - Mirage
-  - Cursed Blade
-  - Stab
-  - Darting Blade
-  - Swift Hand
-  - Cloak and Dagger
-  - Shadow Leap
-  - Rift Step
-  - Cutpurse
-  - Opportunist
-  - Hide in Shadows
-  - Blade Dance
-  - Underhanded
-  - Wraith
-  - Silent Death
-  - Reaper
-  - Daggerstorm
-  - Shadowbind
-  - Fade
-  - Veil of Night
-  - Phantasm
-  - Shadow Fang
-  - Knife Trick
-  - Ghost Step
-  - Assassinate
-  - Vicious Strike
-  - Quickdraw
-  - Blade Trick
-  - Nightblade
-  - Tactician
-  - Feigned Retreat
-  - Twisting Blades
-  - Dart
-  - Shadow Mirage
-  - Sly
-  - Elusive
-  - Phantom Strike
-  - Ravager
-  - Whispered Death
-  - "Death\u2019s Touch"
-  - Dagger Master
-  - Slick
-  - Smokescreen
-  - Untraceable
-  - Hexblade
-  - Enforcer
-  - Dark Assassin
-  - Ruthless
-  - "Razor\u2019s Edge"
-  - Cloaked Menace
-  - Ambush Master
-  - Undetectable
-  - Obfuscate
-  - Elude
-  - Nimble
-  - Cutlass
-  - Poison Dart
-  - Inflict Wounds
-  - Fatal Flourish
-  - Bleeding Edge
-  - Shadowy Figure
-  - Venomous Blade
-  - Night Terror
-  - Arcane Trickster
-  - Hooded Figure
-  - Bloodletting
-  - Nightcrawler
-  - Phantom Dagger
-  - Swashbuckler
-  - Trick Dagger
-  - Ghostly Presence
-  - Lethal Edge
-  - Quickblade
-  - Bloodseeker
-  - Infiltrator
-  - Sinister
-  - Black Mask
-  - Cruel Blade
-  - Whispering Shadow
-  - "Dagger\u2019s Kiss"
-  - Blackout
-  - Slaughter
-  - Whispered Blade
-  - Executioner
-  - Darkened Cloak
-  - Black Veil
-  - Phantom Cloak
-  - Silent Step
-  - Sinister Strike
-  - Piercing Fang
-  - Deadly Precision
-  - Cunning Edge
-  - Cruel Trick
-  - Razor Fang
-  - Silent Reaper
-  - "Death\u2019s Whisper"
-  - Veiled Assassin
-  - Deathstalker
-  - Fatal Strike
-  - Venom Kiss
-  - Silent Hunter
-  - Whispering Death
-  - Death Mask
-  - Slitted Throat
-  - Hidden Blade
-  - Bloodshadow
-  - Cloaked Death
-  - Silent Predator
-  - Shrouded Reaper
-  - Phantom Hunter
-  - "Shadow\u2019s Bite"
-  - Eclipsed Assassin
-  - Gutter Rat
-  - "Knife\u2019s Edge"
-  - "Night\u2019s Embrace"
-  - Quick Cut
-  - Silent Fury
-  - Shadeborn
-  - Reaver
-  - Sharp Reflexes
-  - Ambitious Cutthroat
-  - Grave Dancer
-  - Blood Dagger
-  - Cloak of Midnight
-  - "Death\u2019s Blade"
-  - Whisper Fang
-  - Cruel Cut
-  - Moonlit Stalker
-  - Twisted Blade
-  - Smoke and Mirrors
-  - Ominous Cloak
-  - Bloodied Fang
-  - Cursed Reaver
-  - "Nocturne\u2019s Edge"
-  - Sly Hunter
-  - Sinister Dance
-  - Fatal Lunge
-  - Black Talon
-  - Cold Blooded
-  - Moonlit Phantom
-  - Eclipse Dagger
-  - Wraith Blade
-  - Shadowfang
-  - Stiletto
-  - "Cutthroat\u2019s Gambit"
-  - Bloodmoon Dagger
-  - Razor Dancer
-  - Duskrunner
-  - Shadow Marauder
-  - "Rogue\u2019s Edge"
-  - Stalk and Strike
-  - Strangler
-  - Craven Knife
-  - Ghostblade
-  - Blood Hunter
-  - Gloaming Stalker
-  - Shrouded Blade
-  - Venomous Whisper
-  - "Death\u2019s Cloak"
-  - Nightshroud
-  - Obsidian Blade
-  - Phantom Veil
-  - Twilight Striker
-  - Veiled Trickster
-  - Shadowborn Stalker
-  - "Death\u2019s Gambit"
-  - Poison Fang
-  - Razor Claw
-  - Twilight Cloak
-  - Duskwalker
-  - Wraith Step
-  - "Death\u2019s Edge"
-  - Cloaked Phantom
-  - Blackshade
-  - Blooded Whisper
-  - Shadow Assassin
-  - Cruel Whisper
-  - Shadowy Execution
-  - Midnight Reaper
-  - Venom Shadow
-  - "Blade\u2019s Whisper"
-  - Unseen Reaper
-  - Bloodthirsty Phantom
-  - Shrouded Executioner
-  - Sinister Wraith
-  - Masked Hunter
-  - Twilight Reaper
-  - Wraithborn Stalker
-  - Veiled Reaver
-  - Cloaked Venom
-  - Phantom Stinger
-  - "Reaper\u2019s Mark"
-  - Shadowfang Assassin
-  - Moonlit Reaver
-  - Shrouded Trickster
-  - Whisperfang Executioner
-  - Silent Edge
-  - Crimson Shadow
-  - "Rogue\u2019s Kiss"
-  - Phantom Embrace
-  - Midnight Stalker
-  - Dusky Blade
-  - Unseen Death
-  - Omen Dagger
-  - Sly Specter
-  - Veiled Nightblade
-  - Whispered Phantom
-  - Bloodveil Assassin
-  - Cursed Executioner
-  - "Shadow\u2019s Embrace"
-  - Razor Trickster
-  - Deathmask
-  - Phantom Marauder
-  - Cloaked Shade
-  - Bloodstained Whisper
-  - Deadly Mirage
-  - Forsaken Blade
-  - Phantom Enforcer
-  - Stygian Trickster
-  - Unforgiving Blade
-  - Bloodmarked Reaper
-  - "Reaver\u2019s Shadow"
-  - Midnight Wraith
-  - Crimson Veil
-  - Venom Shroud
-  - "Rogue\u2019s Curse"
-  - Deadly Whisper
-  - Sinister Marauder
-  - Phantom Shade
-  - Dusken Phantom
-  - Whisperfang
-  - "Reaper\u2019s Kiss"
-  - Daggerborn Stalker
-  - Crimson Cloak
-  - Twilight Phantom
-  - Venomstrike
-  - Shrouded Hunter
-  - Cloaked Executioner
-  - Whisperblade
-  - Blackened Fang
-  - Midnight Trickster
-  - Wraith Assassin
-  - Nightborn Stalker
-  - Silent Marauder
-  - Dusken Shade
-  - Phantom Kiss
-  - Whisperfang Stalker
-  - Veiled Executioner
-  - Cloaked Reaver
-  - Shadowborn Assassin
-  - Bloodstalker
-  - Phantom Veil Assassin
-  - "Death\u2019s Phantom"
-  - Moonlit Trickster
-  - Whisperfang Hunter
-  - Venomous Stalker
-  - "Night\u2019s Phantom"
-  - Cloaked Whisperer
-  - "Reaper\u2019s Phantom"
-  - Sinister Kiss
-  - Twilight Reaver
-  - Dusken Assassin
-  - Phantom Executioner
-  - Shadowborn Wraith
-  - Cloaked Phantom Hunter
-  - Midnight Executioner
-  - Wraith Reaper
-  - Blackfang Assassin
-  - Shadowborn Hunter
-  - Nightborn Reaper
-  - "Death\u2019s Hunter"
-  - Venomborn Executioner
-  - Dusken Reaver
-  - Phantomborn Assassin
-  - Whisperfang Reaver
-  - Crimson Executioner
-  - Twilight Hunter
-  - Venomous Reaper
-  - Bloodborn Phantom
-  - Nightveil Assassin
-  - Deathfang Reaver
-  - Dusken Executioner
-  - Phantomborn Hunter
-  - Whisperfang Assassin
-  - Crimson Stalker
-  - Midnight Executioner
-  - Shadowborn Trickster
-  - Cloaked Phantom Assassin
-  - Wraithborn Executioner
-  - Phantom Reaper
-  - Nightveil Trickster
-  - "Death\u2019s Whisperer"
-  - Bloodveil Reaper
-  - Sinister Hunter
-  - Midnight Shade
-  - Shadowborn Marauder
-  - Crimson Phantom
-  - Dusken Trickster
-  - Phantom Whisperer
-  - Deathfang Assassin
-  - Twilight Trickster
-  - Nightveil Reaper
-  - Sinister Phantom
-  - Cloaked Phantom Stalker
-  - Dusken Marauder
-  - Phantomborn Executioner
-  - Bloodveil Stalker
-  - Nightveil Executioner
-  - Midnight Phantom
-  - Shadowfang Executioner
-  - Crimson Hunter
-  - Dusken Executioner
-  - Phantomfang Hunter
-  - Whisperborn Assassin
+  scoredWords:
+  - word: Rogue
+    score: 18
+  - word: Stealth
+    score: 20
+  - word: Shadow
+    score: 16
+  - word: Dagger
+    score: 16
+  - word: Sneak
+    score: 14
+  - word: Ambush
+    score: 18
+  - word: Poison
+    score: 22
+  - word: Evasion
+    score: 24
+  - word: Backstab
+    score: 24
+  - word: Cloak
+    score: 14
+  - word: Agility
+    score: 22
+  - word: Trick
+    score: 18
+  - word: Deception
+    score: 34
+  - word: Assassinate
+    score: 30
+  - word: Lurk
+    score: 12
+  - word: Fade
+    score: 10
+  - word: Dodge
+    score: 14
+  - word: Slay
+    score: 10
+  - word: Slippery
+    score: 28
+  - word: Elusive
+    score: 24
+  - word: Blink
+    score: 16
+  - word: Vanish
+    score: 18
+  - word: Shadowstep
+    score: 30
+  - word: Smoke
+    score: 16
+  - word: Stab
+    score: 12
+  - word: Crit
+    score: 16
+  - word: Flurry
+    score: 20
+  - word: Slash
+    score: 10
+  - word: Cutthroat
+    score: 32
+  - word: Guile
+    score: 16
+  - word: Cunning
+    score: 26
+  - word: Prowl
+    score: 18
+  - word: Strike
+    score: 20
+  - word: Silent
+    score: 20
+  - word: Silentstep
+    score: 34
+  - word: Shiv
+    score: 12
+  - word: Trap
+    score: 14
+  - word: Feint
+    score: 18
+  - word: Swindle
+    score: 22
+  - word: Shroud
+    score: 18
+  - word: Subterfuge
+    score: 34
+  - word: Lacerate
+    score: 26
+  - word: Quickstep
+    score: 32
+  - word: Venom
+    score: 20
+  - word: Mug
+    score: 10
+  - word: Sap
+    score: 8
+  - word: Distract
+    score: 26
+  - word: Gamble
+    score: 18
+  - word: Acrobatic
+    score: 32
+  - word: Nimble
+    score: 22
+  - word: Escape
+    score: 20
+  - word: Reflex
+    score: 20
+  - word: Phantom
+    score: 24
+  - word: Hex
+    score: 10
+  - word: Curse
+    score: 18
+  - word: Hexblade
+    score: 24
+  - word: Trickster
+    score: 32
+  - word: Mislead
+    score: 20
+  - word: Mirage
+    score: 20
+  - word: Fadeaway
+    score: 22
+  - word: Specter
+    score: 26
+  - word: Infiltrate
+    score: 34
+  - word: Disguise
+    score: 24
+  - word: Scoundrel
+    score: 30
+  - word: Vile
+    score: 14
+  - word: Daggerfall
+    score: 24
+  - word: Veil
+    score: 14
+  - word: Nightfall
+    score: 24
+  - word: Cruelty
+    score: 26
+  - word: Betrayal
+    score: 26
+  - word: Swift
+    score: 16
+  - word: Viper
+    score: 20
+  - word: Doom
+    score: 14
+  - word: Fatal
+    score: 12
+  - word: Shadowdance
+    score: 32
+  - word: Phantomstrike
+    score: 44
+  - word: Devious
+    score: 24
+  - word: Slink
+    score: 14
+  - word: Ghost
+    score: 14
+  - word: Illusion
+    score: 26
+  - word: Fadeout
+    score: 22
+  - word: Parry
+    score: 18
+  - word: Shadowmeld
+    score: 28
+  - word: Cloakstep
+    score: 28
+  - word: Shadowbind
+    score: 30
+  - word: Riftstep
+    score: 28
+  - word: Cutpurse
+    score: 30
+  - word: Scurry
+    score: 22
+  - word: Veilstrike
+    score: 34
+  - word: Sly
+    score: 8
+  - word: Sidestep
+    score: 26
+  - word: Nocturnal
+    score: 32
+  - word: Blindside
+    score: 28
+  - word: Underhanded
+    score: 34
+  - word: Sleight
+    score: 20
+  - word: Forsaken
+    score: 24
+  - word: Venomstrike
+    score: 40
+  - word: Slither
+    score: 22
+  - word: Darkblade
+    score: 24
+  - word: Nightshade
+    score: 28
+  - word: Razor
+    score: 18
+  - word: Deathmark
+    score: 26
+  - word: Phantomblade
+    score: 38
+  - word: Misdirect
+    score: 32
+  - word: Hoodwink
+    score: 26
+  - word: Subdue
+    score: 20
+  - word: Thief
+    score: 16
+  - word: Whisper
+    score: 24
+  - word: Reaper
+    score: 22
+  - word: Enigma
+    score: 20
+  - word: Nightstalker
+    score: 36
+  - word: Nightweaver
+    score: 38
+  - word: Mistwalk
+    score: 24
+  - word: Gloom
+    score: 16
+  - word: Phantomveil
+    score: 38
+  - word: Lurkstep
+    score: 26
+  - word: Sable
+    score: 14
+  - word: Skulker
+    score: 20
+  - word: Shade
+    score: 12
+  - word: Eclipse
+    score: 24
+  - word: Outlaw
+    score: 20
+  - word: Bandit
+    score: 20
+  - word: Trickblade
+    score: 32
+  - word: Swindlefang
+    score: 32
+  - word: Slystep
+    score: 22
+  - word: Evade
+    score: 16
+  - word: Daggerdance
+    score: 32
+  - word: Twisted
+    score: 24
+  - word: Sinslash
+    score: 20
+  - word: Conceal
+    score: 24
+  - word: Crossfang
+    score: 26
+  - word: Moonveil
+    score: 30
+  - word: Creep
+    score: 20
+  - word: Deceit
+    score: 22
+  - word: Guise
+    score: 16
+  - word: Riftcloak
+    score: 28
+  - word: Umbra
+    score: 18
+  - word: Voidstep
+    score: 28
+  - word: Bleakfang
+    score: 24
+  - word: Wraith
+    score: 20
+  - word: Blackguard
+    score: 28
+  - word: Daggerfang
+    score: 26
+  - word: Obfuscate
+    score: 30
+  - word: Revenant
+    score: 30
+  - word: Deathshroud
+    score: 32
+  - word: Phantomslash
+    score: 34
+  - word: Slipstream
+    score: 32
+  - word: Trickfang
+    score: 28
+  - word: Nightfang
+    score: 26
+  - word: Sabotage
+    score: 24
+  - word: Fadefang
+    score: 20
+  - word: Serpentstrike
+    score: 46
+  - word: Venomcloak
+    score: 34
+  - word: Gutterfang
+    score: 32
+  - word: Ebonfang
+    score: 26
+  - word: Sinister
+    score: 28
+  - word: Twilightstep
+    score: 40
+  - word: Nocturne
+    score: 32
+  - word: Bloodfang
+    score: 26
+  - word: Forshadow
+    score: 26
+  - word: Phantomrift
+    score: 38
+  - word: Smokeveil
+    score: 30
+  - word: Throatcut
+    score: 32
+  - word: Gutstab
+    score: 22
+  - word: Daggerborn
+    score: 32
+  - word: Umbral
+    score: 20
+  - word: Haunt
+    score: 16
+  - word: Obscure
+    score: 26
+  - word: Shadebound
+    score: 30
+  - word: Murkblade
+    score: 28
+  - word: Gloomfang
+    score: 26
+  - word: Riftfang
+    score: 24
+  - word: Darkstep
+    score: 24
+  - word: Lacerfang
+    score: 26
+  - word: Blackveil
+    score: 28
+  - word: Fadeblade
+    score: 24
+  - word: Shadowfang
+    score: 26
+  - word: Duskrunner
+    score: 34
+  - word: Moonshadow
+    score: 32
+  - word: Daggerwhisper
+    score: 40
+  - word: Cursedfang
+    score: 30
+  - word: Daggerstep
+    score: 30
+  - word: Shadefang
+    score: 22
+  - word: Abysscloak
+    score: 28
+  - word: Voidfang
+    score: 24
+  - word: Riftwalker
+    score: 32
+  - word: Silentfang
+    score: 30
+  - word: Mistfang
+    score: 24
+  - word: Wraithblade
+    score: 34
+  - word: Specterfang
+    score: 36
+  - word: Blackshade
+    score: 26
+  - word: Gloomslice
+    score: 32
+  - word: Slithershadow
+    score: 38
+  - word: Darkfang
+    score: 20
+  - word: Venomshroud
+    score: 38
+  - word: Veilwalker
+    score: 32
+  - word: Stiletto
+    score: 28
+  - word: Hauntslice
+    score: 32
+  - word: Whisperfang
+    score: 34
+  - word: Ebonshadow
+    score: 32
+  - word: Vileblade
+    score: 28
+  - word: Backlash
+    score: 20
+  - word: Nocturneblade
+    score: 46
+  - word: Lurker
+    score: 20
+  - word: Sinveil
+    score: 24
+  - word: Duskslash
+    score: 20
+  - word: Blightfang
+    score: 28
+  - word: Daggerstrike
+    score: 36
+  - word: Lurkslash
+    score: 22
+  - word: Voidshadow
+    score: 30
+  - word: Phantomfang
+    score: 34
+  - word: Wraithfang
+    score: 30
+  - word: Forsworn
+    score: 28
+  - word: Cryptshade
+    score: 32
+  - word: Blackfang
+    score: 24
+  - word: Nightstep
+    score: 30
+  - word: Abyssfang
+    score: 24
+  - word: Lamentblade
+    score: 34
+  - word: Shadowhex
+    score: 26
+  - word: Creepstrike
+    score: 40
+  - word: Sneakfang
+    score: 24
+  - word: Twilightslash
+    score: 36
+  - word: Gloombound
+    score: 34
+  - word: Shadeveil
+    score: 26
+  - word: Riftshroud
+    score: 32
+  - word: Sinisterfang
+    score: 38
+  - word: Shadeborn
+    score: 28
+  - word: Umbralstep
+    score: 34
+  - word: Eclipsefang
+    score: 34
+  - word: Veilfang
+    score: 24
+  - word: Cloakfang
+    score: 24
+  - word: Revenantshade
+    score: 42
+  - word: Twilightfang
+    score: 36
+  - word: Forsakenfang
+    score: 34
+  - word: Spectralstep
+    score: 40
+  - word: Omenfang
+    score: 26
+  - word: Spectershade
+    score: 38
+  - word: Lurkfang
+    score: 22
+  - word: Obscurefang
+    score: 36
+  - word: Silentcut
+    score: 32
+  - word: Blackshroud
+    score: 32
+  - word: Cursedveil
+    score: 34
+  - word: Gloomstep
+    score: 30
+  - word: Murkfury
+    score: 28
+  - word: Duskrift
+    score: 24
+  - word: Nocturnefang
+    score: 42
+  - word: Ebonveil
+    score: 30
+  - word: Stalkerfang
+    score: 30
+  - word: Whisperveil
+    score: 38
+  - word: Trickveil
+    score: 32
+  - word: Deathwhisper
+    score: 38
+  - word: Shadewhisper
+    score: 36
+  - word: Daggerveil
+    score: 30
+  - word: Cloakedfang
+    score: 30
+  - word: Murkfrost
+    score: 30
+  - word: Abyssveil
+    score: 28
+  - word: Fateshade
+    score: 24
+  - word: Obscureveil
+    score: 40
+  - word: Wraithshroud
+    score: 38
+  - word: Guttershade
+    score: 34
+  - word: Shadowedfang
+    score: 32
+  - word: Serpentfang
+    score: 36
+  - word: Doomveil
+    score: 28
+  - word: Nightshadefang
+    score: 38
+  - word: Sinwhisper
+    score: 34
+  - word: Duskrider
+    score: 28
+  - word: Lurkbane
+    score: 26
+  - word: Abysswhisper
+    score: 38
+  - word: Slitherfang
+    score: 32
+  - word: Murkveil
+    score: 28
+  - word: Umbrafang
+    score: 28
+  - word: Darkreaper
+    score: 32
+  - word: Nocturneshade
+    score: 44
+  - word: Stilettofang
+    score: 38
+  - word: Bloodshade
+    score: 28
+  - word: Phantomwhisper
+    score: 48
+  - word: Wraithveil
+    score: 34
+  - word: Voidshade
+    score: 26
+  - word: Shadestep
+    score: 26
+  - word: Fadewhisper
+    score: 34
+  - word: Lurkblade
+    score: 26
+  - word: Shadowreaper
+    score: 38
