@@ -59,7 +59,7 @@ namespace PaperDungoneer.TypingMinigame
 
         private void IncreaseDifficultAndSlidingLevel()
         {
-            difficultyLevel += (int)(difficultyLevel * difficultyMultiplier);
+            difficultyLevel += (int)(slidingDifficultyRange * difficultyMultiplier);
             slidingDifficultyRange++;
 
             OnDifficultyLevelIncrease.Invoke();
