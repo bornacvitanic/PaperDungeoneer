@@ -637,11 +637,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5296890858585031920}
     m_Modifications:
-    - target: {fileID: 5075313563678312926, guid: 93e12727da5bc8e4b861f0b109bbde9a,
-        type: 3}
-      propertyPath: m_text
-      value: He murdered a wounded enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 5228233659128287298, guid: 93e12727da5bc8e4b861f0b109bbde9a,
         type: 3}
       propertyPath: m_Pivot.x
