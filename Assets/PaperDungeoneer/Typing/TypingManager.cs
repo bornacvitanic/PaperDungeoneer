@@ -15,11 +15,15 @@ namespace PaperDungeoneer.Typing
         [SerializeField] private Color defaultColor = Color.white;
 
         private string targetWord;
-        private string previousInput = string.Empty;
 
         public UnityEvent OnWordCompleted;
         public UnityEvent OnCorrectLetterTyped;
         public UnityEvent OnIncorrectLetterTyped;
+
+        private void OnDisable()
+        {
+            inputField.DeactivateInputField();
+        }
 
         public void Start()
         {
@@ -31,6 +35,9 @@ namespace PaperDungeoneer.Typing
         {
             if (!inputField.isFocused)
                 inputField.ActivateInputField();
+
+            if ((Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl)) && Input.GetKey(KeyCode.Backspace))
+                inputField.text = "";
         }
 
         public void SetTargetWord(string word)
