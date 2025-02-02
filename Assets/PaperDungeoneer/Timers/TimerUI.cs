@@ -14,16 +14,18 @@ namespace PaperDungeoneer.Timers
         private void OnEnable()
         {
             timer.OnTimeTick += UpdateUITimer;
+            timer.OnTimeReset += UpdateUITimer;
         }
 
         private void OnDisable()
         {
             timer.OnTimeTick -= UpdateUITimer;
+            timer.OnTimeReset += UpdateUITimer;
         }
 
-        public void UpdateUITimer(float seconds)
+        public void UpdateUITimer()
         {
-            var timeSpan = TimeSpan.FromSeconds(seconds);
+            var timeSpan = TimeSpan.FromSeconds(timer.CurrentTimeSeconds);
             timerText.text = $"{timeSpan.Minutes:D2}:{timeSpan.Seconds:D2}";
         }
     }
