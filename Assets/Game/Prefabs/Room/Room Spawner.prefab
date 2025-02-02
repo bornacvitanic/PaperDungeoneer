@@ -49,6 +49,6 @@ MonoBehaviour:
   wallPrefabs: {fileID: 11400000, guid: ef7c76b22d2ef4348ba538a8f8d429c1, type: 2}
   cornerPrefabs: {fileID: 11400000, guid: b66ddcb3735e3c447829a83f44f48cf3, type: 2}
   floorPrefabs: {fileID: 11400000, guid: b8d5a0656c46e6548bccb8a069daffb1, type: 2}
-  centerFloorPrefab: {fileID: 919132149155446097, guid: 580f2f828fecab5429a5747069bb5f72,
+  centerFloorPrefab: {fileID: 6739523706102617621, guid: f685aeb768c2b204a93f7744882aa6d2,
     type: 3}
   wallWidth: 4

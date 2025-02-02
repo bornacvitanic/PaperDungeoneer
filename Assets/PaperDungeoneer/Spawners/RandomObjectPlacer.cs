@@ -8,19 +8,16 @@ namespace PaperDungoneer.Spawners
     {
         [SerializeField] private List<GameObject> prefabs;
 
-        #region GizmoVariables
-        private int currentPrefabIndex = 0;
-        private float timer = 0f;
-        private const float previewInterval = 5f;
-        #endregion
-
         public UnityEvent<GameObject> OnObjectPlaced;
+
+        private GameObject instance;
 
         private void Awake()
         {
             PlaceRandomObject();
         }
 
+        [ContextMenu("Place Random Object")]
         private void PlaceRandomObject()
         {
             if (prefabs == null || prefabs.Count == 0)
@@ -29,15 +26,29 @@ namespace PaperDungoneer.Spawners
                 return;
             }
 
+            if (instance != null)
+            {
+                Destroy(instance);
+                instance = null;
+            }
+
             GameObject selectedPrefab = prefabs[Random.Range(0, prefabs.Count)];
-            var placedPrefab = Instantiate(selectedPrefab, transform);
-            OnObjectPlaced.Invoke(placedPrefab);
+            instance = Instantiate(selectedPrefab, transform);
+            OnObjectPlaced.Invoke(instance);
         }
 
+        
+        #region GizmoVariables
+        private int currentPrefabIndex = 0;
+        private float timer = 0f;
+        private const float previewInterval = 5f;
+        #endregion
+        
         private void OnDrawGizmos()
         {
             if (prefabs == null || prefabs.Count == 0)
                 return;
+            if (instance != null) return;
 
             timer += Time.deltaTime;
             if (timer >= previewInterval)
@@ -66,7 +77,5 @@ namespace PaperDungoneer.Spawners
                 }
             }
         }
-
-
     }
 }
