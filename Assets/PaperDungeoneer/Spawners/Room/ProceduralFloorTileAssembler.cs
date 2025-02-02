@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using PaperDungeoneer.Spawners.Data;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ namespace PaperDungeoneer.Spawners.Room
     [ExecuteAlways]
     public class ProceduralFloorTileAssembler : MonoBehaviour
     {
+        [SerializeField] private List<GameObject> instances;
         [Header("Half-Sized Floor Tiles")]
         [SerializeField] private WeightedPrefabRepository halfFloorPrefabs; // Repository of half-sized floor tiles
 
@@ -14,7 +16,7 @@ namespace PaperDungeoneer.Spawners.Room
 
         private void Awake()
         {
-            AssembleProceduralFloorTile();
+            if (instances.Count == 0) AssembleProceduralFloorTile();
         }
 
         private void AssembleProceduralFloorTile()
@@ -24,6 +26,13 @@ namespace PaperDungeoneer.Spawners.Room
                 Debug.LogError("Half-sized floor prefabs repository is not assigned or is empty.");
                 return;
             }
+
+            foreach (var instance in instances)
+            {
+                if (Application.isPlaying) Destroy(instance);
+                else DestroyImmediate(instance);
+            }
+            instances.Clear();
 
             // Calculate the offset for half-sized tiles
             float halfTileSize = tileSize / 2f;
@@ -46,6 +55,7 @@ namespace PaperDungeoneer.Spawners.Room
                     // Instantiate the half-sized tile and set its position and parent
                     GameObject halfFloorTile = Instantiate(halfFloorPrefab, position, Quaternion.Euler(0,Random.Range(0,4)*90f,0));
                     halfFloorTile.transform.parent = this.transform;
+                    instances.Add(halfFloorTile);
                 }
             }
         }

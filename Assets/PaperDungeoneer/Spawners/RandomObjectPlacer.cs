@@ -9,14 +9,13 @@ namespace PaperDungoneer.Spawners
     {
         [SerializeField] private List<GameObject> prefabs;
         [SerializeField] private bool randomOrientation;
+        [SerializeField] private GameObject instance;
 
         public UnityEvent<GameObject> OnObjectPlaced;
 
-        private GameObject instance;
-
         private void Awake()
         {
-            PlaceRandomObject();
+            if (instance == null) PlaceRandomObject();
         }
 
         [ContextMenu("Place Random Object")]
@@ -30,7 +29,8 @@ namespace PaperDungoneer.Spawners
 
             if (instance != null)
             {
-                Destroy(instance);
+                if (Application.isPlaying) Destroy(instance);
+                else DestroyImmediate(instance);
                 instance = null;
             }
 
