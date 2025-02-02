@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6630631286328268575}
+  - component: {fileID: 2930479096634597924}
   m_Layer: 0
   m_Name: Rogue
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   - {fileID: 443803864137486192}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2930479096634597924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2157248374815429850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1904b1a6e1250c6419fb940972f61f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordRepository: {fileID: 11400000, guid: 5ea4b50f5f542274d972d1c0fc021a93, type: 2}
 --- !u!1001 &117670001386793115
 PrefabInstance:
   m_ObjectHideFlags: 0

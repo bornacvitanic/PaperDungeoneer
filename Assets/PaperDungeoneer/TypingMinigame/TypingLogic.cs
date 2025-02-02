@@ -13,7 +13,7 @@ namespace PaperDungoneer.TypingMinigame
         [UnityEngine.Range(0f,1f)]
         [SerializeField] private float difficultyMultiplier = 0.5f;
         [SerializeField] private int startingSlidingDifficultyRange = 10;
-        [SerializeField] private int uppercaseDifficultyLevelStart = 40;
+        [SerializeField] private int uppercaseDifficultyLevelStart = 25;
 
         private int difficultyLevel;
         private int slidingDifficultyRange;
@@ -31,7 +31,7 @@ namespace PaperDungoneer.TypingMinigame
         {
             difficultyLevel = startingDifficultyLevel;
             slidingDifficultyRange = startingSlidingDifficultyRange;
-            fetchedWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange, slidingDifficultyRange);
+            fetchedWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange);
 
             PickTargetWord();
         }
@@ -40,7 +40,7 @@ namespace PaperDungoneer.TypingMinigame
         {
             if (fetchedWords.Count == 0)
             {
-                fetchedWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange, slidingDifficultyRange);
+                fetchedWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange);
                 IncreaseDifficultAndSlidingLevel();
             }
 
@@ -69,7 +69,7 @@ namespace PaperDungoneer.TypingMinigame
         {
             difficultyLevel = startingDifficultyLevel;
             slidingDifficultyRange = startingSlidingDifficultyRange;
-            fetchedWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange, slidingDifficultyRange);
+            fetchedWords = wordPicker.GetWordsByScore(difficultyLevel, slidingDifficultyRange);
             OnRestartGame.Invoke();
             PickTargetWord();
         }
