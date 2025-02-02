@@ -1,8 +1,8 @@
 using System;
 
 [Serializable]
-public struct WordValue
+public struct ScoredWord
 {
     public string word;
-    public int wordValue;
+    public int score;
 }

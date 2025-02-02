@@ -6,12 +6,12 @@ namespace PaperDungoneer.WordDictionary
     [CreateAssetMenu(menuName = "Words/Word Repository")]
     public class WordRepository : ScriptableObject
     {
-        [SerializeField] private List<WordValue> words = new();
+        [SerializeField] private List<ScoredWord> scoredWords = new();
 
-        public List<WordValue> Words
+        public List<ScoredWord> ScoredWords
         {
-            get => words;
-            set => words = value;
+            get => scoredWords;
+            set => scoredWords = value;
         }
 
         private readonly HashSet<char> homeRowKeys = new()
@@ -22,10 +22,10 @@ namespace PaperDungoneer.WordDictionary
         [ContextMenu("Evaluate Word Values")]
         public void EvaluateWordValues()
         {
-            for(int i = 0; i < words.Count; i++)
+            for(int i = 0; i < scoredWords.Count; i++)
             {
-                int newWordValue = CalculateWordValue(words[i].word);
-                words[i] = new WordValue() { word = words[i].word, wordValue = newWordValue };
+                int newWordValue = CalculateWordValue(scoredWords[i].word);
+                scoredWords[i] = new ScoredWord() { word = scoredWords[i].word, score = newWordValue };
             }
         }
 

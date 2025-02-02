@@ -8,9 +8,9 @@ namespace PaperDungoneer.WordDictionary
     {
         [SerializeField] private WordRepository wordDictionary;
 
-        public List<WordValue> GetWordsByLenght(int length)
+        public List<ScoredWord> GetWordsByLenght(int length)
         {
-            List<WordValue> filteredWords = wordDictionary.Words.Where(word => word.word.Length <= length).ToList();
+            List<ScoredWord> filteredWords = wordDictionary.ScoredWords.Where(word => word.word.Length <= length).ToList();
             if (filteredWords.Count == 0)
             {
                 Debug.LogWarning($"No words found with length {length}");
@@ -19,9 +19,9 @@ namespace PaperDungoneer.WordDictionary
             return filteredWords;
         }
 
-        public List<WordValue> GetWordsByValue(int wordValue)
+        public List<ScoredWord> GetWordsByValue(int wordValue)
         {
-            List<WordValue> filteredWords = wordDictionary.Words.Where(word => word.wordValue <= wordValue).ToList();
+            List<ScoredWord> filteredWords = wordDictionary.ScoredWords.Where(word => word.score <= wordValue).ToList();
             if (filteredWords.Count == 0)
             {
                 Debug.LogWarning($"No words found with value {wordValue}");

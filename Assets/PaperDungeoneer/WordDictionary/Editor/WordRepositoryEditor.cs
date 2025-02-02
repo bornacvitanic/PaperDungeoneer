@@ -38,7 +38,7 @@ public class WordRepositoryWindow : EditorWindow
 
         GUILayout.Space(10);
 
-        if (GUILayout.Button("Populate From Paragraph"))
+        if (GUILayout.Button("Populate From Paragraph and Evaluate"))
         {
             PopulateFromParagraph();
             EditorUtility.SetDirty(wordRepository);
@@ -47,12 +47,12 @@ public class WordRepositoryWindow : EditorWindow
         GUILayout.Space(10);
 
         // Scrollable List of Stored Words
-        if (wordRepository.Words != null && wordRepository.Words.Count > 0)
+        if (wordRepository.ScoredWords != null && wordRepository.ScoredWords.Count > 0)
         {
             GUILayout.Label("Stored Words:", EditorStyles.boldLabel);
             wordsScrollPos = EditorGUILayout.BeginScrollView(wordsScrollPos, GUILayout.Height(150));
 
-            foreach (var word in wordRepository.Words)
+            foreach (var word in wordRepository.ScoredWords)
             {
                 GUILayout.Label(word.word, EditorStyles.wordWrappedLabel);
             }
@@ -69,12 +69,13 @@ public class WordRepositoryWindow : EditorWindow
             return;
         }
 
-        wordRepository.Words.Clear();
+        wordRepository.ScoredWords.Clear();
         string[] splitWords = wordsInParagraph.Split(new[] { ", " }, System.StringSplitOptions.RemoveEmptyEntries);
         foreach (var w in splitWords)
         {
-            wordRepository.Words.Add(new WordValue() { word = w});
+            wordRepository.ScoredWords.Add(new ScoredWord() { word = w});
         }
-        Debug.Log($"Word Repository updated with {wordRepository.Words.Count} words.");
+        wordRepository.EvaluateWordValues();
+        Debug.Log($"Word Repository updated with {wordRepository.ScoredWords.Count} words and evaluated.");
     }
 }
