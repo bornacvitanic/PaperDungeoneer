@@ -32,7 +32,6 @@ namespace PaperDungeoneer.Scoring
 
             Instance = this;
             Score = 0;
-            DontDestroyOnLoad(gameObject);
         }
 
         public void AddScore(int amount)
