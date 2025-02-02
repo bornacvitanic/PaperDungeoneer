@@ -518,7 +518,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1952257091}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1952257091}
     - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
@@ -526,6 +546,56 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 1952257093}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PaperDungoneer.TypingMinigame.TypingLogic, PaperDungeoneer.TypingMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4019971580896741779, guid: d5c3ef603b78f6547aa4567b7ff943a8,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4262229037799900991, guid: d5c3ef603b78f6547aa4567b7ff943a8,
         type: 3}
       propertyPath: scorer
