@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b072ee5a174ee5aff67f76b89a52cf, type: 3}
+  m_Name: WallWeightedPrefabRepository
+  m_EditorClassIdentifier: 
+  prefabs:
+  - prefab: {fileID: 919132149155446097, guid: ed8226d6110ad7d4d800ad6df7a31690, type: 3}
+    weight: 50
+  - prefab: {fileID: 919132149155446097, guid: 3cd5aba65630bce4a9e8ed43eb7b03c1, type: 3}
+    weight: 50
+  - prefab: {fileID: 919132149155446097, guid: 7ffe54fa9537dbf42b6f7ce54965805c, type: 3}
+    weight: 50
+  - prefab: {fileID: 919132149155446097, guid: 5b469fb8547ae404aaa4cc9ef6f47951, type: 3}
+    weight: 30
+  - prefab: {fileID: 919132149155446097, guid: 99eccbb0eaa2e3d4aa13d19f7906a66c, type: 3}
+    weight: 20
+  - prefab: {fileID: 919132149155446097, guid: e79735778f9950044a536848a86d19c5, type: 3}
+    weight: 100
+  - prefab: {fileID: 919132149155446097, guid: 2d7539007a75c454b9adc4714221dca7, type: 3}
+    weight: 40
+  - prefab: {fileID: 919132149155446097, guid: 0c4715b33e222e845b1a52f353ba2ab5, type: 3}
+    weight: 30
+  - prefab: {fileID: 919132149155446097, guid: 479e2b7cffa18134484345911730d175, type: 3}
+    weight: 20
+  - prefab: {fileID: 919132149155446097, guid: ad588d5133e137345995eec7fe1742b8, type: 3}
+    weight: 10
+  - prefab: {fileID: 919132149155446097, guid: 2062e5742dac89e4099f983168fcf012, type: 3}
+    weight: 5
+  - prefab: {fileID: 919132149155446097, guid: 1f819c4a18a299047b4f3f0edc036cb5, type: 3}
+    weight: 50
+  - prefab: {fileID: 919132149155446097, guid: da5f65fbd08eae3449da92f76368f76a, type: 3}
+    weight: 30
+  - prefab: {fileID: 919132149155446097, guid: e31ab75a5378d81408e5adcaf6ef5d6f, type: 3}
+    weight: 10
+  - prefab: {fileID: 919132149155446097, guid: 144413e82cfadad4dbd0c29b6acb9933, type: 3}
+    weight: 10
+  - prefab: {fileID: 919132149155446097, guid: 131060bfc2913d34d97c6b171d7b14d3, type: 3}
+    weight: 10
+  - prefab: {fileID: 919132149155446097, guid: 90756502c79f922498101d0199b9706f, type: 3}
+    weight: 10
