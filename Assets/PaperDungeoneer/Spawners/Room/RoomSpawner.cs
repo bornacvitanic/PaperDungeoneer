@@ -34,7 +34,7 @@ namespace PaperDungeoneer.Spawners.Room
         }
 
         [ContextMenu("Generate Room")]
-        private void GenerateRoom()
+        public void GenerateRoom()
         {
             // Clear existing room instances
             foreach (var instance in instances)

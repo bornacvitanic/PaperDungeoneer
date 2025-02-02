@@ -19,7 +19,7 @@ namespace PaperDungoneer.Spawners
         }
 
         [ContextMenu("Place Random Object")]
-        private void PlaceRandomObject()
+        public void PlaceRandomObject()
         {
             if (prefabs == null || prefabs.Count == 0)
             {
