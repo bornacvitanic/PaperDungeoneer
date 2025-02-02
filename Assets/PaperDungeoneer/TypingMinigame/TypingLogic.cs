@@ -7,8 +7,8 @@ namespace PaperDungoneer.TypingMinigame
     public class TypingLogic : MonoBehaviour
     {
         [SerializeField] private WordPicker wordPicker;
-        [SerializeField] private int startingDifficultyLevel;
-        [SerializeField] private int increaseInLevel;
+        [SerializeField] private int startingDifficultyLevel = 10;
+        [SerializeField] private int increaseInLevel = 2;
 
         private int difficultyLevel;
 
@@ -28,7 +28,7 @@ namespace PaperDungoneer.TypingMinigame
 
             OnWordPicked.Invoke(word[Random.Range(0, word.Count)].word);
         }
-
+            
         public void IncreaseDifficulty()
         {
             difficultyLevel += increaseInLevel;
