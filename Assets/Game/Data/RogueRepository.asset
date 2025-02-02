@@ -1,0 +1,741 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d87c1950193ba54aa42358fc1bc433c, type: 3}
+  m_Name: RogueRepository
+  m_EditorClassIdentifier: 
+  scoredWords:
+  - word: Rogue
+    score: 18
+  - word: Thief
+    score: 16
+  - word: Bandit
+    score: 20
+  - word: Cutpurse
+    score: 30
+  - word: Pickpocket
+    score: 36
+  - word: Assassin
+    score: 20
+  - word: Shadow
+    score: 16
+  - word: Burglar
+    score: 22
+  - word: Scoundrel
+    score: 30
+  - word: Trickster
+    score: 32
+  - word: Swindler
+    score: 26
+  - word: Prowler
+    score: 26
+  - word: Lurker
+    score: 20
+  - word: Saboteur
+    score: 28
+  - word: Miscreant
+    score: 32
+  - word: Rapscallion
+    score: 34
+  - word: Renegade
+    score: 26
+  - word: Outcast
+    score: 24
+  - word: Scamp
+    score: 16
+  - word: Scallywag
+    score: 24
+  - word: Desperado
+    score: 28
+  - word: Brigand
+    score: 22
+  - word: Spy
+    score: 10
+  - word: Infiltrator
+    score: 38
+  - word: Traitor
+    score: 26
+  - word: Conman
+    score: 22
+  - word: Hustler
+    score: 22
+  - word: Gambler
+    score: 22
+  - word: Urchin
+    score: 22
+  - word: Drifter
+    score: 24
+  - word: Marauder
+    score: 26
+  - word: Ruffian
+    score: 22
+  - word: Highwayman
+    score: 30
+  - word: Reprobate
+    score: 34
+  - word: Picklock
+    score: 26
+  - word: Infiltration
+    score: 42
+  - word: Stealth
+    score: 20
+  - word: Subterfuge
+    score: 34
+  - word: Sabotage
+    score: 24
+  - word: Ruse
+    score: 14
+  - word: Hoax
+    score: 12
+  - word: Fraud
+    score: 14
+  - word: Forger
+    score: 20
+  - word: Deception
+    score: 34
+  - word: Cunning
+    score: 26
+  - word: Guile
+    score: 16
+  - word: Lockpick
+    score: 26
+  - word: Dagger
+    score: 16
+  - word: Cloak
+    score: 14
+  - word: Hood
+    score: 12
+  - word: Cowl
+    score: 14
+  - word: Garrote
+    score: 24
+  - word: Poison
+    score: 22
+  - word: Venom
+    score: 20
+  - word: Toxin
+    score: 20
+  - word: Blowgun
+    score: 24
+  - word: Crossbow
+    score: 28
+  - word: Shortbow
+    score: 28
+  - word: Rapier
+    score: 22
+  - word: Backstab
+    score: 24
+  - word: Feint
+    score: 18
+  - word: Bounty
+    score: 24
+  - word: Heist
+    score: 16
+  - word: Scam
+    score: 12
+  - word: Evasion
+    score: 24
+  - word: Espionage
+    score: 30
+  - word: Burglary
+    score: 26
+  - word: Looter
+    score: 22
+  - word: Contraband
+    score: 34
+  - word: Footpad
+    score: 22
+  - word: Skullduggery
+    score: 34
+  - word: Larceny
+    score: 24
+  - word: Corruption
+    score: 40
+  - word: Conspiracy
+    score: 36
+  - word: Shuriken
+    score: 26
+  - word: Dirk
+    score: 12
+  - word: Stiletto
+    score: 28
+  - word: Roguishness
+    score: 34
+  - word: Treachery
+    score: 32
+  - word: Thievery
+    score: 30
+  - word: Banditry
+    score: 28
+  - word: Con
+    score: 12
+  - word: Scheme
+    score: 20
+  - word: Hustle
+    score: 18
+  - word: Roguery
+    score: 26
+  - word: Culprit
+    score: 26
+  - word: Duplicity
+    score: 32
+  - word: Villainy
+    score: 26
+  - word: Extortion
+    score: 36
+  - word: Blackmail
+    score: 26
+  - word: Bribery
+    score: 28
+  - word: Smuggling
+    score: 26
+  - word: Eavesdropping
+    score: 44
+  - word: Underground
+    score: 38
+  - word: Ambush
+    score: 18
+  - word: Stealthiness
+    score: 36
+  - word: Nightshade
+    score: 28
+  - word: Mark
+    score: 12
+  - word: Target
+    score: 20
+  - word: Hoodlum
+    score: 22
+  - word: Steal
+    score: 14
+  - word: Pick
+    score: 14
+  - word: Pilfer
+    score: 20
+  - word: Purloin
+    score: 26
+  - word: Swipe
+    score: 18
+  - word: Burgle
+    score: 20
+  - word: Rob
+    score: 12
+  - word: Loot
+    score: 14
+  - word: Rummage
+    score: 24
+  - word: Ransack
+    score: 20
+  - word: Scavenge
+    score: 26
+  - word: Scrounge
+    score: 28
+  - word: Pocket
+    score: 22
+  - word: Snatch
+    score: 18
+  - word: Skulk
+    score: 12
+  - word: Sneak
+    score: 14
+  - word: Creep
+    score: 20
+  - word: Slink
+    score: 14
+  - word: Lurk
+    score: 12
+  - word: Eavesdrop
+    score: 30
+  - word: Infiltrate
+    score: 34
+  - word: Tamper
+    score: 22
+  - word: Disable
+    score: 20
+  - word: Disarm
+    score: 18
+  - word: Stab
+    score: 12
+  - word: Assassinate
+    score: 30
+  - word: Hamper
+    score: 20
+  - word: Slash
+    score: 10
+  - word: Shank
+    score: 12
+  - word: Cheat
+    score: 16
+  - word: Swindle
+    score: 22
+  - word: Trick
+    score: 18
+  - word: Mislead
+    score: 20
+  - word: Dupe
+    score: 14
+  - word: Deceive
+    score: 26
+  - word: Gull
+    score: 10
+  - word: Impersonate
+    score: 40
+  - word: Disguise
+    score: 24
+  - word: Camouflage
+    score: 30
+  - word: Vanish
+    score: 18
+  - word: Slip
+    score: 12
+  - word: Fade
+    score: 10
+  - word: Dodge
+    score: 14
+  - word: Evade
+    score: 16
+  - word: Escape
+    score: 20
+  - word: Outrun
+    score: 24
+  - word: Outsmart
+    score: 28
+  - word: Unlatch
+    score: 22
+  - word: Unbolt
+    score: 22
+  - word: Stalk
+    score: 12
+  - word: Tail
+    score: 12
+  - word: Pry
+    score: 12
+  - word: Rifle
+    score: 16
+  - word: Case
+    score: 12
+  - word: Scout
+    score: 18
+  - word: Gauge
+    score: 14
+  - word: Glean
+    score: 14
+  - word: Extort
+    score: 24
+  - word: Bribe
+    score: 20
+  - word: Threaten
+    score: 28
+  - word: Intimidate
+    score: 36
+  - word: Browbeat
+    score: 30
+  - word: Spook
+    score: 16
+  - word: Unnerve
+    score: 28
+  - word: Corner
+    score: 24
+  - word: Trap
+    score: 14
+  - word: Confine
+    score: 26
+  - word: Disappear
+    score: 28
+  - word: Duck
+    score: 12
+  - word: Sidestep
+    score: 26
+  - word: Shimmy
+    score: 20
+  - word: Sheath
+    score: 16
+  - word: Strangle
+    score: 24
+  - word: Gag
+    score: 6
+  - word: Throttle
+    score: 28
+  - word: Stash
+    score: 12
+  - word: Fence
+    score: 18
+  - word: Launder
+    score: 22
+  - word: Obscure
+    score: 26
+  - word: Conceal
+    score: 24
+  - word: Hide
+    score: 12
+  - word: Hush
+    score: 10
+  - word: Silence
+    score: 24
+  - word: Sly
+    score: 8
+  - word: Stealthy
+    score: 24
+  - word: Furtive
+    score: 26
+  - word: Covert
+    score: 24
+  - word: Underhanded
+    score: 34
+  - word: Crafty
+    score: 20
+  - word: Devious
+    score: 24
+  - word: Elusive
+    score: 24
+  - word: Slippery
+    score: 28
+  - word: Shadowy
+    score: 20
+  - word: Dodgy
+    score: 14
+  - word: Cagey
+    score: 16
+  - word: Secretive
+    score: 34
+  - word: Enigmatic
+    score: 32
+  - word: Cryptic
+    score: 28
+  - word: Clandestine
+    score: 36
+  - word: Untrustworthy
+    score: 48
+  - word: Dishonest
+    score: 28
+  - word: Shady
+    score: 12
+  - word: Dubious
+    score: 24
+  - word: Questionable
+    score: 42
+  - word: Unscrupulous
+    score: 42
+  - word: Villainous
+    score: 32
+  - word: Nefarious
+    score: 30
+  - word: Wicked
+    score: 20
+  - word: Shifty
+    score: 18
+  - word: Subtle
+    score: 20
+  - word: Tricksy
+    score: 24
+  - word: Manipulative
+    score: 42
+  - word: Roguish
+    score: 22
+  - word: Dangerous
+    score: 28
+  - word: Treacherous
+    score: 38
+  - word: Artful
+    score: 18
+  - word: Smooth
+    score: 20
+  - word: Slick
+    score: 14
+  - word: Astute
+    score: 20
+  - word: Concealed
+    score: 30
+  - word: Veiled
+    score: 20
+  - word: Mysterious
+    score: 36
+  - word: Discreet
+    score: 28
+  - word: Quiet
+    score: 20
+  - word: Lithe
+    score: 16
+  - word: Agile
+    score: 14
+  - word: Nimble
+    score: 22
+  - word: Acrobatic
+    score: 32
+  - word: Flexible
+    score: 26
+  - word: Wiry
+    score: 16
+  - word: Spry
+    score: 14
+  - word: Serpentine
+    score: 38
+  - word: Predatory
+    score: 32
+  - word: Unseen
+    score: 22
+  - word: Lurking
+    score: 22
+  - word: Inconspicuous
+    score: 48
+  - word: Hidden
+    score: 18
+  - word: Masked
+    score: 16
+  - word: Unnoticed
+    score: 34
+  - word: Silent
+    score: 20
+  - word: Soundless
+    score: 26
+  - word: Sleek
+    score: 14
+  - word: Wily
+    score: 14
+  - word: Lethal
+    score: 16
+  - word: Cutthroat
+    score: 32
+  - word: Coldblooded
+    score: 34
+  - word: Merciless
+    score: 30
+  - word: Remorseless
+    score: 36
+  - word: Hardhearted
+    score: 32
+  - word: Resourceful
+    score: 38
+  - word: Opportunistic
+    score: 50
+  - word: Scheming
+    score: 26
+  - word: Sinister
+    score: 28
+  - word: Malevolent
+    score: 34
+  - word: Malicious
+    score: 30
+  - word: Vengeful
+    score: 26
+  - word: Crooked
+    score: 24
+  - word: Immoral
+    score: 24
+  - word: Felonious
+    score: 30
+  - word: Dark
+    score: 10
+  - word: Unlawful
+    score: 24
+  - word: Deviant
+    score: 24
+  - word: Ambiguous
+    score: 30
+  - word: Hushed
+    score: 16
+  - word: Nocturnal
+    score: 32
+  - word: Shrouded
+    score: 24
+  - word: Invisible
+    score: 32
+  - word: Illicit
+    score: 24
+  - word: Guileful
+    score: 24
+  - word: Suspicious
+    score: 34
+  - word: Overshadowed
+    score: 38
+  - word: Conniving
+    score: 34
+  - word: Conspiratorial
+    score: 48
+  - word: Fishy
+    score: 14
+  - word: Undercover
+    score: 38
+  - word: Slice
+    score: 16
+  - word: Carve
+    score: 18
+  - word: Jab
+    score: 8
+  - word: Drug
+    score: 12
+  - word: Surprise
+    score: 28
+  - word: Ensnare
+    score: 24
+  - word: Choke
+    score: 16
+  - word: Stun
+    score: 14
+  - word: Incapacitate
+    score: 42
+  - word: Immobilize
+    score: 38
+  - word: Sap
+    score: 8
+  - word: Blackjack
+    score: 24
+  - word: Mug
+    score: 10
+  - word: Gut
+    score: 10
+  - word: Eviscerate
+    score: 36
+  - word: Disembowel
+    score: 34
+  - word: Hamstring
+    score: 28
+  - word: Maim
+    score: 14
+  - word: Dice
+    score: 14
+  - word: Butcher
+    score: 26
+  - word: Massacre
+    score: 24
+  - word: Shatter
+    score: 22
+  - word: Hobble
+    score: 20
+  - word: Cut
+    score: 12
+  - word: Nick
+    score: 14
+  - word: Batter
+    score: 22
+  - word: Cudgel
+    score: 18
+  - word: Pound
+    score: 18
+  - word: Bruise
+    score: 22
+  - word: Wound
+    score: 18
+  - word: Bleed
+    score: 16
+  - word: Pierce
+    score: 24
+  - word: Spike
+    score: 16
+  - word: Gore
+    score: 14
+  - word: Impale
+    score: 20
+  - word: Pin
+    score: 12
+  - word: Pinion
+    score: 24
+  - word: Decapitate
+    score: 34
+  - word: Kidnap
+    score: 18
+  - word: Abduct
+    score: 20
+  - word: Beat
+    score: 14
+  - word: Thrash
+    score: 16
+  - word: Flog
+    score: 10
+  - word: Whip
+    score: 14
+  - word: Lash
+    score: 8
+  - word: Elbow
+    score: 18
+  - word: Knee
+    score: 14
+  - word: Pummel
+    score: 22
+  - word: Smash
+    score: 12
+  - word: Clobber
+    score: 26
+  - word: Coldcock
+    score: 26
+  - word: Shiv
+    score: 12
+  - word: Blindside
+    score: 28
+  - word: Waylay
+    score: 18
+  - word: Strike
+    score: 20
+  - word: Scathe
+    score: 18
+  - word: Assault
+    score: 18
+  - word: Entrap
+    score: 22
+  - word: Envenom
+    score: 28
+  - word: Cripple
+    score: 26
+  - word: Slaughter
+    score: 26
+  - word: Flay
+    score: 10
+  - word: Scalp
+    score: 14
+  - word: Maul
+    score: 12
+  - word: Harass
+    score: 14
+  - word: Torment
+    score: 28
+  - word: Overpower
+    score: 36
+  - word: Puncture
+    score: 32
+  - word: Lacerate
+    score: 26
+  - word: Hack
+    score: 10
+  - word: Slit
+    score: 12
+  - word: Headbutt
+    score: 26
+  - word: Brawl
+    score: 16
+  - word: Grapple
+    score: 22
+  - word: Pommel
+    score: 22
+  - word: Punch
+    score: 18
+  - word: Wallop
+    score: 18
+  - word: Disfigure
+    score: 28
+  - word: Injure
+    score: 22
+  - word: Afflict
+    score: 20
+  - word: Whack
+    score: 14
+  - word: Trip
+    score: 16
+  - word: Crack
+    score: 16
+  - word: Rake
+    score: 12
+  - word: Wrench
+    score: 22
+  - word: Bludgeon
+    score: 26
+  - word: Wind
+    score: 14
+  - word: Deck
+    score: 12

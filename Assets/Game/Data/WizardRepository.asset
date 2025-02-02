@@ -1,0 +1,701 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d87c1950193ba54aa42358fc1bc433c, type: 3}
+  m_Name: WizardRepository
+  m_EditorClassIdentifier: 
+  scoredWords:
+  - word: Wizard
+    score: 20
+  - word: Mage
+    score: 12
+  - word: Sorcerer
+    score: 30
+  - word: Warlock
+    score: 22
+  - word: Enchantress
+    score: 36
+  - word: Witch
+    score: 18
+  - word: Conjurer
+    score: 30
+  - word: Necromancer
+    score: 42
+  - word: Alchemist
+    score: 28
+  - word: Archmage
+    score: 24
+  - word: Apprentice
+    score: 38
+  - word: Realm
+    score: 16
+  - word: Tower
+    score: 20
+  - word: Fortress
+    score: 26
+  - word: Dungeon
+    score: 24
+  - word: Spellbook
+    score: 28
+  - word: Tome
+    score: 16
+  - word: Grimoire
+    score: 30
+  - word: Staff
+    score: 12
+  - word: Wand
+    score: 12
+  - word: Scepter
+    score: 26
+  - word: Orb
+    score: 12
+  - word: Crystal
+    score: 22
+  - word: Amulet
+    score: 20
+  - word: Talisman
+    score: 24
+  - word: Ring
+    score: 14
+  - word: Cloak
+    score: 14
+  - word: Robe
+    score: 16
+  - word: Broomstick
+    score: 36
+  - word: Cauldron
+    score: 26
+  - word: Potion
+    score: 24
+  - word: Elixir
+    score: 22
+  - word: Scroll
+    score: 18
+  - word: Incantation
+    score: 40
+  - word: Artifact
+    score: 26
+  - word: Rune
+    score: 16
+  - word: Glyph
+    score: 14
+  - word: Sigil
+    score: 14
+  - word: Circle
+    score: 22
+  - word: Ritual
+    score: 20
+  - word: Prophecy
+    score: 30
+  - word: Omen
+    score: 16
+  - word: Familiar
+    score: 24
+  - word: Phoenix
+    score: 26
+  - word: Dragon
+    score: 18
+  - word: Gargoyle
+    score: 24
+  - word: Lich
+    score: 12
+  - word: Specter
+    score: 26
+  - word: Apparition
+    score: 36
+  - word: Illusionist
+    score: 36
+  - word: Conjuration
+    score: 40
+  - word: Enchantment
+    score: 40
+  - word: Arcana
+    score: 18
+  - word: Hex
+    score: 10
+  - word: Cast
+    score: 12
+  - word: Conjure
+    score: 26
+  - word: Summon
+    score: 22
+  - word: Bewitch
+    score: 26
+  - word: Enchant
+    score: 24
+  - word: Curse
+    score: 18
+  - word: Dispel
+    score: 18
+  - word: Transmute
+    score: 32
+  - word: Invoke
+    score: 22
+  - word: Evoke
+    score: 18
+  - word: Channel
+    score: 22
+  - word: Imbue
+    score: 20
+  - word: Empower
+    score: 28
+  - word: Manifest
+    score: 26
+  - word: Banish
+    score: 18
+  - word: Bind
+    score: 14
+  - word: Seal
+    score: 10
+  - word: Ward
+    score: 12
+  - word: Weave
+    score: 18
+  - word: Unravel
+    score: 24
+  - word: Chant
+    score: 16
+  - word: Recite
+    score: 24
+  - word: Harness
+    score: 20
+  - word: Illuminate
+    score: 34
+  - word: Infuse
+    score: 20
+  - word: Levitate
+    score: 28
+  - word: Mesmerize
+    score: 34
+  - word: Morph
+    score: 18
+  - word: Dissolve
+    score: 24
+  - word: Emancipate
+    score: 36
+  - word: Transfigure
+    score: 36
+  - word: Translocate
+    score: 36
+  - word: Resurrect
+    score: 34
+  - word: Ignite
+    score: 22
+  - word: Emanate
+    score: 24
+  - word: Dominate
+    score: 28
+  - word: Mystify
+    score: 24
+  - word: Probe
+    score: 20
+  - word: Scry
+    score: 14
+  - word: Radiate
+    score: 22
+  - word: Replicate
+    score: 32
+  - word: Dissipate
+    score: 28
+  - word: Arcane
+    score: 20
+  - word: Eldritch
+    score: 26
+  - word: Mystical
+    score: 26
+  - word: Occult
+    score: 22
+  - word: Enchanted
+    score: 30
+  - word: Bewitched
+    score: 32
+  - word: Cursed
+    score: 20
+  - word: Ethereal
+    score: 26
+  - word: Otherworldly
+    score: 40
+  - word: Shimmering
+    score: 34
+  - word: Radiant
+    score: 22
+  - word: Luminous
+    score: 28
+  - word: Shadowy
+    score: 20
+  - word: Hidden
+    score: 18
+  - word: Veiled
+    score: 20
+  - word: Illusory
+    score: 26
+  - word: Potent
+    score: 24
+  - word: Powerful
+    score: 28
+  - word: Ancient
+    score: 26
+  - word: Primal
+    score: 20
+  - word: Forbidden
+    score: 30
+  - word: Cryptic
+    score: 28
+  - word: Glimmering
+    score: 34
+  - word: Fiery
+    score: 18
+  - word: Unholy
+    score: 20
+  - word: Divine
+    score: 22
+  - word: Celestial
+    score: 28
+  - word: Spectral
+    score: 26
+  - word: Ghostly
+    score: 20
+  - word: Malevolent
+    score: 34
+  - word: Benevolent
+    score: 38
+  - word: Whimsical
+    score: 28
+  - word: Tenebrous
+    score: 34
+  - word: Resplendent
+    score: 38
+  - word: Scintillating
+    score: 42
+  - word: Transcendent
+    score: 42
+  - word: Woven
+    score: 20
+  - word: Charmed
+    score: 22
+  - word: Imbued
+    score: 22
+  - word: Supernal
+    score: 26
+  - word: Infernal
+    score: 26
+  - word: Fearsome
+    score: 26
+  - word: Enthralling
+    score: 34
+  - word: Illusions
+    score: 28
+  - word: Aura
+    score: 12
+  - word: Apprenticeship
+    score: 50
+  - word: Summoning
+    score: 32
+  - word: Elemental
+    score: 30
+  - word: Crypt
+    score: 20
+  - word: Labyrinth
+    score: 30
+  - word: Relic
+    score: 18
+  - word: Phylactery
+    score: 34
+  - word: Incursion
+    score: 34
+  - word: Teleportation
+    score: 48
+  - word: Demon
+    score: 18
+  - word: Sparkle
+    score: 20
+  - word: Invocation
+    score: 38
+  - word: Transmutation
+    score: 46
+  - word: Charm
+    score: 16
+  - word: Catalyst
+    score: 24
+  - word: Sprite
+    score: 22
+  - word: Magecraft
+    score: 28
+  - word: Emanation
+    score: 32
+  - word: Alchemy
+    score: 22
+  - word: Sorcery
+    score: 26
+  - word: Witchcraft
+    score: 34
+  - word: Wizardry
+    score: 28
+  - word: Devilry
+    score: 24
+  - word: Shapeshifting
+    score: 38
+  - word: Vortex
+    score: 24
+  - word: Conflux
+    score: 24
+  - word: Matrix
+    score: 22
+  - word: Spellweaving
+    score: 38
+  - word: Divination
+    score: 36
+  - word: Clairvoyance
+    score: 42
+  - word: Wizardhood
+    score: 32
+  - word: Incorporeality
+    score: 52
+  - word: Poltergeist
+    score: 38
+  - word: Mysticism
+    score: 32
+  - word: Levitation
+    score: 36
+  - word: Pyromancy
+    score: 34
+  - word: Chronomancy
+    score: 40
+  - word: Geomancy
+    score: 28
+  - word: Aeromancy
+    score: 32
+  - word: Hydromancy
+    score: 34
+  - word: Necromancy
+    score: 38
+  - word: Omnimancy
+    score: 34
+  - word: Telepathy
+    score: 30
+  - word: Seer
+    score: 14
+  - word: Trance
+    score: 22
+  - word: Metamorphosis
+    score: 44
+  - word: Barrier
+    score: 26
+  - word: Sanctum
+    score: 24
+  - word: Summoner
+    score: 30
+  - word: Herb
+    score: 14
+  - word: Wandmaker
+    score: 28
+  - word: Evocation
+    score: 34
+  - word: Abjuration
+    score: 34
+  - word: Trickery
+    score: 30
+  - word: Alteration
+    score: 34
+  - word: Wonder
+    score: 22
+  - word: Sorceress
+    score: 30
+  - word: Magus
+    score: 14
+  - word: Thrall
+    score: 16
+  - word: Manipulation
+    score: 42
+  - word: Possession
+    score: 32
+  - word: Brew
+    score: 16
+  - word: Jinx
+    score: 14
+  - word: Teleport
+    score: 30
+  - word: Transform
+    score: 30
+  - word: Shapeshift
+    score: 28
+  - word: Materialize
+    score: 38
+  - word: Dematerialize
+    score: 44
+  - word: Vanish
+    score: 18
+  - word: Appear
+    score: 20
+  - word: Abjure
+    score: 20
+  - word: Incant
+    score: 22
+  - word: Manipulate
+    score: 34
+  - word: Spark
+    score: 14
+  - word: Glow
+    score: 12
+  - word: Blind
+    score: 16
+  - word: Dazzle
+    score: 18
+  - word: Enthrall
+    score: 24
+  - word: Animate
+    score: 24
+  - word: Revive
+    score: 24
+  - word: Command
+    score: 24
+  - word: Control
+    score: 26
+  - word: Brandish
+    score: 24
+  - word: Swirl
+    score: 16
+  - word: Prophesy
+    score: 28
+  - word: Foretell
+    score: 26
+  - word: Transfix
+    score: 26
+  - word: Petrify
+    score: 26
+  - word: Freeze
+    score: 22
+  - word: Absorb
+    score: 20
+  - word: Focus
+    score: 16
+  - word: Amplify
+    score: 22
+  - word: Conceal
+    score: 24
+  - word: Reveal
+    score: 20
+  - word: Shield
+    score: 16
+  - word: Pierce
+    score: 24
+  - word: Deflect
+    score: 22
+  - word: Unbind
+    score: 22
+  - word: Disenchant
+    score: 32
+  - word: Weaken
+    score: 20
+  - word: Strengthen
+    score: 34
+  - word: Apparate
+    score: 26
+  - word: Consecrate
+    score: 36
+  - word: Exorcise
+    score: 30
+  - word: Flick
+    score: 14
+  - word: Glimmer
+    score: 24
+  - word: Bewilder
+    score: 28
+  - word: Scribe
+    score: 22
+  - word: Inscribe
+    score: 30
+  - word: Engrave
+    score: 24
+  - word: Whisper
+    score: 24
+  - word: Intonate
+    score: 30
+  - word: Scorch
+    score: 20
+  - word: Unleash
+    score: 20
+  - word: Torment
+    score: 28
+  - word: Ensnare
+    score: 24
+  - word: Distort
+    score: 24
+  - word: Beckon
+    score: 22
+  - word: Soar
+    score: 12
+  - word: Murmur
+    score: 24
+  - word: Overshadow
+    score: 32
+  - word: Subjugate
+    score: 28
+  - word: Hamper
+    score: 20
+  - word: Stun
+    score: 14
+  - word: Duplicate
+    score: 30
+  - word: Alchemize
+    score: 30
+  - word: Disintegrate
+    score: 40
+  - word: Combust
+    score: 26
+  - word: Shatter
+    score: 22
+  - word: Bestow
+    score: 22
+  - word: Envelop
+    score: 26
+  - word: Mystic
+    score: 22
+  - word: Magical
+    score: 20
+  - word: Sorcerous
+    score: 32
+  - word: Phantasmal
+    score: 28
+  - word: Wizardly
+    score: 26
+  - word: Fey
+    score: 10
+  - word: Runic
+    score: 20
+  - word: Secret
+    score: 22
+  - word: Ominous
+    score: 26
+  - word: Glowing
+    score: 22
+  - word: Sparkling
+    score: 26
+  - word: Astral
+    score: 16
+  - word: Numinous
+    score: 30
+  - word: Supernatural
+    score: 40
+  - word: Haunted
+    score: 22
+  - word: Unearthly
+    score: 30
+  - word: Metaphysical
+    score: 38
+  - word: Illusive
+    score: 26
+  - word: Haunting
+    score: 26
+  - word: Clandestine
+    score: 36
+  - word: Esoteric
+    score: 30
+  - word: Intangible
+    score: 34
+  - word: Obscure
+    score: 26
+  - word: Eerie
+    score: 20
+  - word: Uncanny
+    score: 26
+  - word: Shapeless
+    score: 24
+  - word: Infinite
+    score: 30
+  - word: Alchemical
+    score: 30
+  - word: Interdimensional
+    score: 56
+  - word: Timeless
+    score: 26
+  - word: Primeval
+    score: 28
+  - word: Spellbound
+    score: 32
+  - word: Hexed
+    score: 16
+  - word: Charming
+    score: 26
+  - word: Prophesied
+    score: 34
+  - word: Doomed
+    score: 20
+  - word: Dreadful
+    score: 22
+  - word: Fateful
+    score: 20
+  - word: Swirling
+    score: 26
+  - word: Lunar
+    score: 16
+  - word: Stellar
+    score: 20
+  - word: Cosmic
+    score: 22
+  - word: Ephemeral
+    score: 30
+  - word: Incorporeal
+    score: 40
+  - word: Shifting
+    score: 24
+  - word: Chaotic
+    score: 24
+  - word: Ritualistic
+    score: 38
+  - word: Unfathomable
+    score: 38
+  - word: Ineffable
+    score: 28
+  - word: Surreal
+    score: 22
+  - word: Dreamlike
+    score: 28
+  - word: Smoldering
+    score: 32
+  - word: Electrifying
+    score: 42
+  - word: Vampiric
+    score: 30
+  - word: Draconic
+    score: 28
+  - word: Immaterial
+    score: 34
+  - word: Unstable
+    score: 26
+  - word: Monstrous
+    score: 32
+  - word: Hallowed
+    score: 22
+  - word: Dormant
+    score: 24
+  - word: Awakened
+    score: 24
+  - word: Blazing
+    score: 22
+  - word: Demonic
+    score: 26
+  - word: Angelic
+    score: 22
+  - word: Mighty
+    score: 20
+  - word: Unstoppable
+    score: 38
+  - word: Unbounded
+    score: 32
+  - word: Misty
+    score: 18
+  - word: Foreboding
+    score: 34
+  - word: Phantasmic
+    score: 32
+  - word: Chilling
+    score: 24

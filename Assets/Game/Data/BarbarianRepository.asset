@@ -1,0 +1,653 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d87c1950193ba54aa42358fc1bc433c, type: 3}
+  m_Name: BarbarianRepository
+  m_EditorClassIdentifier: 
+  scoredWords:
+  - word: Savage
+    score: 16
+  - word: Wild
+    score: 12
+  - word: Feral
+    score: 14
+  - word: Primal
+    score: 20
+  - word: Brutal
+    score: 20
+  - word: Fierce
+    score: 22
+  - word: Untamed
+    score: 24
+  - word: Raging
+    score: 18
+  - word: Unstoppable
+    score: 38
+  - word: Warlike
+    score: 22
+  - word: Bestial
+    score: 22
+  - word: Raw
+    score: 10
+  - word: Harsh
+    score: 12
+  - word: Craggy
+    score: 18
+  - word: Unrefined
+    score: 32
+  - word: Coarse
+    score: 20
+  - word: Rugged
+    score: 18
+  - word: Hardy
+    score: 14
+  - word: Unyielding
+    score: 34
+  - word: Tenacious
+    score: 32
+  - word: Indomitable
+    score: 38
+  - word: Fearsome
+    score: 26
+  - word: Monstrous
+    score: 32
+  - word: Massive
+    score: 22
+  - word: Hulking
+    score: 20
+  - word: Towering
+    score: 30
+  - word: Imposing
+    score: 28
+  - word: Formidable
+    score: 32
+  - word: Thunderous
+    score: 34
+  - word: Tempestuous
+    score: 40
+  - word: Furious
+    score: 24
+  - word: Stormy
+    score: 22
+  - word: Rawboned
+    score: 28
+  - word: Dauntless
+    score: 26
+  - word: Fearless
+    score: 22
+  - word: Bold
+    score: 12
+  - word: Brazen
+    score: 22
+  - word: Sinewy
+    score: 22
+  - word: Brawny
+    score: 22
+  - word: Mighty
+    score: 20
+  - word: Bloody
+    score: 20
+  - word: Violent
+    score: 26
+  - word: Vicious
+    score: 26
+  - word: Brutish
+    score: 24
+  - word: Hostile
+    score: 22
+  - word: Wrathful
+    score: 24
+  - word: Relentless
+    score: 32
+  - word: Rampant
+    score: 24
+  - word: Merciless
+    score: 30
+  - word: Bloodthirsty
+    score: 40
+  - word: Ruthless
+    score: 24
+  - word: Stubborn
+    score: 30
+  - word: Gnarled
+    score: 20
+  - word: Battered
+    score: 28
+  - word: Weathered
+    score: 30
+  - word: Scarred
+    score: 22
+  - word: Rampaging
+    score: 28
+  - word: Unbridled
+    score: 30
+  - word: Ferocious
+    score: 32
+  - word: Commanding
+    score: 34
+  - word: Dominant
+    score: 28
+  - word: Alpha
+    score: 12
+  - word: Dreaded
+    score: 20
+  - word: Grim
+    score: 14
+  - word: Stark
+    score: 14
+  - word: Rough
+    score: 16
+  - word: Brash
+    score: 14
+  - word: Uncivilized
+    score: 40
+  - word: Primitive
+    score: 36
+  - word: Barbaric
+    score: 28
+  - word: Heathen
+    score: 22
+  - word: Frenzied
+    score: 28
+  - word: Berserk
+    score: 24
+  - word: Bloodied
+    score: 26
+  - word: Tattered
+    score: 28
+  - word: Caked
+    score: 14
+  - word: Stocky
+    score: 20
+  - word: Knotted
+    score: 24
+  - word: Tough
+    score: 16
+  - word: Broad
+    score: 16
+  - word: Muscular
+    score: 26
+  - word: Colossal
+    score: 22
+  - word: Monolithic
+    score: 36
+  - word: Primeval
+    score: 28
+  - word: Ancient
+    score: 26
+  - word: Earthy
+    score: 20
+  - word: Gruff
+    score: 14
+  - word: Fiery
+    score: 18
+  - word: Brooding
+    score: 28
+  - word: Somber
+    score: 22
+  - word: Unrelenting
+    score: 40
+  - word: Pitiless
+    score: 26
+  - word: Barbarous
+    score: 30
+  - word: Instinctual
+    score: 38
+  - word: Predatory
+    score: 32
+  - word: Wolfish
+    score: 20
+  - word: Lionhearted
+    score: 36
+  - word: Smash
+    score: 12
+  - word: Crush
+    score: 16
+  - word: Slam
+    score: 10
+  - word: Pound
+    score: 18
+  - word: Bash
+    score: 10
+  - word: Thrash
+    score: 16
+  - word: Rend
+    score: 14
+  - word: Tear
+    score: 14
+  - word: Shred
+    score: 14
+  - word: Slash
+    score: 10
+  - word: Hack
+    score: 10
+  - word: Cleave
+    score: 20
+  - word: Chop
+    score: 14
+  - word: Carve
+    score: 18
+  - word: Gore
+    score: 14
+  - word: Demolish
+    score: 24
+  - word: Ravage
+    score: 18
+  - word: Flatten
+    score: 22
+  - word: Impale
+    score: 20
+  - word: Scythe
+    score: 20
+  - word: Decimate
+    score: 28
+  - word: Devastate
+    score: 28
+  - word: Pulverize
+    score: 34
+  - word: Stomp
+    score: 18
+  - word: Maul
+    score: 12
+  - word: Mangle
+    score: 18
+  - word: Sunder
+    score: 20
+  - word: Break
+    score: 16
+  - word: Scatter
+    score: 24
+  - word: Rampage
+    score: 22
+  - word: Overwhelm
+    score: 32
+  - word: Beset
+    score: 18
+  - word: Trample
+    score: 24
+  - word: Tackle
+    score: 18
+  - word: Charge
+    score: 18
+  - word: Overrun
+    score: 28
+  - word: Whack
+    score: 14
+  - word: Deck
+    score: 12
+  - word: Pommel
+    score: 22
+  - word: Pummel
+    score: 22
+  - word: Flail
+    score: 12
+  - word: Fling
+    score: 14
+  - word: Heave
+    score: 16
+  - word: Hurl
+    score: 12
+  - word: Hammer
+    score: 20
+  - word: Club
+    score: 14
+  - word: Slug
+    score: 10
+  - word: Concuss
+    score: 24
+  - word: Disembowel
+    score: 34
+  - word: Eviscerate
+    score: 36
+  - word: Hew
+    score: 10
+  - word: Slice
+    score: 16
+  - word: Dice
+    score: 14
+  - word: Cripple
+    score: 26
+  - word: Wreck
+    score: 18
+  - word: Incapacitate
+    score: 42
+  - word: Gut
+    score: 10
+  - word: Lash
+    score: 8
+  - word: Whip
+    score: 14
+  - word: Lacerate
+    score: 26
+  - word: Bludgeon
+    score: 26
+  - word: Smother
+    score: 24
+  - word: Strangle
+    score: 24
+  - word: Choke
+    score: 16
+  - word: Knee
+    score: 14
+  - word: Elbow
+    score: 18
+  - word: Headbutt
+    score: 26
+  - word: Clobber
+    score: 26
+  - word: Subdue
+    score: 20
+  - word: Manhandle
+    score: 26
+  - word: Rake
+    score: 12
+  - word: Trounce
+    score: 28
+  - word: Destroy
+    score: 24
+  - word: Batter
+    score: 22
+  - word: Smite
+    score: 18
+  - word: Knock
+    score: 16
+  - word: Floor
+    score: 16
+  - word: Spear
+    score: 16
+  - word: Skewer
+    score: 20
+  - word: Pin
+    score: 12
+  - word: Buck
+    score: 14
+  - word: Clamp
+    score: 16
+  - word: Gnaw
+    score: 12
+  - word: Mince
+    score: 20
+  - word: Rip
+    score: 12
+  - word: Drag
+    score: 10
+  - word: Toss
+    score: 12
+  - word: Trip
+    score: 16
+  - word: Ram
+    score: 10
+  - word: Bullrush
+    score: 24
+  - word: Shoulder
+    score: 24
+  - word: Backhand
+    score: 22
+  - word: Mash
+    score: 10
+  - word: Harpoon
+    score: 24
+  - word: Gash
+    score: 8
+  - word: Saw
+    score: 8
+  - word: Dismember
+    score: 32
+  - word: Pillage
+    score: 20
+  - word: Plunder
+    score: 24
+  - word: Raid
+    score: 12
+  - word: Maraud
+    score: 18
+  - word: Storm
+    score: 18
+  - word: Conquer
+    score: 28
+  - word: Subjugate
+    score: 28
+  - word: Roar
+    score: 14
+  - word: Bellow
+    score: 20
+  - word: Brandish
+    score: 24
+  - word: Obliterate
+    score: 36
+  - word: Uproot
+    score: 24
+  - word: Fracture
+    score: 28
+  - word: Shatter
+    score: 22
+  - word: Burst
+    score: 18
+  - word: Howl
+    score: 12
+  - word: Holler
+    score: 18
+  - word: Plunge
+    score: 20
+  - word: Stampede
+    score: 26
+  - word: Intimidate
+    score: 36
+  - word: Threaten
+    score: 28
+  - word: Bark
+    score: 12
+  - word: Grunt
+    score: 18
+  - word: Devour
+    score: 22
+  - word: Swarm
+    score: 16
+  - word: Lunge
+    score: 16
+  - word: Hurtle
+    score: 20
+  - word: Seize
+    score: 18
+  - word: Brawl
+    score: 16
+  - word: Wrestle
+    score: 24
+  - word: Grapple
+    score: 22
+  - word: Scorch
+    score: 20
+  - word: Brand
+    score: 16
+  - word: Scalp
+    score: 14
+  - word: Topple
+    score: 22
+  - word: Tromp
+    score: 20
+  - word: Grind
+    score: 16
+  - word: Vandalize
+    score: 28
+  - word: Burn
+    score: 16
+  - word: Launch
+    score: 18
+  - word: Throw
+    score: 18
+  - word: Harry
+    score: 16
+  - word: Dethrone
+    score: 28
+  - word: Ensnare
+    score: 24
+  - word: Overthrow
+    score: 34
+  - word: Shear
+    score: 14
+  - word: Disarm
+    score: 18
+  - word: Crack
+    score: 16
+  - word: Barbarian
+    score: 30
+  - word: Raider
+    score: 20
+  - word: Berserker
+    score: 32
+  - word: Chieftain
+    score: 30
+  - word: Warlord
+    score: 22
+  - word: Clan
+    score: 12
+  - word: Tribe
+    score: 20
+  - word: Steppe
+    score: 22
+  - word: Wasteland
+    score: 26
+  - word: Pillager
+    score: 24
+  - word: Marauder
+    score: 26
+  - word: Harbinger
+    score: 30
+  - word: Beast
+    score: 16
+  - word: Warhorn
+    score: 24
+  - word: Buckler
+    score: 24
+  - word: Ringmail
+    score: 26
+  - word: Fur
+    score: 10
+  - word: Pelt
+    score: 14
+  - word: Warpaint
+    score: 28
+  - word: Fang
+    score: 10
+  - word: Totem
+    score: 20
+  - word: Bone
+    score: 16
+  - word: Scimitar
+    score: 28
+  - word: Greataxe
+    score: 26
+  - word: Waraxe
+    score: 20
+  - word: Javelin
+    score: 22
+  - word: Braids
+    score: 18
+  - word: Shrine
+    score: 20
+  - word: Ferocity
+    score: 30
+  - word: Brutality
+    score: 32
+  - word: Dread
+    score: 14
+  - word: Ruckus
+    score: 20
+  - word: Fury
+    score: 14
+  - word: Rage
+    score: 12
+  - word: Howling
+    score: 22
+  - word: Horde
+    score: 16
+  - word: Campsite
+    score: 28
+  - word: Wilderness
+    score: 32
+  - word: Frontier
+    score: 30
+  - word: Outlands
+    score: 24
+  - word: Rawness
+    score: 22
+  - word: Boldness
+    score: 24
+  - word: Hardness
+    score: 22
+  - word: Strength
+    score: 26
+  - word: Might
+    score: 16
+  - word: Bloodlust
+    score: 28
+  - word: Trophy
+    score: 22
+  - word: Warcry
+    score: 22
+  - word: Onslaught
+    score: 26
+  - word: Drums
+    score: 16
+  - word: Ancestry
+    score: 28
+  - word: Carnage
+    score: 22
+  - word: Ruin
+    score: 16
+  - word: Uproar
+    score: 22
+  - word: Outcry
+    score: 24
+  - word: Conquest
+    score: 30
+  - word: Savagery
+    score: 24
+  - word: Avalanche
+    score: 26
+  - word: Havoc
+    score: 16
+  - word: Dominion
+    score: 30
+  - word: Feast
+    score: 14
+  - word: Spit
+    score: 14
+  - word: Frost
+    score: 16
+  - word: Plains
+    score: 18
+  - word: Barbarism
+    score: 30
+  - word: Stronghold
+    score: 30
+  - word: Strongman
+    score: 30
+  - word: Warband
+    score: 22
+  - word: Pathfinder
+    score: 32
+  - word: Conqueror
+    score: 36
+  - word: Exile
+    score: 18
+  - word: Trackless
+    score: 26
+  - word: Huntsman
+    score: 26
+  - word: Scuffle
+    score: 20
+  - word: Colossus
+    score: 24
+  - word: Muscles
+    score: 22
+  - word: Beastmaster
+    score: 36

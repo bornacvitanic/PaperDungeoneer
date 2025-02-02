@@ -1,0 +1,719 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d87c1950193ba54aa42358fc1bc433c, type: 3}
+  m_Name: KnightRepository
+  m_EditorClassIdentifier: 
+  scoredWords:
+  - word: Slash
+    score: 10
+  - word: Thrust
+    score: 20
+  - word: Lunge
+    score: 16
+  - word: Stab
+    score: 12
+  - word: Hack
+    score: 10
+  - word: Chop
+    score: 14
+  - word: Cleave
+    score: 20
+  - word: Smite
+    score: 18
+  - word: Strike
+    score: 20
+  - word: Bash
+    score: 10
+  - word: Pound
+    score: 18
+  - word: Whack
+    score: 14
+  - word: Brandish
+    score: 24
+  - word: Swing
+    score: 16
+  - word: Hew
+    score: 10
+  - word: Carve
+    score: 18
+  - word: Maul
+    score: 12
+  - word: Gore
+    score: 14
+  - word: Flatten
+    score: 22
+  - word: Crater
+    score: 22
+  - word: Crush
+    score: 16
+  - word: Slam
+    score: 10
+  - word: Drive
+    score: 18
+  - word: Pierce
+    score: 24
+  - word: Skewer
+    score: 20
+  - word: Impale
+    score: 20
+  - word: Topple
+    score: 22
+  - word: Flay
+    score: 10
+  - word: Scythe
+    score: 20
+  - word: Rend
+    score: 14
+  - word: Claw
+    score: 12
+  - word: Flail
+    score: 12
+  - word: Throttle
+    score: 28
+  - word: Bludgeon
+    score: 26
+  - word: Bombard
+    score: 24
+  - word: Assail
+    score: 14
+  - word: Assault
+    score: 18
+  - word: Besiege
+    score: 24
+  - word: Ravage
+    score: 18
+  - word: Raze
+    score: 14
+  - word: Devastate
+    score: 28
+  - word: Unleash
+    score: 20
+  - word: Swarm
+    score: 16
+  - word: Overrun
+    score: 28
+  - word: Subdue
+    score: 20
+  - word: Quell
+    score: 16
+  - word: Vanquish
+    score: 26
+  - word: Beset
+    score: 18
+  - word: Whelm
+    score: 16
+  - word: Envelop
+    score: 26
+  - word: Maim
+    score: 14
+  - word: Savage
+    score: 16
+  - word: Exterminate
+    score: 42
+  - word: Butcher
+    score: 26
+  - word: Massacre
+    score: 24
+  - word: Trample
+    score: 24
+  - word: Harry
+    score: 16
+  - word: Maraud
+    score: 18
+  - word: Pillage
+    score: 20
+  - word: Rout
+    score: 16
+  - word: Dethrone
+    score: 28
+  - word: Cripple
+    score: 26
+  - word: Disable
+    score: 20
+  - word: Knock
+    score: 16
+  - word: Punch
+    score: 18
+  - word: Pummel
+    score: 22
+  - word: Elbow
+    score: 18
+  - word: Knee
+    score: 14
+  - word: Overthrow
+    score: 34
+  - word: Overwhelm
+    score: 32
+  - word: Level
+    score: 16
+  - word: Charge
+    score: 18
+  - word: Batter
+    score: 22
+  - word: Bruise
+    score: 22
+  - word: Harass
+    score: 14
+  - word: Worry
+    score: 20
+  - word: Sear
+    score: 12
+  - word: Scorch
+    score: 20
+  - word: Brand
+    score: 16
+  - word: Scald
+    score: 12
+  - word: Sting
+    score: 16
+  - word: Spear
+    score: 16
+  - word: Tear
+    score: 14
+  - word: Rip
+    score: 12
+  - word: Cut
+    score: 12
+  - word: Rampage
+    score: 22
+  - word: Club
+    score: 14
+  - word: Steamroll
+    score: 28
+  - word: Poke
+    score: 14
+  - word: Jab
+    score: 8
+  - word: Buffet
+    score: 20
+  - word: Slap
+    score: 10
+  - word: Thump
+    score: 18
+  - word: Belt
+    score: 14
+  - word: Choke
+    score: 16
+  - word: Gut
+    score: 10
+  - word: Pounce
+    score: 24
+  - word: Raid
+    score: 12
+  - word: Wound
+    score: 18
+  - word: Drub
+    score: 14
+  - word: Knight
+    score: 18
+  - word: Armor
+    score: 18
+  - word: Sword
+    score: 16
+  - word: Shield
+    score: 16
+  - word: Lance
+    score: 16
+  - word: Steed
+    score: 16
+  - word: Joust
+    score: 16
+  - word: Squire
+    score: 22
+  - word: Castle
+    score: 18
+  - word: Fortress
+    score: 26
+  - word: Monarchy
+    score: 28
+  - word: Kingdom
+    score: 22
+  - word: Realm
+    score: 16
+  - word: Domain
+    score: 20
+  - word: Baron
+    score: 18
+  - word: Vassal
+    score: 14
+  - word: Retinue
+    score: 28
+  - word: Court
+    score: 20
+  - word: Throne
+    score: 22
+  - word: Fealty
+    score: 18
+  - word: Heraldry
+    score: 24
+  - word: Banner
+    score: 22
+  - word: Standard
+    score: 22
+  - word: Tabard
+    score: 18
+  - word: Coatofarms
+    score: 32
+  - word: Gauntlet
+    score: 26
+  - word: Greave
+    score: 20
+  - word: Mail
+    score: 12
+  - word: Chainmail
+    score: 28
+  - word: Cuirass
+    score: 22
+  - word: Pauldron
+    score: 26
+  - word: Helm
+    score: 12
+  - word: Visor
+    score: 18
+  - word: Crest
+    score: 18
+  - word: Plume
+    score: 18
+  - word: Scabbard
+    score: 24
+  - word: Chalice
+    score: 22
+  - word: Coronation
+    score: 38
+  - word: Catapult
+    score: 26
+  - word: Ballista
+    score: 22
+  - word: Crossbow
+    score: 28
+  - word: Arrow
+    score: 18
+  - word: Quiver
+    score: 24
+  - word: Soldier
+    score: 22
+  - word: Crusader
+    score: 26
+  - word: Cavalier
+    score: 26
+  - word: Templar
+    score: 24
+  - word: Paladin
+    score: 20
+  - word: Champion
+    score: 28
+  - word: Defender
+    score: 26
+  - word: Swordsman
+    score: 28
+  - word: Warrior
+    score: 26
+  - word: Guard
+    score: 14
+  - word: Gatehouse
+    score: 28
+  - word: Drawbridge
+    score: 32
+  - word: Moat
+    score: 14
+  - word: Rampart
+    score: 24
+  - word: Parapet
+    score: 24
+  - word: Siege
+    score: 16
+  - word: Stable
+    score: 18
+  - word: Tapestry
+    score: 28
+  - word: Pavilion
+    score: 28
+  - word: Dais
+    score: 10
+  - word: Lineage
+    score: 22
+  - word: Spurs
+    score: 16
+  - word: Knighthood
+    score: 30
+  - word: Bravery
+    score: 26
+  - word: Gallantry
+    score: 26
+  - word: Quest
+    score: 18
+  - word: Paragon
+    score: 22
+  - word: Royalty
+    score: 24
+  - word: Capital
+    score: 22
+  - word: Outpost
+    score: 26
+  - word: Watchtower
+    score: 36
+  - word: Garrison
+    score: 26
+  - word: Battlement
+    score: 36
+  - word: Militia
+    score: 24
+  - word: Populace
+    score: 28
+  - word: Mission
+    score: 24
+  - word: Escort
+    score: 22
+  - word: Scout
+    score: 18
+  - word: Crusade
+    score: 22
+  - word: Tyranny
+    score: 26
+  - word: Ruler
+    score: 18
+  - word: Hierarchy
+    score: 30
+  - word: Peasantry
+    score: 30
+  - word: Farmland
+    score: 22
+  - word: Orchard
+    score: 22
+  - word: Cavalry
+    score: 22
+  - word: Brigade
+    score: 22
+  - word: Patrol
+    score: 20
+  - word: Muster
+    score: 22
+  - word: Vantage
+    score: 22
+  - word: Serf
+    score: 12
+  - word: Tithe
+    score: 18
+  - word: Scriptorium
+    score: 42
+  - word: Gallop
+    score: 16
+  - word: Protect
+    score: 28
+  - word: Defend
+    score: 18
+  - word: Serve
+    score: 18
+  - word: Pledge
+    score: 18
+  - word: Swear
+    score: 16
+  - word: Vow
+    score: 12
+  - word: Parry
+    score: 18
+  - word: Block
+    score: 16
+  - word: Kneel
+    score: 16
+  - word: Arise
+    score: 16
+  - word: Tilt
+    score: 14
+  - word: Rescue
+    score: 22
+  - word: Retake
+    score: 20
+  - word: Occupy
+    score: 24
+  - word: Fortify
+    score: 24
+  - word: Rally
+    score: 14
+  - word: March
+    score: 16
+  - word: Repel
+    score: 18
+  - word: Conquer
+    score: 28
+  - word: Yield
+    score: 16
+  - word: Ascend
+    score: 18
+  - word: Enthrone
+    score: 30
+  - word: Challenge
+    score: 26
+  - word: Hail
+    score: 10
+  - word: Proclaim
+    score: 28
+  - word: Obey
+    score: 16
+  - word: Herald
+    score: 16
+  - word: Anoint
+    score: 22
+  - word: Bend
+    score: 14
+  - word: Unify
+    score: 18
+  - word: Honor
+    score: 18
+  - word: Advance
+    score: 22
+  - word: Wield
+    score: 16
+  - word: Ride
+    score: 14
+  - word: Canter
+    score: 22
+  - word: Trot
+    score: 16
+  - word: Chase
+    score: 14
+  - word: Capture
+    score: 26
+  - word: Detain
+    score: 20
+  - word: Release
+    score: 22
+  - word: Alight
+    score: 16
+  - word: Spur
+    score: 14
+  - word: Equip
+    score: 20
+  - word: Bestride
+    score: 28
+  - word: Revere
+    score: 24
+  - word: Spar
+    score: 12
+  - word: Feint
+    score: 18
+  - word: Duel
+    score: 12
+  - word: Aim
+    score: 10
+  - word: Arm
+    score: 10
+  - word: Declare
+    score: 22
+  - word: Bear
+    score: 14
+  - word: Enlist
+    score: 20
+  - word: Dub
+    score: 10
+  - word: Hamper
+    score: 20
+  - word: Sheath
+    score: 16
+  - word: Sharpen
+    score: 22
+  - word: Flourish
+    score: 24
+  - word: Lead
+    score: 10
+  - word: Chivalrous
+    score: 32
+  - word: Noble
+    score: 18
+  - word: Brave
+    score: 18
+  - word: Gallant
+    score: 18
+  - word: Valiant
+    score: 22
+  - word: Loyal
+    score: 14
+  - word: Honorable
+    score: 30
+  - word: Steadfast
+    score: 24
+  - word: Stalwart
+    score: 24
+  - word: Virtuous
+    score: 30
+  - word: Regal
+    score: 14
+  - word: Kingly
+    score: 18
+  - word: Queenly
+    score: 26
+  - word: Princely
+    score: 30
+  - word: Fearless
+    score: 22
+  - word: Bold
+    score: 12
+  - word: Heroic
+    score: 22
+  - word: Just
+    score: 12
+  - word: Devout
+    score: 22
+  - word: Daring
+    score: 18
+  - word: Martial
+    score: 22
+  - word: Militant
+    score: 28
+  - word: Resolute
+    score: 28
+  - word: Adamant
+    score: 20
+  - word: Unwavering
+    score: 36
+  - word: Ironclad
+    score: 26
+  - word: Shining
+    score: 22
+  - word: Polished
+    score: 24
+  - word: Armored
+    score: 24
+  - word: Equestrian
+    score: 36
+  - word: Equine
+    score: 24
+  - word: Dignified
+    score: 28
+  - word: Majestic
+    score: 26
+  - word: Fearsome
+    score: 26
+  - word: Robust
+    score: 22
+  - word: Hearty
+    score: 20
+  - word: Valorous
+    score: 26
+  - word: Brazen
+    score: 22
+  - word: Righteous
+    score: 30
+  - word: Glorious
+    score: 26
+  - word: Unyielding
+    score: 34
+  - word: Proud
+    score: 18
+  - word: Resilient
+    score: 32
+  - word: Unbreakable
+    score: 36
+  - word: Disciplined
+    score: 36
+  - word: Immovable
+    score: 32
+  - word: Inviolate
+    score: 32
+  - word: Heraldic
+    score: 24
+  - word: Archaic
+    score: 22
+  - word: Medieval
+    score: 26
+  - word: Feudal
+    score: 16
+  - word: Ancestral
+    score: 28
+  - word: Courtly
+    score: 26
+  - word: Stately
+    score: 22
+  - word: Revered
+    score: 26
+  - word: Hallowed
+    score: 22
+  - word: Magnanimous
+    score: 36
+  - word: Merciful
+    score: 28
+  - word: Courageous
+    score: 34
+  - word: Knightly
+    score: 24
+  - word: Pious
+    score: 18
+  - word: Faithful
+    score: 22
+  - word: Undaunted
+    score: 30
+  - word: Unstoppable
+    score: 38
+  - word: Epic
+    score: 16
+  - word: Firm
+    score: 14
+  - word: Elevated
+    score: 26
+  - word: Grand
+    score: 14
+  - word: Superior
+    score: 30
+  - word: Upright
+    score: 24
+  - word: Ethical
+    score: 22
+  - word: Famed
+    score: 14
+  - word: Renowned
+    score: 30
+  - word: Exalted
+    score: 22
+  - word: Mighty
+    score: 20
+  - word: Formidable
+    score: 32
+  - word: Dutiful
+    score: 22
+  - word: Abiding
+    score: 22
+  - word: Holy
+    score: 12
+  - word: Sanctified
+    score: 32
+  - word: Venerated
+    score: 32
+  - word: Chivalric
+    score: 30
+  - word: Trained
+    score: 24
+  - word: Unflinching
+    score: 36
+  - word: Watchful
+    score: 24
+  - word: Vigilant
+    score: 26
+  - word: Brash
+    score: 14
+  - word: Cunning
+    score: 26
+  - word: Resourceful
+    score: 38
+  - word: Brawny
+    score: 22
+  - word: Greathearted
+    score: 38
+  - word: Keen
+    score: 14
+  - word: Sharp
+    score: 14
+  - word: Devoted
+    score: 24
+  - word: Lustrous
+    score: 26
+  - word: Legendary
+    score: 28

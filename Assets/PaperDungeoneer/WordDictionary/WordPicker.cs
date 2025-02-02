@@ -6,11 +6,13 @@ namespace PaperDungoneer.WordDictionary
 {
     public class WordPicker : MonoBehaviour
     {
-        [SerializeField] private WordRepository wordDictionary;
+        [SerializeField] private WordRepository wordRepository;
+
+        public WordRepository WordRepository { get { return wordRepository; } set { wordRepository = value; } }
 
         public List<ScoredWord> GetWordsByLenght(int length)
         {
-            List<ScoredWord> filteredWords = wordDictionary.ScoredWords.Where(word => word.word.Length <= length).ToList();
+            List<ScoredWord> filteredWords = wordRepository.ScoredWords.Where(word => word.word.Length <= length).ToList();
             if (filteredWords.Count == 0)
             {
                 Debug.LogWarning($"No words found with length {length}");
@@ -19,15 +21,15 @@ namespace PaperDungoneer.WordDictionary
             return filteredWords;
         }
 
-        public List<ScoredWord> GetWordsByScore(int wordScoreTo, int scoreRange, int amountOfWords)
+        public List<ScoredWord> GetWordsByScore(int wordScoreTo, int amountOfWords)
         {
-            if(wordScoreTo > wordDictionary.MaxScore)
-                wordScoreTo = wordDictionary.MaxScore;
+            List<ScoredWord> filteredWords = wordRepository.ScoredWords.Where(word => word.score <= wordScoreTo).ToList();
 
-            List<ScoredWord> filteredWords = wordDictionary.ScoredWords.Where(word => word.score >= wordScoreTo - scoreRange && word.score <= wordScoreTo).ToList();
+            filteredWords.Sort((x, y) => y.score.CompareTo(x.score));
+            
             if (filteredWords.Count == 0)
             {
-                Debug.LogWarning($"No words found within scores {wordScoreTo - scoreRange} - {wordScoreTo}");
+                Debug.LogWarning($"No words found up to score {wordScoreTo}");
                 return new();
             }
 
