@@ -11,15 +11,15 @@ namespace PaperDungeoneer.Spawners.Room
         [SerializeField] private Vector2Int roomLengthRange = new(1, 5);
 
         [Header("Wall and Corner Prefabs")]
-        public WeightedPrefabRepository wallPrefabs; // List of weighted wall prefabs
-        public WeightedPrefabRepository cornerPrefabs; // List of weighted corner prefabs
-        public WeightedPrefabRepository floorPrefabs; // List of weighted floor prefabs
+        [SerializeField] private WeightedPrefabRepository wallPrefabs; // List of weighted wall prefabs
+        [SerializeField] private WeightedPrefabRepository cornerPrefabs; // List of weighted corner prefabs
+        [SerializeField] private WeightedPrefabRepository floorPrefabs; // List of weighted floor prefabs
 
         [Header("Center Floor Prefab")]
-        public GameObject centerFloorPrefab; // Center floor piece (2x2 size)
+        [SerializeField] private GameObject centerFloorPrefab; // Center floor piece (2x2 size)
 
         [Header("Wall and Corner Dimensions")]
-        public float wallWidth = 1.0f; // Width of the wall prefabs
+        [SerializeField] private float wallWidth = 1.0f; // Width of the wall prefabs
 
         private int RoomWidth { get; set; }
         private int RoomLength { get; set; }

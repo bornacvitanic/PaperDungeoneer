@@ -6,10 +6,10 @@ namespace PaperDungeoneer.Spawners.Room
     public class ProceduralFloorTileAssembler : MonoBehaviour
     {
         [Header("Half-Sized Floor Tiles")]
-        public WeightedPrefabRepository halfFloorPrefabs; // Repository of half-sized floor tiles
+        [SerializeField] private WeightedPrefabRepository halfFloorPrefabs; // Repository of half-sized floor tiles
 
         [Header("Tile Dimensions")]
-        public float tileSize = 1.0f; // Size of the full floor tile (width and length)
+        [SerializeField] private float tileSize = 1.0f; // Size of the full floor tile (width and length)
 
         private void Awake()
         {
