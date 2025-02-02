@@ -135,12 +135,12 @@ PrefabInstance:
     - target: {fileID: 2978918540235479857, guid: ffec51fbc3eb8254c9d9b1209c70c754,
         type: 3}
       propertyPath: increaseInLevel
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2978918540235479857, guid: ffec51fbc3eb8254c9d9b1209c70c754,
         type: 3}
       propertyPath: startingDifficultyLevel
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2978918540235479857, guid: ffec51fbc3eb8254c9d9b1209c70c754,
         type: 3}
