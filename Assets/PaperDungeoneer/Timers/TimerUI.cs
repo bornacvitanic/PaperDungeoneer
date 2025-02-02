@@ -20,7 +20,7 @@ namespace PaperDungeoneer.Timers
         private void OnDisable()
         {
             timer.OnTimeTick -= UpdateUITimer;
-            timer.OnTimeReset += UpdateUITimer;
+            timer.OnTimeReset -= UpdateUITimer;
         }
 
         public void UpdateUITimer()
