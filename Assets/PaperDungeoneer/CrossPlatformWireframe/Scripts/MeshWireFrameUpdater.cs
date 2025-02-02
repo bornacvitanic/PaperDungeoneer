@@ -58,7 +58,6 @@ public class MeshWireframeUpdater : MonoBehaviour
             if (colors != null)
             {
                 mesh.SetColors(colors);
-                Debug.Log($"Updated mesh colors for SkinnedMeshRenderer on {smr.gameObject.name}", smr.gameObject);
             }
         }
     }
