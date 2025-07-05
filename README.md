@@ -1,3 +1,5 @@
+﻿# PaperDungeoneer
+
 Step into the flickering torchlight of **Paper Dungeoneer**, a papercraft dungeon-crawler forged for **Mini Jam 177: Papercraft**. Play as one of four brave adventurers — **Barnarian**, **Rouge**, **Wizard**, or **Knight** — and descend into an endless labyrinth crafted from parchment and secrets.
 
 In this dark, medieval world where ink and courage are your greatest weapons, fallen heroes from failed journeys rise again as skeletal foes. To defeat them, you must quickly inscribe words onto ancient parchment — each word a blow against the undead.
@@ -22,6 +24,6 @@ Your ultimate goal: **uncover the hidden sentence that reveals the secret of you
 
 ---
 
-https://itch.io/jam/mini-jam-177-papercraft/
-https://itch.io/jam/mini-jam-177-papercraft/rate/3297430
+https://itch.io/jam/mini-jam-177-papercraft/ \
+https://itch.io/jam/mini-jam-177-papercraft/rate/3297430 \
 https://bornacvitanic.itch.io/paper-dungeoneer
